@@ -7,5 +7,10 @@ Access via:
 https://haulaah.github.io/CIRPO#
 
 
-Paper:
-===================
+# Paper Publication
+
+If you use this ontology, please cite our paper:
+
+H. S. Galadima, C. Doherty, and R. Brennan,
+""
+*publicaion in  progress*

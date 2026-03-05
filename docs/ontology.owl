@@ -8,12 +8,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://haulaah.github.io/CIRPO">
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-06-01</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-03</terms:created>
         <terms:creator>Haula Galadima, Cormac Doherty, Rob Brennan</terms:creator>
         <terms:description>An ontology for modeling cybersecurity incident response processes</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Cyber Incident Response Process Ontology (CIRPO)</terms:title>
-        <owl:versionInfo>1.0</owl:versionInfo>
+        <owl:versionInfo>6.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -187,6 +187,19 @@
     
 
 
+    <!-- https://haulaah.github.io/CIRPO#containsChat -->
+
+
+    <owl:ObjectProperty rdf:about="https://haulaah.github.io/CIRPO#containsChat">
+        <owl:inverseOf rdf:resource="https://haulaah.github.io/CIRPO#wasPostedTo"/>
+        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ChatChannel"/>
+        <rdfs:range rdf:resource="https://haulaah.github.io/CIRPO#ChatMessage"/>
+        <rdfs:comment>Indicates that a channel contains chat messages.</rdfs:comment>
+        <rdfs:label>contains chat</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://haulaah.github.io/CIRPO#createdArtefact -->
 
 
@@ -228,8 +241,8 @@
 
     <owl:ObjectProperty rdf:about="https://haulaah.github.io/CIRPO#generatedChat">
         <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#Analyst"/>
-        <rdfs:range rdf:resource="https://haulaah.github.io/CIRPO#ResponderCommunication"/>
-        <rdfs:comment>Inverse of hasChatAnalyst. Links an analyst to the chat they generated.</rdfs:comment>
+        <rdfs:range rdf:resource="https://haulaah.github.io/CIRPO#ChatMessage"/>
+        <rdfs:comment>Inverse of hasChatAnalyst.</rdfs:comment>
         <rdfs:label>generated chat</rdfs:label>
     </owl:ObjectProperty>
     
@@ -307,14 +320,28 @@
     
 
 
+    <!-- https://haulaah.github.io/CIRPO#hasChannel -->
+
+
+    <owl:ObjectProperty rdf:about="https://haulaah.github.io/CIRPO#hasChannel">
+        <rdfs:subPropertyOf rdf:resource="https://haulaah.github.io/CIRPO#hasResponderCommunication"/>
+        <owl:inverseOf rdf:resource="https://haulaah.github.io/CIRPO#isChannelOf"/>
+        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#Incident"/>
+        <rdfs:range rdf:resource="https://haulaah.github.io/CIRPO#ChatChannel"/>
+        <rdfs:comment>Links an incident to its chat channel.</rdfs:comment>
+        <rdfs:label>has channel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://haulaah.github.io/CIRPO#hasChatAnalyst -->
 
 
     <owl:ObjectProperty rdf:about="https://haulaah.github.io/CIRPO#hasChatAnalyst">
         <owl:inverseOf rdf:resource="https://haulaah.github.io/CIRPO#generatedChat"/>
-        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ResponderCommunication"/>
+        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ChatMessage"/>
         <rdfs:range rdf:resource="https://haulaah.github.io/CIRPO#Analyst"/>
-        <rdfs:comment>Links a communication to the analyst who made the chat.</rdfs:comment>
+        <rdfs:comment>Links a chat message to the analyst who authored it.</rdfs:comment>
         <rdfs:label>has chat analyst</rdfs:label>
     </owl:ObjectProperty>
     
@@ -385,14 +412,15 @@
     
 
 
-    <!-- https://haulaah.github.io/CIRPO#hasPertainingChat -->
+    <!-- https://haulaah.github.io/CIRPO#hasResponderCommunication -->
 
 
-    <owl:ObjectProperty rdf:about="https://haulaah.github.io/CIRPO#hasPertainingChat">
+    <owl:ObjectProperty rdf:about="https://haulaah.github.io/CIRPO#hasResponderCommunication">
+        <owl:inverseOf rdf:resource="https://haulaah.github.io/CIRPO#isRelatedToIncident"/>
         <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#Incident"/>
         <rdfs:range rdf:resource="https://haulaah.github.io/CIRPO#ResponderCommunication"/>
-        <rdfs:comment>Inverse of pertainsToIncident. Links an incident to a chat about it.</rdfs:comment>
-        <rdfs:label>has pertaining chat</rdfs:label>
+        <rdfs:comment>Links an incident to any responder communication resource.</rdfs:comment>
+        <rdfs:label>has responder communication</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -421,6 +449,18 @@
     
 
 
+    <!-- https://haulaah.github.io/CIRPO#isChannelOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://haulaah.github.io/CIRPO#isChannelOf">
+        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ChatChannel"/>
+        <rdfs:range rdf:resource="https://haulaah.github.io/CIRPO#Incident"/>
+        <rdfs:comment>Inverse of hasChannel.</rdfs:comment>
+        <rdfs:label>is channel of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://haulaah.github.io/CIRPO#isCoaOf -->
 
 
@@ -441,6 +481,18 @@
         <rdfs:range rdf:resource="https://haulaah.github.io/CIRPO#Incident"/>
         <rdfs:comment>Inverse of hasEvent. Links a security event back to its parent incident.</rdfs:comment>
         <rdfs:label>is event of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://haulaah.github.io/CIRPO#isRelatedToIncident -->
+
+
+    <owl:ObjectProperty rdf:about="https://haulaah.github.io/CIRPO#isRelatedToIncident">
+        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ResponderCommunication"/>
+        <rdfs:range rdf:resource="https://haulaah.github.io/CIRPO#Incident"/>
+        <rdfs:comment>Inverse of hasResponderCommunication. Links any responder communication back to the incident it is associated with.</rdfs:comment>
+        <rdfs:label>is related to incident</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -476,15 +528,14 @@
     
 
 
-    <!-- https://haulaah.github.io/CIRPO#pertainsToIncident -->
+    <!-- https://haulaah.github.io/CIRPO#wasPostedTo -->
 
 
-    <owl:ObjectProperty rdf:about="https://haulaah.github.io/CIRPO#pertainsToIncident">
-        <owl:inverseOf rdf:resource="https://haulaah.github.io/CIRPO#hasPertainingChat"/>
-        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ResponderCommunication"/>
-        <rdfs:range rdf:resource="https://haulaah.github.io/CIRPO#Incident"/>
-        <rdfs:comment>Links a chat to the incident it discusses.</rdfs:comment>
-        <rdfs:label>pertains to incident</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://haulaah.github.io/CIRPO#wasPostedTo">
+        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ChatMessage"/>
+        <rdfs:range rdf:resource="https://haulaah.github.io/CIRPO#ChatChannel"/>
+        <rdfs:comment>Indicates the channel where the chat message was posted.</rdfs:comment>
+        <rdfs:label>was posted to</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -573,11 +624,35 @@
     
 
 
+    <!-- https://haulaah.github.io/CIRPO#hasChatChannelId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://haulaah.github.io/CIRPO#hasChatChannelId">
+        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ChatChannel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Unique identifier of the communication channel (channel_id).</rdfs:comment>
+        <rdfs:label>has chat channel ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://haulaah.github.io/CIRPO#hasChatChannelName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://haulaah.github.io/CIRPO#hasChatChannelName">
+        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ChatChannel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name of the communication channel (channel_name).</rdfs:comment>
+        <rdfs:label>has chat channel name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://haulaah.github.io/CIRPO#hasChatMessage -->
 
 
     <owl:DatatypeProperty rdf:about="https://haulaah.github.io/CIRPO#hasChatMessage">
-        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ResponderCommunication"/>
+        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ChatMessage"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The content or body of the communication message.</rdfs:comment>
         <rdfs:label>has chat message</rdfs:label>
@@ -589,10 +664,22 @@
 
 
     <owl:DatatypeProperty rdf:about="https://haulaah.github.io/CIRPO#hasChatMessageDateTime">
-        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ResponderCommunication"/>
+        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ChatMessage"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment>Timestamp when the communication occurred.</rdfs:comment>
         <rdfs:label>has chat message datetime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://haulaah.github.io/CIRPO#hasChatMessageId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://haulaah.github.io/CIRPO#hasChatMessageId">
+        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ChatMessage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Unique identifier of the chat message (post_id).</rdfs:comment>
+        <rdfs:label>has chat message ID</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -601,7 +688,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://haulaah.github.io/CIRPO#hasChatSentiment">
-        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ResponderCommunication"/>
+        <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#ChatMessage"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The sentiment or tone of the communication.</rdfs:comment>
         <rdfs:label>has chat sentiment</rdfs:label>
@@ -928,6 +1015,28 @@
     
 
 
+    <!-- https://haulaah.github.io/CIRPO#ChatChannel -->
+
+
+    <owl:Class rdf:about="https://haulaah.github.io/CIRPO#ChatChannel">
+        <rdfs:subClassOf rdf:resource="https://haulaah.github.io/CIRPO#ResponderCommunication"/>
+        <rdfs:comment>A communication channel where responders exchange messages</rdfs:comment>
+        <rdfs:label>Chat Channel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://haulaah.github.io/CIRPO#ChatMessage -->
+
+
+    <owl:Class rdf:about="https://haulaah.github.io/CIRPO#ChatMessage">
+        <rdfs:subClassOf rdf:resource="https://haulaah.github.io/CIRPO#ResponderCommunication"/>
+        <rdfs:comment>A message posted by a responder within a chat channel.</rdfs:comment>
+        <rdfs:label>Chat Message</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://haulaah.github.io/CIRPO#Containment -->
 
 
@@ -1007,7 +1116,7 @@
 
 
     <owl:Class rdf:about="https://haulaah.github.io/CIRPO#ResponderCommunication">
-        <rdfs:comment>Communication between incident responders during an investigation.</rdfs:comment>
+        <rdfs:comment> Any communication resource involved in incident response activities,including channels and individual chat messages</rdfs:comment>
         <rdfs:label>Responder Communication</rdfs:label>
     </owl:Class>
     

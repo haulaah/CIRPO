@@ -15,6 +15,12 @@ This ontology has the following classes and properties.</span>
       <a href="#Artefact" title="https://haulaah.github.io/CIRPO#Artefact">Artefact</a>
    </li>
    <li>
+      <a href="#ChatChannel" title="https://haulaah.github.io/CIRPO#ChatChannel">Chat Channel</a>
+   </li>
+   <li>
+      <a href="#ChatMessage" title="https://haulaah.github.io/CIRPO#ChatMessage">Chat Message</a>
+   </li>
+   <li>
       <a href="#Containment" title="https://haulaah.github.io/CIRPO#Containment">Containment</a>
    </li>
    <li>
@@ -71,6 +77,9 @@ This ontology has the following classes and properties.</span>
          title="https://haulaah.github.io/CIRPO#confirmedIncident">confirmed incident</a>
    </li>
    <li>
+      <a href="#containsChat" title="https://haulaah.github.io/CIRPO#containsChat">contains chat</a>
+   </li>
+   <li>
       <a href="#createdArtefact" title="https://haulaah.github.io/CIRPO#createdArtefact">created artefact</a>
    </li>
    <li>
@@ -101,6 +110,9 @@ This ontology has the following classes and properties.</span>
          title="https://haulaah.github.io/CIRPO#hasArtefactCreationAnalyst">has artefact creation analyst</a>
    </li>
    <li>
+      <a href="#hasChannel" title="https://haulaah.github.io/CIRPO#hasChannel">has channel</a>
+   </li>
+   <li>
       <a href="#hasChatAnalyst" title="https://haulaah.github.io/CIRPO#hasChatAnalyst">has chat analyst</a>
    </li>
    <li>
@@ -122,8 +134,8 @@ This ontology has the following classes and properties.</span>
       <a href="#hasEvent" title="https://haulaah.github.io/CIRPO#hasEvent">has event</a>
    </li>
    <li>
-      <a href="#hasPertainingChat"
-         title="https://haulaah.github.io/CIRPO#hasPertainingChat">has pertaining chat</a>
+      <a href="#hasResponderCommunication"
+         title="https://haulaah.github.io/CIRPO#hasResponderCommunication">has responder communication</a>
    </li>
    <li>
       <a href="#isAnalysisOf" title="https://haulaah.github.io/CIRPO#isAnalysisOf">is analysis of</a>
@@ -132,10 +144,17 @@ This ontology has the following classes and properties.</span>
       <a href="#isArtefactOf" title="https://haulaah.github.io/CIRPO#isArtefactOf">is artefact of</a>
    </li>
    <li>
+      <a href="#isChannelOf" title="https://haulaah.github.io/CIRPO#isChannelOf">is channel of</a>
+   </li>
+   <li>
       <a href="#isCoaOf" title="https://haulaah.github.io/CIRPO#isCoaOf">is COA of</a>
    </li>
    <li>
       <a href="#isEventOf" title="https://haulaah.github.io/CIRPO#isEventOf">is event of</a>
+   </li>
+   <li>
+      <a href="#isRelatedToIncident"
+         title="https://haulaah.github.io/CIRPO#isRelatedToIncident">is related to incident</a>
    </li>
    <li>
       <a href="#performed" title="https://haulaah.github.io/CIRPO#performed">performed</a>
@@ -143,10 +162,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#performedAnalysis"
          title="https://haulaah.github.io/CIRPO#performedAnalysis">performed analysis</a>
-   </li>
-   <li>
-      <a href="#pertainsToIncident"
-         title="https://haulaah.github.io/CIRPO#pertainsToIncident">pertains to incident</a>
    </li>
    <li>
       <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a>
@@ -159,6 +174,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://www.w3.org/ns/prov#wasPerformedBy" title="http://www.w3.org/ns/prov#wasPerformedBy">was performed by</a>
+   </li>
+   <li>
+      <a href="#wasPostedTo" title="https://haulaah.github.io/CIRPO#wasPostedTo">was posted to</a>
    </li>
    <li>
       <a href="#wasUsedBy" title="https://haulaah.github.io/CIRPO#wasUsedBy">was used by</a>
@@ -184,11 +202,21 @@ This ontology has the following classes and properties.</span>
       <a href="#hasArtefactType" title="https://haulaah.github.io/CIRPO#hasArtefactType">has artefact type</a>
    </li>
    <li>
+      <a href="#hasChatChannelId" title="https://haulaah.github.io/CIRPO#hasChatChannelId">has chat channel ID</a>
+   </li>
+   <li>
+      <a href="#hasChatChannelName"
+         title="https://haulaah.github.io/CIRPO#hasChatChannelName">has chat channel name</a>
+   </li>
+   <li>
       <a href="#hasChatMessage" title="https://haulaah.github.io/CIRPO#hasChatMessage">has chat message</a>
    </li>
    <li>
       <a href="#hasChatMessageDateTime"
          title="https://haulaah.github.io/CIRPO#hasChatMessageDateTime">has chat message datetime</a>
+   </li>
+   <li>
+      <a href="#hasChatMessageId" title="https://haulaah.github.io/CIRPO#hasChatMessageId">has chat message ID</a>
    </li>
    <li>
       <a href="#hasChatSentiment" title="https://haulaah.github.io/CIRPO#hasChatSentiment">has chat sentiment</a>
@@ -255,7 +283,8 @@ This ontology has the following classes and properties.</span>
          title="https://haulaah.github.io/CIRPO#hasIncidentSeverity">has incident severity</a>
    </li>
    <li>
-      <a href="#hasIncidentStage" title="https://haulaah.github.io/CIRPO#hasIncidentStage">has incident stage</a>
+      <a href="#hasIncidentStage"
+         title="https://haulaah.github.io/CIRPO#hasIncidentStage">has incident stage</a>
    </li>
    <li>
       <a href="#hasIncidentStatus"

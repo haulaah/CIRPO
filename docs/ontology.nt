@@ -1,10 +1,10 @@
 <https://haulaah.github.io/CIRPO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://haulaah.github.io/CIRPO> <http://purl.org/dc/terms/created> "2025-06-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://haulaah.github.io/CIRPO> <http://purl.org/dc/terms/created> "2026-05-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://haulaah.github.io/CIRPO> <http://purl.org/dc/terms/creator> "Haula Galadima, Cormac Doherty, Rob Brennan" .
 <https://haulaah.github.io/CIRPO> <http://purl.org/dc/terms/description> "An ontology for modeling cybersecurity incident response processes" .
 <https://haulaah.github.io/CIRPO> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://haulaah.github.io/CIRPO> <http://purl.org/dc/terms/title> "Cyber Incident Response Process Ontology (CIRPO)" .
-<https://haulaah.github.io/CIRPO> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<https://haulaah.github.io/CIRPO> <http://www.w3.org/2002/07/owl#versionInfo> "6.0" .
 # 
 # 
 # #################################################################
@@ -115,6 +115,14 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://haulaah.github.io/CIRPO#confirmedIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasConfirmationAnalyst. Links an analyst to the incidents they confirmed." .
 <https://haulaah.github.io/CIRPO#confirmedIncident> <http://www.w3.org/2000/01/rdf-schema#label> "confirmed incident" .
 # 
+# https://haulaah.github.io/CIRPO#containsChat
+<https://haulaah.github.io/CIRPO#containsChat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://haulaah.github.io/CIRPO#containsChat> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#wasPostedTo> .
+<https://haulaah.github.io/CIRPO#containsChat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatChannel> .
+<https://haulaah.github.io/CIRPO#containsChat> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#ChatMessage> .
+<https://haulaah.github.io/CIRPO#containsChat> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a channel contains chat messages." .
+<https://haulaah.github.io/CIRPO#containsChat> <http://www.w3.org/2000/01/rdf-schema#label> "contains chat" .
+# 
 # https://haulaah.github.io/CIRPO#createdArtefact
 <https://haulaah.github.io/CIRPO#createdArtefact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://haulaah.github.io/CIRPO#createdArtefact> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Analyst> .
@@ -139,8 +147,8 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://haulaah.github.io/CIRPO#generatedChat
 <https://haulaah.github.io/CIRPO#generatedChat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://haulaah.github.io/CIRPO#generatedChat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#generatedChat> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
-<https://haulaah.github.io/CIRPO#generatedChat> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasChatAnalyst. Links an analyst to the chat they generated." .
+<https://haulaah.github.io/CIRPO#generatedChat> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#ChatMessage> .
+<https://haulaah.github.io/CIRPO#generatedChat> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasChatAnalyst." .
 <https://haulaah.github.io/CIRPO#generatedChat> <http://www.w3.org/2000/01/rdf-schema#label> "generated chat" .
 # 
 # https://haulaah.github.io/CIRPO#hadAssociatedEntity
@@ -193,12 +201,21 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://haulaah.github.io/CIRPO#hasArtefactCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an artefact to the analyst who collected, created, or documented it." .
 <https://haulaah.github.io/CIRPO#hasArtefactCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact creation analyst" .
 # 
+# https://haulaah.github.io/CIRPO#hasChannel
+<https://haulaah.github.io/CIRPO#hasChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://haulaah.github.io/CIRPO#hasChannel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://haulaah.github.io/CIRPO#hasResponderCommunication> .
+<https://haulaah.github.io/CIRPO#hasChannel> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#isChannelOf> .
+<https://haulaah.github.io/CIRPO#hasChannel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
+<https://haulaah.github.io/CIRPO#hasChannel> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#ChatChannel> .
+<https://haulaah.github.io/CIRPO#hasChannel> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to its chat channel." .
+<https://haulaah.github.io/CIRPO#hasChannel> <http://www.w3.org/2000/01/rdf-schema#label> "has channel" .
+# 
 # https://haulaah.github.io/CIRPO#hasChatAnalyst
 <https://haulaah.github.io/CIRPO#hasChatAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://haulaah.github.io/CIRPO#hasChatAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#generatedChat> .
-<https://haulaah.github.io/CIRPO#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
+<https://haulaah.github.io/CIRPO#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatMessage> .
 <https://haulaah.github.io/CIRPO#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a communication to the analyst who made the chat." .
+<https://haulaah.github.io/CIRPO#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a chat message to the analyst who authored it." .
 <https://haulaah.github.io/CIRPO#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has chat analyst" .
 # 
 # https://haulaah.github.io/CIRPO#hasCoa
@@ -241,12 +258,13 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://haulaah.github.io/CIRPO#hasEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to one or more related security events that triggered or are part of it." .
 <https://haulaah.github.io/CIRPO#hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "has event" .
 # 
-# https://haulaah.github.io/CIRPO#hasPertainingChat
-<https://haulaah.github.io/CIRPO#hasPertainingChat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hasPertainingChat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasPertainingChat> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
-<https://haulaah.github.io/CIRPO#hasPertainingChat> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of pertainsToIncident. Links an incident to a chat about it." .
-<https://haulaah.github.io/CIRPO#hasPertainingChat> <http://www.w3.org/2000/01/rdf-schema#label> "has pertaining chat" .
+# https://haulaah.github.io/CIRPO#hasResponderCommunication
+<https://haulaah.github.io/CIRPO#hasResponderCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://haulaah.github.io/CIRPO#hasResponderCommunication> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#isRelatedToIncident> .
+<https://haulaah.github.io/CIRPO#hasResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
+<https://haulaah.github.io/CIRPO#hasResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
+<https://haulaah.github.io/CIRPO#hasResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to any responder communication resource." .
+<https://haulaah.github.io/CIRPO#hasResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#label> "has responder communication" .
 # 
 # https://haulaah.github.io/CIRPO#isAnalysisOf
 <https://haulaah.github.io/CIRPO#isAnalysisOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -262,6 +280,13 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://haulaah.github.io/CIRPO#isArtefactOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasArtefact. Links an artefact back to its incident." .
 <https://haulaah.github.io/CIRPO#isArtefactOf> <http://www.w3.org/2000/01/rdf-schema#label> "is artefact of" .
 # 
+# https://haulaah.github.io/CIRPO#isChannelOf
+<https://haulaah.github.io/CIRPO#isChannelOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://haulaah.github.io/CIRPO#isChannelOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatChannel> .
+<https://haulaah.github.io/CIRPO#isChannelOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Incident> .
+<https://haulaah.github.io/CIRPO#isChannelOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasChannel." .
+<https://haulaah.github.io/CIRPO#isChannelOf> <http://www.w3.org/2000/01/rdf-schema#label> "is channel of" .
+# 
 # https://haulaah.github.io/CIRPO#isCoaOf
 <https://haulaah.github.io/CIRPO#isCoaOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://haulaah.github.io/CIRPO#isCoaOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#CourseOfAction> .
@@ -275,6 +300,13 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://haulaah.github.io/CIRPO#isEventOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Incident> .
 <https://haulaah.github.io/CIRPO#isEventOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasEvent. Links a security event back to its parent incident." .
 <https://haulaah.github.io/CIRPO#isEventOf> <http://www.w3.org/2000/01/rdf-schema#label> "is event of" .
+# 
+# https://haulaah.github.io/CIRPO#isRelatedToIncident
+<https://haulaah.github.io/CIRPO#isRelatedToIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://haulaah.github.io/CIRPO#isRelatedToIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
+<https://haulaah.github.io/CIRPO#isRelatedToIncident> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Incident> .
+<https://haulaah.github.io/CIRPO#isRelatedToIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasResponderCommunication. Links any responder communication back to the incident it is associated with." .
+<https://haulaah.github.io/CIRPO#isRelatedToIncident> <http://www.w3.org/2000/01/rdf-schema#label> "is related to incident" .
 # 
 # https://haulaah.github.io/CIRPO#performed
 <https://haulaah.github.io/CIRPO#performed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -298,13 +330,12 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://haulaah.github.io/CIRPO#performedAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasAnalysisPerformingAnalyst. Links an analyst to the analyses they performed." .
 <https://haulaah.github.io/CIRPO#performedAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "performed analysis" .
 # 
-# https://haulaah.github.io/CIRPO#pertainsToIncident
-<https://haulaah.github.io/CIRPO#pertainsToIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#pertainsToIncident> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#hasPertainingChat> .
-<https://haulaah.github.io/CIRPO#pertainsToIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
-<https://haulaah.github.io/CIRPO#pertainsToIncident> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#pertainsToIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a chat to the incident it discusses." .
-<https://haulaah.github.io/CIRPO#pertainsToIncident> <http://www.w3.org/2000/01/rdf-schema#label> "pertains to incident" .
+# https://haulaah.github.io/CIRPO#wasPostedTo
+<https://haulaah.github.io/CIRPO#wasPostedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://haulaah.github.io/CIRPO#wasPostedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatMessage> .
+<https://haulaah.github.io/CIRPO#wasPostedTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#ChatChannel> .
+<https://haulaah.github.io/CIRPO#wasPostedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the channel where the chat message was posted." .
+<https://haulaah.github.io/CIRPO#wasPostedTo> <http://www.w3.org/2000/01/rdf-schema#label> "was posted to" .
 # 
 # https://haulaah.github.io/CIRPO#wasUsedBy
 <https://haulaah.github.io/CIRPO#wasUsedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -357,23 +388,44 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://haulaah.github.io/CIRPO#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of the artefact." .
 <https://haulaah.github.io/CIRPO#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact type" .
 # 
+# https://haulaah.github.io/CIRPO#hasChatChannelId
+<https://haulaah.github.io/CIRPO#hasChatChannelId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://haulaah.github.io/CIRPO#hasChatChannelId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatChannel> .
+<https://haulaah.github.io/CIRPO#hasChatChannelId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://haulaah.github.io/CIRPO#hasChatChannelId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier of the communication channel (channel_id)." .
+<https://haulaah.github.io/CIRPO#hasChatChannelId> <http://www.w3.org/2000/01/rdf-schema#label> "has chat channel ID" .
+# 
+# https://haulaah.github.io/CIRPO#hasChatChannelName
+<https://haulaah.github.io/CIRPO#hasChatChannelName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://haulaah.github.io/CIRPO#hasChatChannelName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatChannel> .
+<https://haulaah.github.io/CIRPO#hasChatChannelName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://haulaah.github.io/CIRPO#hasChatChannelName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the communication channel (channel_name)." .
+<https://haulaah.github.io/CIRPO#hasChatChannelName> <http://www.w3.org/2000/01/rdf-schema#label> "has chat channel name" .
+# 
 # https://haulaah.github.io/CIRPO#hasChatMessage
 <https://haulaah.github.io/CIRPO#hasChatMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
+<https://haulaah.github.io/CIRPO#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatMessage> .
 <https://haulaah.github.io/CIRPO#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://haulaah.github.io/CIRPO#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#comment> "The content or body of the communication message." .
 <https://haulaah.github.io/CIRPO#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#label> "has chat message" .
 # 
 # https://haulaah.github.io/CIRPO#hasChatMessageDateTime
 <https://haulaah.github.io/CIRPO#hasChatMessageDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
+<https://haulaah.github.io/CIRPO#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatMessage> .
 <https://haulaah.github.io/CIRPO#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://haulaah.github.io/CIRPO#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the communication occurred." .
 <https://haulaah.github.io/CIRPO#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has chat message datetime" .
 # 
+# https://haulaah.github.io/CIRPO#hasChatMessageId
+<https://haulaah.github.io/CIRPO#hasChatMessageId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://haulaah.github.io/CIRPO#hasChatMessageId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatMessage> .
+<https://haulaah.github.io/CIRPO#hasChatMessageId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://haulaah.github.io/CIRPO#hasChatMessageId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier of the chat message (post_id)." .
+<https://haulaah.github.io/CIRPO#hasChatMessageId> <http://www.w3.org/2000/01/rdf-schema#label> "has chat message ID" .
+# 
 # https://haulaah.github.io/CIRPO#hasChatSentiment
 <https://haulaah.github.io/CIRPO#hasChatSentiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
+<https://haulaah.github.io/CIRPO#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatMessage> .
 <https://haulaah.github.io/CIRPO#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://haulaah.github.io/CIRPO#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#comment> "The sentiment or tone of the communication." .
 <https://haulaah.github.io/CIRPO#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#label> "has chat sentiment" .
@@ -564,6 +616,18 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://haulaah.github.io/CIRPO#Artefact> <http://www.w3.org/2000/01/rdf-schema#comment> "An observable piece of evidence collected from an incident." .
 <https://haulaah.github.io/CIRPO#Artefact> <http://www.w3.org/2000/01/rdf-schema#label> "Artefact" .
 # 
+# https://haulaah.github.io/CIRPO#ChatChannel
+<https://haulaah.github.io/CIRPO#ChatChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://haulaah.github.io/CIRPO#ChatChannel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
+<https://haulaah.github.io/CIRPO#ChatChannel> <http://www.w3.org/2000/01/rdf-schema#comment> "A communication channel where responders exchange messages" .
+<https://haulaah.github.io/CIRPO#ChatChannel> <http://www.w3.org/2000/01/rdf-schema#label> "Chat Channel" .
+# 
+# https://haulaah.github.io/CIRPO#ChatMessage
+<https://haulaah.github.io/CIRPO#ChatMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://haulaah.github.io/CIRPO#ChatMessage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
+<https://haulaah.github.io/CIRPO#ChatMessage> <http://www.w3.org/2000/01/rdf-schema#comment> "A message posted by a responder within a chat channel." .
+<https://haulaah.github.io/CIRPO#ChatMessage> <http://www.w3.org/2000/01/rdf-schema#label> "Chat Message" .
+# 
 # https://haulaah.github.io/CIRPO#Containment
 <https://haulaah.github.io/CIRPO#Containment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://haulaah.github.io/CIRPO#Containment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#CourseOfAction> .
@@ -606,7 +670,7 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://haulaah.github.io/CIRPO#ResponderCommunication
 <https://haulaah.github.io/CIRPO#ResponderCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#ResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> "Communication between incident responders during an investigation." .
+<https://haulaah.github.io/CIRPO#ResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> " Any communication resource involved in incident response activities,including channels and individual chat messages" .
 <https://haulaah.github.io/CIRPO#ResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#label> "Responder Communication" .
 # 
 # https://haulaah.github.io/CIRPO#SecurityAnalysis

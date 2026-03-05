@@ -6,6 +6,8 @@ This section provides details for each class and property defined by Cyber Incid
   <li><a href="#Analysis" title="https://haulaah.github.io/CIRPO#Analysis">Analysis</a></li>
   <li><a href="#Analyst" title="https://haulaah.github.io/CIRPO#Analyst">Analyst</a></li>
   <li><a href="#Artefact" title="https://haulaah.github.io/CIRPO#Artefact">Artefact</a></li>
+  <li><a href="#ChatChannel" title="https://haulaah.github.io/CIRPO#ChatChannel">Chat Channel</a></li>
+  <li><a href="#ChatMessage" title="https://haulaah.github.io/CIRPO#ChatMessage">Chat Message</a></li>
   <li><a href="#Containment" title="https://haulaah.github.io/CIRPO#Containment">Containment</a></li>
   <li><a href="#CourseOfAction" title="https://haulaah.github.io/CIRPO#CourseOfAction">Course of Action</a></li>
   <li><a href="#Detection" title="https://haulaah.github.io/CIRPO#Detection">Detection</a></li>
@@ -93,6 +95,60 @@ This section provides details for each class and property defined by Cyber Incid
    </dt>
    <dd>
     <a href="#Analyst" title="https://haulaah.github.io/CIRPO#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>, <a href="#CourseOfAction" title="https://haulaah.github.io/CIRPO#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>, <a href="#Incident" title="https://haulaah.github.io/CIRPO#Incident">Incident</a> <sup class="type-c" title="class">c</sup>, <a href="#ResponderCommunication" title="https://haulaah.github.io/CIRPO#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>, <a href="#SecurityAnalysis" title="https://haulaah.github.io/CIRPO#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#SecurityEvent" title="https://haulaah.github.io/CIRPO#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ChatChannel">
+  <h3>Chat Channel<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#ChatChannel</p>
+  <div class="comment">
+   <span class="markdown">A communication channel where responders exchange messages</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ResponderCommunication" title="https://haulaah.github.io/CIRPO#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#containsChat" title="https://haulaah.github.io/CIRPO#containsChat">contains chat</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasChatChannelId" title="https://haulaah.github.io/CIRPO#hasChatChannelId">has chat channel ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChatChannelName" title="https://haulaah.github.io/CIRPO#hasChatChannelName">has chat channel name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isChannelOf" title="https://haulaah.github.io/CIRPO#isChannelOf">is channel of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasChannel" title="https://haulaah.github.io/CIRPO#hasChannel">has channel</a> <sup class="type-op" title="object property">op</sup>, <a href="#wasPostedTo" title="https://haulaah.github.io/CIRPO#wasPostedTo">was posted to</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ChatMessage">
+  <h3>Chat Message<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#ChatMessage</p>
+  <div class="comment">
+   <span class="markdown">A message posted by a responder within a chat channel.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ResponderCommunication" title="https://haulaah.github.io/CIRPO#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasChatAnalyst" title="https://haulaah.github.io/CIRPO#hasChatAnalyst">has chat analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasChatMessage" title="https://haulaah.github.io/CIRPO#hasChatMessage">has chat message</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChatMessageId" title="https://haulaah.github.io/CIRPO#hasChatMessageId">has chat message ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChatMessageDateTime" title="https://haulaah.github.io/CIRPO#hasChatMessageDateTime">has chat message datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChatSentiment" title="https://haulaah.github.io/CIRPO#hasChatSentiment">has chat sentiment</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#wasPostedTo" title="https://haulaah.github.io/CIRPO#wasPostedTo">was posted to</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#containsChat" title="https://haulaah.github.io/CIRPO#containsChat">contains chat</a> <sup class="type-op" title="object property">op</sup>, <a href="#generatedChat" title="https://haulaah.github.io/CIRPO#generatedChat">generated chat</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -185,13 +241,13 @@ This section provides details for each class and property defined by Cyber Incid
     is in domain of
    </dt>
    <dd>
-    <a href="#hadAssociatedEntity" title="https://haulaah.github.io/CIRPO#hadAssociatedEntity">had associated entity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasAnalysis" title="https://haulaah.github.io/CIRPO#hasAnalysis">has analysis</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasArtefact" title="https://haulaah.github.io/CIRPO#hasArtefact">has artefact</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasConfirmationAnalyst" title="https://haulaah.github.io/CIRPO#hasConfirmationAnalyst">has confirmation analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasConfirmationDateTime" title="https://haulaah.github.io/CIRPO#hasConfirmationDateTime">has confirmation datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCoa" title="https://haulaah.github.io/CIRPO#hasCoa">has course of action</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEndDateTime" title="https://haulaah.github.io/CIRPO#hasEndDateTime">has end datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEvent" title="https://haulaah.github.io/CIRPO#hasEvent">has event</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIncidentId" title="https://haulaah.github.io/CIRPO#hasIncidentId">has incident ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentCreationDateTime" title="https://haulaah.github.io/CIRPO#hasIncidentCreationDateTime">has incident creation datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentDescription" title="https://haulaah.github.io/CIRPO#hasIncidentDescription">has incident description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentName" title="https://haulaah.github.io/CIRPO#hasIncidentName">has incident name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentSeverity" title="https://haulaah.github.io/CIRPO#hasIncidentSeverity">has incident severity</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentStage" title="https://haulaah.github.io/CIRPO#hasIncidentStage">has incident stage</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentStatus" title="https://haulaah.github.io/CIRPO#hasIncidentStatus">has incident status</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPertainingChat" title="https://haulaah.github.io/CIRPO#hasPertainingChat">has pertaining chat</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hadAssociatedEntity" title="https://haulaah.github.io/CIRPO#hadAssociatedEntity">had associated entity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasAnalysis" title="https://haulaah.github.io/CIRPO#hasAnalysis">has analysis</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasArtefact" title="https://haulaah.github.io/CIRPO#hasArtefact">has artefact</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasChannel" title="https://haulaah.github.io/CIRPO#hasChannel">has channel</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasConfirmationAnalyst" title="https://haulaah.github.io/CIRPO#hasConfirmationAnalyst">has confirmation analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasConfirmationDateTime" title="https://haulaah.github.io/CIRPO#hasConfirmationDateTime">has confirmation datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCoa" title="https://haulaah.github.io/CIRPO#hasCoa">has course of action</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEndDateTime" title="https://haulaah.github.io/CIRPO#hasEndDateTime">has end datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEvent" title="https://haulaah.github.io/CIRPO#hasEvent">has event</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIncidentId" title="https://haulaah.github.io/CIRPO#hasIncidentId">has incident ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentCreationDateTime" title="https://haulaah.github.io/CIRPO#hasIncidentCreationDateTime">has incident creation datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentDescription" title="https://haulaah.github.io/CIRPO#hasIncidentDescription">has incident description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentName" title="https://haulaah.github.io/CIRPO#hasIncidentName">has incident name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentSeverity" title="https://haulaah.github.io/CIRPO#hasIncidentSeverity">has incident severity</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentStage" title="https://haulaah.github.io/CIRPO#hasIncidentStage">has incident stage</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentStatus" title="https://haulaah.github.io/CIRPO#hasIncidentStatus">has incident status</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasResponderCommunication" title="https://haulaah.github.io/CIRPO#hasResponderCommunication">has responder communication</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#confirmedIncident" title="https://haulaah.github.io/CIRPO#confirmedIncident">confirmed incident</a> <sup class="type-op" title="object property">op</sup>, <a href="#isCoaOf" title="https://haulaah.github.io/CIRPO#isCoaOf">is COA of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isAnalysisOf" title="https://haulaah.github.io/CIRPO#isAnalysisOf">is analysis of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isArtefactOf" title="https://haulaah.github.io/CIRPO#isArtefactOf">is artefact of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isEventOf" title="https://haulaah.github.io/CIRPO#isEventOf">is event of</a> <sup class="type-op" title="object property">op</sup>, <a href="#pertainsToIncident" title="https://haulaah.github.io/CIRPO#pertainsToIncident">pertains to incident</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#confirmedIncident" title="https://haulaah.github.io/CIRPO#confirmedIncident">confirmed incident</a> <sup class="type-op" title="object property">op</sup>, <a href="#isCoaOf" title="https://haulaah.github.io/CIRPO#isCoaOf">is COA of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isAnalysisOf" title="https://haulaah.github.io/CIRPO#isAnalysisOf">is analysis of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isArtefactOf" title="https://haulaah.github.io/CIRPO#isArtefactOf">is artefact of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isChannelOf" title="https://haulaah.github.io/CIRPO#isChannelOf">is channel of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isEventOf" title="https://haulaah.github.io/CIRPO#isEventOf">is event of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isRelatedToIncident" title="https://haulaah.github.io/CIRPO#isRelatedToIncident">is related to incident</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is disjoint with
@@ -235,20 +291,26 @@ This section provides details for each class and property defined by Cyber Incid
   <h3>Responder Communication<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#ResponderCommunication</p>
   <div class="comment">
-   <span class="markdown">Communication between incident responders during an investigation.</span>
+   <span class="markdown"> Any communication resource involved in incident response activities,including channels and individual chat messages</span>
   </div>
   <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ChatChannel" title="https://haulaah.github.io/CIRPO#ChatChannel">Chat Channel</a> <sup class="type-c" title="class">c</sup>, <a href="#ChatMessage" title="https://haulaah.github.io/CIRPO#ChatMessage">Chat Message</a> <sup class="type-c" title="class">c</sup>
+   </dd>
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#hasChatAnalyst" title="https://haulaah.github.io/CIRPO#hasChatAnalyst">has chat analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasChatMessage" title="https://haulaah.github.io/CIRPO#hasChatMessage">has chat message</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChatMessageDateTime" title="https://haulaah.github.io/CIRPO#hasChatMessageDateTime">has chat message datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChatSentiment" title="https://haulaah.github.io/CIRPO#hasChatSentiment">has chat sentiment</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#pertainsToIncident" title="https://haulaah.github.io/CIRPO#pertainsToIncident">pertains to incident</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#isRelatedToIncident" title="https://haulaah.github.io/CIRPO#isRelatedToIncident">is related to incident</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#generatedChat" title="https://haulaah.github.io/CIRPO#generatedChat">generated chat</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPertainingChat" title="https://haulaah.github.io/CIRPO#hasPertainingChat">has pertaining chat</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasResponderCommunication" title="https://haulaah.github.io/CIRPO#hasResponderCommunication">has responder communication</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is disjoint with
@@ -389,6 +451,7 @@ This section provides details for each class and property defined by Cyber Incid
  <ul class="hlist">
   <li><a href="#assignedToCoa" title="https://haulaah.github.io/CIRPO#assignedToCoa">assigned to COA</a></li>
   <li><a href="#confirmedIncident" title="https://haulaah.github.io/CIRPO#confirmedIncident">confirmed incident</a></li>
+  <li><a href="#containsChat" title="https://haulaah.github.io/CIRPO#containsChat">contains chat</a></li>
   <li><a href="#createdArtefact" title="https://haulaah.github.io/CIRPO#createdArtefact">created artefact</a></li>
   <li><a href="#createdCoa" title="https://haulaah.github.io/CIRPO#createdCoa">created COA</a></li>
   <li><a href="#generated" title="https://haulaah.github.io/CIRPO#generated">generated</a></li>
@@ -398,24 +461,27 @@ This section provides details for each class and property defined by Cyber Incid
   <li><a href="#hasAnalysisPerformingAnalyst" title="https://haulaah.github.io/CIRPO#hasAnalysisPerformingAnalyst">has analysis performing analyst</a></li>
   <li><a href="#hasArtefact" title="https://haulaah.github.io/CIRPO#hasArtefact">has artefact</a></li>
   <li><a href="#hasArtefactCreationAnalyst" title="https://haulaah.github.io/CIRPO#hasArtefactCreationAnalyst">has artefact creation analyst</a></li>
+  <li><a href="#hasChannel" title="https://haulaah.github.io/CIRPO#hasChannel">has channel</a></li>
   <li><a href="#hasChatAnalyst" title="https://haulaah.github.io/CIRPO#hasChatAnalyst">has chat analyst</a></li>
   <li><a href="#hasCoaAssignedAnalyst" title="https://haulaah.github.io/CIRPO#hasCoaAssignedAnalyst">has COA assigned analyst</a></li>
   <li><a href="#hasCoaCreationAnalyst" title="https://haulaah.github.io/CIRPO#hasCoaCreationAnalyst">has COA creation analyst</a></li>
   <li><a href="#hasConfirmationAnalyst" title="https://haulaah.github.io/CIRPO#hasConfirmationAnalyst">has confirmation analyst</a></li>
   <li><a href="#hasCoa" title="https://haulaah.github.io/CIRPO#hasCoa">has course of action</a></li>
   <li><a href="#hasEvent" title="https://haulaah.github.io/CIRPO#hasEvent">has event</a></li>
-  <li><a href="#hasPertainingChat" title="https://haulaah.github.io/CIRPO#hasPertainingChat">has pertaining chat</a></li>
+  <li><a href="#hasResponderCommunication" title="https://haulaah.github.io/CIRPO#hasResponderCommunication">has responder communication</a></li>
   <li><a href="#isAnalysisOf" title="https://haulaah.github.io/CIRPO#isAnalysisOf">is analysis of</a></li>
   <li><a href="#isArtefactOf" title="https://haulaah.github.io/CIRPO#isArtefactOf">is artefact of</a></li>
+  <li><a href="#isChannelOf" title="https://haulaah.github.io/CIRPO#isChannelOf">is channel of</a></li>
   <li><a href="#isCoaOf" title="https://haulaah.github.io/CIRPO#isCoaOf">is COA of</a></li>
   <li><a href="#isEventOf" title="https://haulaah.github.io/CIRPO#isEventOf">is event of</a></li>
+  <li><a href="#isRelatedToIncident" title="https://haulaah.github.io/CIRPO#isRelatedToIncident">is related to incident</a></li>
   <li><a href="#performed" title="https://haulaah.github.io/CIRPO#performed">performed</a></li>
   <li><a href="#performedAnalysis" title="https://haulaah.github.io/CIRPO#performedAnalysis">performed analysis</a></li>
-  <li><a href="#pertainsToIncident" title="https://haulaah.github.io/CIRPO#pertainsToIncident">pertains to incident</a></li>
   <li><a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a></li>
   <li><a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a></li>
   <li><a href="#http://www.w3.org/ns/prov#wasGeneratedBy" title="http://www.w3.org/ns/prov#wasGeneratedBy">was generated by</a></li>
   <li><a href="#http://www.w3.org/ns/prov#wasPerformedBy" title="http://www.w3.org/ns/prov#wasPerformedBy">was performed by</a></li>
+  <li><a href="#wasPostedTo" title="https://haulaah.github.io/CIRPO#wasPostedTo">was posted to</a></li>
   <li><a href="#wasUsedBy" title="https://haulaah.github.io/CIRPO#wasUsedBy">was used by</a></li>
  </ul>
  <div class="entity" id="assignedToCoa">
@@ -472,6 +538,35 @@ This section provides details for each class and property defined by Cyber Incid
     </dt>
     <dd>
      <a href="#hasConfirmationAnalyst" title="https://haulaah.github.io/CIRPO#hasConfirmationAnalyst">has confirmation analyst</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="containsChat">
+  <h3>contains chat<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#containsChat</p>
+  <div class="comment">
+   <span class="markdown">Indicates that a channel contains chat messages.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ChatChannel" title="https://haulaah.github.io/CIRPO#ChatChannel">Chat Channel</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ChatMessage" title="https://haulaah.github.io/CIRPO#ChatMessage">Chat Message</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#wasPostedTo" title="https://haulaah.github.io/CIRPO#wasPostedTo">was posted to</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -567,7 +662,7 @@ This section provides details for each class and property defined by Cyber Incid
   <h3>generated chat<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#generatedChat</p>
   <div class="comment">
-   <span class="markdown">Inverse of hasChatAnalyst. Links an analyst to the chat they generated.</span>
+   <span class="markdown">Inverse of hasChatAnalyst.</span>
   </div>
   <div class="description">
    <dl>
@@ -581,7 +676,7 @@ This section provides details for each class and property defined by Cyber Incid
      has range
     </dt>
     <dd>
-     <a href="#ResponderCommunication" title="https://haulaah.github.io/CIRPO#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ChatMessage" title="https://haulaah.github.io/CIRPO#ChatMessage">Chat Message</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      is inverse of
@@ -737,11 +832,46 @@ This section provides details for each class and property defined by Cyber Incid
    </dl>
   </div>
  </div>
+ <div class="entity" id="hasChannel">
+  <h3>has channel<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#hasChannel</p>
+  <div class="comment">
+   <span class="markdown">Links an incident to its chat channel.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#hasResponderCommunication" title="https://haulaah.github.io/CIRPO#hasResponderCommunication">has responder communication</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="https://haulaah.github.io/CIRPO#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ChatChannel" title="https://haulaah.github.io/CIRPO#ChatChannel">Chat Channel</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isChannelOf" title="https://haulaah.github.io/CIRPO#isChannelOf">is channel of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="hasChatAnalyst">
   <h3>has chat analyst<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#hasChatAnalyst</p>
   <div class="comment">
-   <span class="markdown">Links a communication to the analyst who made the chat.</span>
+   <span class="markdown">Links a chat message to the analyst who authored it.</span>
   </div>
   <div class="description">
    <dl>
@@ -749,7 +879,7 @@ This section provides details for each class and property defined by Cyber Incid
      has domain
     </dt>
     <dd>
-     <a href="#ResponderCommunication" title="https://haulaah.github.io/CIRPO#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ChatMessage" title="https://haulaah.github.io/CIRPO#ChatMessage">Chat Message</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -911,14 +1041,20 @@ This section provides details for each class and property defined by Cyber Incid
    </dl>
   </div>
  </div>
- <div class="entity" id="hasPertainingChat">
-  <h3>has pertaining chat<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#hasPertainingChat</p>
+ <div class="entity" id="hasResponderCommunication">
+  <h3>has responder communication<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#hasResponderCommunication</p>
   <div class="comment">
-   <span class="markdown">Inverse of pertainsToIncident. Links an incident to a chat about it.</span>
+   <span class="markdown">Links an incident to any responder communication resource.</span>
   </div>
   <div class="description">
    <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#hasChannel" title="https://haulaah.github.io/CIRPO#hasChannel">has channel</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
     <dt>
      has domain
     </dt>
@@ -935,7 +1071,7 @@ This section provides details for each class and property defined by Cyber Incid
      is inverse of
     </dt>
     <dd>
-     <a href="#pertainsToIncident" title="https://haulaah.github.io/CIRPO#pertainsToIncident">pertains to incident</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#isRelatedToIncident" title="https://haulaah.github.io/CIRPO#isRelatedToIncident">is related to incident</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -998,6 +1134,35 @@ This section provides details for each class and property defined by Cyber Incid
    </dl>
   </div>
  </div>
+ <div class="entity" id="isChannelOf">
+  <h3>is channel of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#isChannelOf</p>
+  <div class="comment">
+   <span class="markdown">Inverse of hasChannel.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ChatChannel" title="https://haulaah.github.io/CIRPO#ChatChannel">Chat Channel</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Incident" title="https://haulaah.github.io/CIRPO#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasChannel" title="https://haulaah.github.io/CIRPO#hasChannel">has channel</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="isCoaOf">
   <h3>is COA of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#isCoaOf</p>
@@ -1056,6 +1221,35 @@ This section provides details for each class and property defined by Cyber Incid
    </dl>
   </div>
  </div>
+ <div class="entity" id="isRelatedToIncident">
+  <h3>is related to incident<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#isRelatedToIncident</p>
+  <div class="comment">
+   <span class="markdown">Inverse of hasResponderCommunication. Links any responder communication back to the incident it is associated with.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ResponderCommunication" title="https://haulaah.github.io/CIRPO#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Incident" title="https://haulaah.github.io/CIRPO#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasResponderCommunication" title="https://haulaah.github.io/CIRPO#hasResponderCommunication">has responder communication</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="performed">
   <h3>performed<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#performed</p>
@@ -1110,35 +1304,6 @@ This section provides details for each class and property defined by Cyber Incid
     </dt>
     <dd>
      <a href="#hasAnalysisPerformingAnalyst" title="https://haulaah.github.io/CIRPO#hasAnalysisPerformingAnalyst">has analysis performing analyst</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="pertainsToIncident">
-  <h3>pertains to incident<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#pertainsToIncident</p>
-  <div class="comment">
-   <span class="markdown">Links a chat to the incident it discusses.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#ResponderCommunication" title="https://haulaah.github.io/CIRPO#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#Incident" title="https://haulaah.github.io/CIRPO#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#hasPertainingChat" title="https://haulaah.github.io/CIRPO#hasPertainingChat">has pertaining chat</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -1259,6 +1424,35 @@ This section provides details for each class and property defined by Cyber Incid
    </dl>
   </div>
  </div>
+ <div class="entity" id="wasPostedTo">
+  <h3>was posted to<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#wasPostedTo</p>
+  <div class="comment">
+   <span class="markdown">Indicates the channel where the chat message was posted.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ChatMessage" title="https://haulaah.github.io/CIRPO#ChatMessage">Chat Message</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ChatChannel" title="https://haulaah.github.io/CIRPO#ChatChannel">Chat Channel</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#containsChat" title="https://haulaah.github.io/CIRPO#containsChat">contains chat</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="wasUsedBy">
   <h3>was used by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#wasUsedBy</p>
@@ -1296,8 +1490,11 @@ This section provides details for each class and property defined by Cyber Incid
   <li><a href="#hasArtefactCreationDateTime" title="https://haulaah.github.io/CIRPO#hasArtefactCreationDateTime">has artefact creation datetime</a></li>
   <li><a href="#hasArtefactDataValue" title="https://haulaah.github.io/CIRPO#hasArtefactDataValue">has artefact data value</a></li>
   <li><a href="#hasArtefactType" title="https://haulaah.github.io/CIRPO#hasArtefactType">has artefact type</a></li>
+  <li><a href="#hasChatChannelId" title="https://haulaah.github.io/CIRPO#hasChatChannelId">has chat channel ID</a></li>
+  <li><a href="#hasChatChannelName" title="https://haulaah.github.io/CIRPO#hasChatChannelName">has chat channel name</a></li>
   <li><a href="#hasChatMessage" title="https://haulaah.github.io/CIRPO#hasChatMessage">has chat message</a></li>
   <li><a href="#hasChatMessageDateTime" title="https://haulaah.github.io/CIRPO#hasChatMessageDateTime">has chat message datetime</a></li>
+  <li><a href="#hasChatMessageId" title="https://haulaah.github.io/CIRPO#hasChatMessageId">has chat message ID</a></li>
   <li><a href="#hasChatSentiment" title="https://haulaah.github.io/CIRPO#hasChatSentiment">has chat sentiment</a></li>
   <li><a href="#hasCoaCreationDateTime" title="https://haulaah.github.io/CIRPO#hasCoaCreationDateTime">has COA creation datetime</a></li>
   <li><a href="#hasCoaDescription" title="https://haulaah.github.io/CIRPO#hasCoaDescription">has COA description</a></li>
@@ -1438,6 +1635,52 @@ This section provides details for each class and property defined by Cyber Incid
    </dl>
   </div>
  </div>
+ <div class="entity" id="hasChatChannelId">
+  <h3>has chat channel ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#hasChatChannelId</p>
+  <div class="comment">
+   <span class="markdown">Unique identifier of the communication channel (channel_id).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ChatChannel" title="https://haulaah.github.io/CIRPO#ChatChannel">Chat Channel</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasChatChannelName">
+  <h3>has chat channel name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#hasChatChannelName</p>
+  <div class="comment">
+   <span class="markdown">Name of the communication channel (channel_name).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ChatChannel" title="https://haulaah.github.io/CIRPO#ChatChannel">Chat Channel</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="hasChatMessage">
   <h3>has chat message<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#hasChatMessage</p>
@@ -1450,7 +1693,7 @@ This section provides details for each class and property defined by Cyber Incid
      has domain
     </dt>
     <dd>
-     <a href="#ResponderCommunication" title="https://haulaah.github.io/CIRPO#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ChatMessage" title="https://haulaah.github.io/CIRPO#ChatMessage">Chat Message</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1473,13 +1716,36 @@ This section provides details for each class and property defined by Cyber Incid
      has domain
     </dt>
     <dd>
-     <a href="#ResponderCommunication" title="https://haulaah.github.io/CIRPO#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ChatMessage" title="https://haulaah.github.io/CIRPO#ChatMessage">Chat Message</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
      <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasChatMessageId">
+  <h3>has chat message ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://haulaah.github.io/CIRPO#hasChatMessageId</p>
+  <div class="comment">
+   <span class="markdown">Unique identifier of the chat message (post_id).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ChatMessage" title="https://haulaah.github.io/CIRPO#ChatMessage">Chat Message</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
     </dd>
    </dl>
   </div>
@@ -1496,7 +1762,7 @@ This section provides details for each class and property defined by Cyber Incid
      has domain
     </dt>
     <dd>
-     <a href="#ResponderCommunication" title="https://haulaah.github.io/CIRPO#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ChatMessage" title="https://haulaah.github.io/CIRPO#ChatMessage">Chat Message</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range

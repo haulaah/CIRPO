@@ -157,7 +157,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-06-01"
+    "@value" : "2026-05-03"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Haula Galadima, Cormac Doherty, Rob Brennan"
@@ -172,7 +172,7 @@
     "@value" : "Cyber Incident Response Process Ontology (CIRPO)"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "1.0"
+    "@value" : "6.0"
   } ]
 }, {
   "@id" : "https://haulaah.github.io/CIRPO#Analysis",
@@ -203,6 +203,30 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Artefact"
+  } ]
+}, {
+  "@id" : "https://haulaah.github.io/CIRPO#ChatChannel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A communication channel where responders exchange messages"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Chat Channel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
+  } ]
+}, {
+  "@id" : "https://haulaah.github.io/CIRPO#ChatMessage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A message posted by a responder within a chat channel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Chat Message"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
   } ]
 }, {
   "@id" : "https://haulaah.github.io/CIRPO#Containment",
@@ -286,7 +310,7 @@
   "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Communication between incident responders during an investigation."
+    "@value" : " Any communication resource involved in incident response activities,including channels and individual chat messages"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Responder Communication"
@@ -388,6 +412,24 @@
     "@id" : "https://haulaah.github.io/CIRPO#Incident"
   } ]
 }, {
+  "@id" : "https://haulaah.github.io/CIRPO#containsChat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that a channel contains chat messages."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#ChatChannel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contains chat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#wasPostedTo"
+  } ]
+}, {
   "@id" : "https://haulaah.github.io/CIRPO#createdArtefact",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -436,7 +478,7 @@
   "@id" : "https://haulaah.github.io/CIRPO#generatedChat",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Inverse of hasChatAnalyst. Links an analyst to the chat they generated."
+    "@value" : "Inverse of hasChatAnalyst."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://haulaah.github.io/CIRPO#Analyst"
@@ -445,7 +487,7 @@
     "@value" : "generated chat"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
+    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
   } ]
 }, {
   "@id" : "https://haulaah.github.io/CIRPO#hadAssociatedEntity",
@@ -610,13 +652,34 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "https://haulaah.github.io/CIRPO#hasChannel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links an incident to its chat channel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has channel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#ChatChannel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#hasResponderCommunication"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#isChannelOf"
+  } ]
+}, {
   "@id" : "https://haulaah.github.io/CIRPO#hasChatAnalyst",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Links a communication to the analyst who made the chat."
+    "@value" : "Links a chat message to the analyst who authored it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
+    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has chat analyst"
@@ -628,13 +691,43 @@
     "@id" : "https://haulaah.github.io/CIRPO#generatedChat"
   } ]
 }, {
+  "@id" : "https://haulaah.github.io/CIRPO#hasChatChannelId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier of the communication channel (channel_id)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#ChatChannel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has chat channel ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://haulaah.github.io/CIRPO#hasChatChannelName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name of the communication channel (channel_name)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#ChatChannel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has chat channel name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "https://haulaah.github.io/CIRPO#hasChatMessage",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The content or body of the communication message."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
+    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has chat message"
@@ -649,7 +742,7 @@
     "@value" : "Timestamp when the communication occurred."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
+    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has chat message datetime"
@@ -658,13 +751,28 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
+  "@id" : "https://haulaah.github.io/CIRPO#hasChatMessageId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier of the chat message (post_id)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has chat message ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "https://haulaah.github.io/CIRPO#hasChatSentiment",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The sentiment or tone of the communication."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
+    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has chat sentiment"
@@ -1048,19 +1156,22 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasPertainingChat",
+  "@id" : "https://haulaah.github.io/CIRPO#hasResponderCommunication",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Inverse of pertainsToIncident. Links an incident to a chat about it."
+    "@value" : "Links an incident to any responder communication resource."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://haulaah.github.io/CIRPO#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has pertaining chat"
+    "@value" : "has responder communication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#isRelatedToIncident"
   } ]
 }, {
   "@id" : "https://haulaah.github.io/CIRPO#hasSecurityAnalysisDataValue",
@@ -1153,6 +1264,21 @@
     "@id" : "https://haulaah.github.io/CIRPO#Incident"
   } ]
 }, {
+  "@id" : "https://haulaah.github.io/CIRPO#isChannelOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of hasChannel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#ChatChannel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is channel of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+  } ]
+}, {
   "@id" : "https://haulaah.github.io/CIRPO#isCoaOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1178,6 +1304,21 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is event of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+  } ]
+}, {
+  "@id" : "https://haulaah.github.io/CIRPO#isRelatedToIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of hasResponderCommunication. Links any responder communication back to the incident it is associated with."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is related to incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://haulaah.github.io/CIRPO#Incident"
@@ -1213,22 +1354,19 @@
     "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#pertainsToIncident",
+  "@id" : "https://haulaah.github.io/CIRPO#wasPostedTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Links a chat to the incident it discusses."
+    "@value" : "Indicates the channel where the chat message was posted."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
+    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "pertains to incident"
+    "@value" : "was posted to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#hasPertainingChat"
+    "@id" : "https://haulaah.github.io/CIRPO#ChatChannel"
   } ]
 }, {
   "@id" : "https://haulaah.github.io/CIRPO#wasUsedBy",

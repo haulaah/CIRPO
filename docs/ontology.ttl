@@ -61,7 +61,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/ns/prov#wasAssociatedWith
 <http://www.w3.org/ns/prov#wasAssociatedWith> rdf:type owl:ObjectProperty ;
-                                              owl:inverseOf :hadAssociatedEntity ;
+                                              owl:inverseOf :hadAssociationWith ;
                                               rdfs:domain [ rdf:type owl:Class ;
                                                             owl:unionOf ( :Analyst
                                                                           :Artefact
@@ -152,17 +152,17 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:label "generated chat" .
 
 
-###  https://haulaah.github.io/CIRPO#hadAssociatedEntity
-:hadAssociatedEntity rdf:type owl:ObjectProperty ;
-                     rdfs:domain :Incident ;
-                     rdfs:range [ rdf:type owl:Class ;
-                                  owl:unionOf ( :Analyst
-                                                :Artefact
-                                                :SecurityEvent
-                                              )
-                                ] ;
-                     rdfs:comment "Inverse of prov:wasAssociatedWith. Indicates an incident had an associated entity." ;
-                     rdfs:label "had associated entity" .
+###  https://haulaah.github.io/CIRPO#hadAssociationWith
+:hadAssociationWith rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Incident ;
+                    rdfs:range [ rdf:type owl:Class ;
+                                 owl:unionOf ( :Analyst
+                                               :Artefact
+                                               :SecurityEvent
+                                             )
+                               ] ;
+                    rdfs:comment "Inverse of prov:wasAssociatedWith. Indicates an incident's associated analyst, artefact, or security event." ;
+                    rdfs:label "had association with" .
 
 
 ###  https://haulaah.github.io/CIRPO#hasAnalysis

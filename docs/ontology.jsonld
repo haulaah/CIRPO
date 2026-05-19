@@ -114,7 +114,7 @@
     "@id" : "https://haulaah.github.io/CIRPO#Incident"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#hadAssociatedEntity"
+    "@id" : "https://haulaah.github.io/CIRPO#hadAssociationWith"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy",
@@ -490,16 +490,16 @@
     "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hadAssociatedEntity",
+  "@id" : "https://haulaah.github.io/CIRPO#hadAssociationWith",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Inverse of prov:wasAssociatedWith. Indicates an incident had an associated entity."
+    "@value" : "Inverse of prov:wasAssociatedWith. Indicates an incident's associated analyst, artefact, or security event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://haulaah.github.io/CIRPO#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "had associated entity"
+    "@value" : "had association with"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid8"

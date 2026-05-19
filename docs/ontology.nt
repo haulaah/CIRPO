@@ -60,7 +60,7 @@
 # 
 # http://www.w3.org/ns/prov#wasAssociatedWith
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#hadAssociatedEntity> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#hadAssociationWith> .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
 _:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
@@ -151,10 +151,10 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://haulaah.github.io/CIRPO#generatedChat> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasChatAnalyst." .
 <https://haulaah.github.io/CIRPO#generatedChat> <http://www.w3.org/2000/01/rdf-schema#label> "generated chat" .
 # 
-# https://haulaah.github.io/CIRPO#hadAssociatedEntity
-<https://haulaah.github.io/CIRPO#hadAssociatedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hadAssociatedEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hadAssociatedEntity> <http://www.w3.org/2000/01/rdf-schema#range> _:genid8 .
+# https://haulaah.github.io/CIRPO#hadAssociationWith
+<https://haulaah.github.io/CIRPO#hadAssociationWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://haulaah.github.io/CIRPO#hadAssociationWith> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
+<https://haulaah.github.io/CIRPO#hadAssociationWith> <http://www.w3.org/2000/01/rdf-schema#range> _:genid8 .
 _:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
@@ -166,8 +166,8 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#Analyst> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#hadAssociatedEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of prov:wasAssociatedWith. Indicates an incident had an associated entity." .
-<https://haulaah.github.io/CIRPO#hadAssociatedEntity> <http://www.w3.org/2000/01/rdf-schema#label> "had associated entity" .
+<https://haulaah.github.io/CIRPO#hadAssociationWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of prov:wasAssociatedWith. Indicates an incident's associated analyst, artefact, or security event." .
+<https://haulaah.github.io/CIRPO#hadAssociationWith> <http://www.w3.org/2000/01/rdf-schema#label> "had association with" .
 # 
 # https://haulaah.github.io/CIRPO#hasAnalysis
 <https://haulaah.github.io/CIRPO#hasAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

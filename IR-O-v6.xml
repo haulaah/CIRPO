@@ -691,7 +691,7 @@
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
-    <owl:inverseOf rdf:resource="https://haulaah.github.io/CIRPO#hadAssociatedEntity"/>
+    <owl:inverseOf rdf:resource="https://haulaah.github.io/CIRPO#hadAssociationWith"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#used">
@@ -724,10 +724,10 @@
     </rdfs:range>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="https://haulaah.github.io/CIRPO#hadAssociatedEntity">
+  <owl:ObjectProperty rdf:about="https://haulaah.github.io/CIRPO#hadAssociationWith">
     <rdfs:domain rdf:resource="https://haulaah.github.io/CIRPO#Incident"/>
-    <rdfs:label>had associated entity</rdfs:label>
-    <rdfs:comment>Inverse of prov:wasAssociatedWith. Indicates an incident had an associated entity.</rdfs:comment>
+    <rdfs:label>had association with</rdfs:label>
+    <rdfs:comment>Inverse of prov:wasAssociatedWith. Indicates an incident's associated analyst, artefact, or security event.</rdfs:comment>
     <rdfs:range>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">

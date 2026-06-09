@@ -17,7 +17,7 @@
         <dc:subject>ontology</dc:subject>
         <terms:accessRights>public</terms:accessRights>
         <terms:bibliographicCitation>Galadima, H., Doherty, C., &amp; Brennan, R. (2026). Cyber Incident Response Process Ontology (CIRPO) Version 7.0. Zenodo. https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER</terms:bibliographicCitation>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-03</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-06-09</terms:created>
         <terms:creator rdf:nodeID="genid1"/>
         <terms:creator>
             <rdf:Description>

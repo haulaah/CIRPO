@@ -5,7 +5,7 @@
 <https://w3id.org/cirpo> <http://purl.org/dc/elements/1.1/subject> "incident response" .
 <https://w3id.org/cirpo> <http://purl.org/dc/elements/1.1/subject> "ontology" .
 <https://w3id.org/cirpo> <http://purl.org/dc/terms/accessRights> "public" .
-<https://w3id.org/cirpo> <http://purl.org/dc/terms/bibliographicCitation> "Galadima, H., Doherty, C., & Brennan, R. (2026). Cyber Incident Response Process Ontology (CIRPO) Version 7.0. Zenodo. https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER" .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/bibliographicCitation> "Galadima, H., Doherty, C., & Brennan, R. (2026). Cyber Incident Response Process Ontology (CIRPO) Version 7.0. Zenodo. https://doi.org/10.5281/zenodo.20615897" .
 <https://w3id.org/cirpo> <http://purl.org/dc/terms/created> "2026-06-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/cirpo> <http://purl.org/dc/terms/creator> _:genid1 .
 _:genid1 <http://xmlns.com/foaf/0.1/name> "Haula Galadima" .
@@ -758,9 +758,9 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
-# https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER
-<https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/cirpo> .
+# https://doi.org/10.5281/zenodo.20615897
+<https://doi.org/10.5281/zenodo.20615897> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://doi.org/10.5281/zenodo.20615897> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/cirpo> .
 <https://w3id.org/cirpo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/cirpo

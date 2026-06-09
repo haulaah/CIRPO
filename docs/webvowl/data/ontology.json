@@ -8,7 +8,7 @@
     },
     "iri" : "https://w3id.org/cirpo",
     "version" : "7.0",
-    "author" : [ "_:genid2147483675", "_:genid2147483674", "_:genid2147483673" ],
+    "author" : [ "Haula Galadima", "Cormac Doherty", "_:genid2147483675", "_:genid2147483674", "_:genid2147483673", "Rob Brennan" ],
     "description" : {
       "undefined" : "An ontology for modeling cybersecurity incident response processes"
     },
@@ -22,30 +22,35 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
+        "value" : "Rob Brennan",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
         "value" : "_:genid2147483675",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "_:genid2147483674",
+        "value" : "Haula Galadima",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "_:genid2147483673",
         "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Cormac Doherty",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "_:genid2147483674",
+        "type" : "label"
       } ],
       "subject" : [ {
-        "identifier" : "subject",
-        "language" : "undefined",
-        "value" : "ontology",
-        "type" : "label"
-      }, {
-        "identifier" : "subject",
-        "language" : "undefined",
-        "value" : "incident response",
-        "type" : "label"
-      }, {
         "identifier" : "subject",
         "language" : "undefined",
         "value" : "CSIRT",
@@ -54,6 +59,16 @@
         "identifier" : "subject",
         "language" : "undefined",
         "value" : "cybersecurity",
+        "type" : "label"
+      }, {
+        "identifier" : "subject",
+        "language" : "undefined",
+        "value" : "ontology",
+        "type" : "label"
+      }, {
+        "identifier" : "subject",
+        "language" : "undefined",
+        "value" : "incident response",
         "type" : "label"
       } ],
       "created" : [ {
@@ -163,7 +178,7 @@
     "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "44",
+    "id" : "45",
     "type" : "owl:Class"
   }, {
     "id" : "46",
@@ -187,7 +202,7 @@
     "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
+    "id" : "14",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "38",
@@ -280,7 +295,7 @@
     "id" : "109",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "14",
+    "id" : "16",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "26",
@@ -387,20 +402,7 @@
     "comment" : {
       "undefined" : "Senior analyst or subject matter expert handling complex investigations."
     },
-    "id" : "44",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "https://w3id.org/cirpo#Tier2",
-    "baseIri" : "https://w3id.org/cirpo",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Tier2",
-      "undefined" : "Tier 2"
-    },
-    "comment" : {
-      "undefined" : "Incident responder handling deeper investigation and analysis."
-    },
-    "id" : "46",
+    "id" : "45",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "https://w3id.org/cirpo#SecurityEventAction",
@@ -413,8 +415,21 @@
     "comment" : {
       "undefined" : "A specific action taken or observed within a security event."
     },
-    "id" : "47",
+    "id" : "46",
     "superClasses" : [ "35" ]
+  }, {
+    "iri" : "https://w3id.org/cirpo#Tier2",
+    "baseIri" : "https://w3id.org/cirpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tier2",
+      "undefined" : "Tier 2"
+    },
+    "comment" : {
+      "undefined" : "Incident responder handling deeper investigation and analysis."
+    },
+    "id" : "47",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "https://w3id.org/cirpo#Tier1",
     "baseIri" : "https://w3id.org/cirpo",
@@ -436,7 +451,7 @@
       "IRI-based" : "Analyst",
       "undefined" : "Analyst"
     },
-    "subClasses" : [ "44", "46", "48" ],
+    "subClasses" : [ "45", "47", "48" ],
     "comment" : {
       "undefined" : "A security analyst who investigates and responds to incidents."
     },
@@ -470,7 +485,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "16",
+    "id" : "14",
     "label" : {
       "IRI-based" : "string"
     }
@@ -563,7 +578,7 @@
       "IRI-based" : "SecurityEvent",
       "undefined" : "Security Event"
     },
-    "subClasses" : [ "47" ],
+    "subClasses" : [ "46" ],
     "comment" : {
       "undefined" : "An observable occurrence relevant to system security (e.g., alert from SIEM, IDS)."
     },
@@ -728,7 +743,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "14",
+    "id" : "16",
     "label" : {
       "IRI-based" : "dateTime"
     }
@@ -850,7 +865,7 @@
     "id" : "43",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "45",
+    "id" : "44",
     "type" : "owl:objectProperty"
   }, {
     "id" : "20",
@@ -1167,23 +1182,9 @@
     "attributes" : [ "object" ],
     "id" : "9"
   }, {
-    "iri" : "https://w3id.org/cirpo#hasSecurityAnalysisDateTime",
-    "baseIri" : "https://w3id.org/cirpo",
-    "range" : "14",
-    "label" : {
-      "IRI-based" : "hasSecurityAnalysisDateTime",
-      "undefined" : "has security analysis datetime"
-    },
-    "domain" : "7",
-    "comment" : {
-      "undefined" : "Timestamp when the security analysis was performed."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "13"
-  }, {
     "iri" : "https://w3id.org/cirpo#hasIncidentName",
     "baseIri" : "https://w3id.org/cirpo",
-    "range" : "16",
+    "range" : "14",
     "label" : {
       "IRI-based" : "hasIncidentName",
       "undefined" : "has incident name"
@@ -1191,6 +1192,20 @@
     "domain" : "2",
     "comment" : {
       "undefined" : "Title of the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasSecurityAnalysisDateTime",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasSecurityAnalysisDateTime",
+      "undefined" : "has security analysis datetime"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Timestamp when the security analysis was performed."
     },
     "attributes" : [ "datatype" ],
     "id" : "15"
@@ -1280,12 +1295,12 @@
     "comment" : {
       "undefined" : "Indicates association with an incident"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "31"
   }, {
     "range" : "35",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "39"
   }, {
     "iri" : "https://w3id.org/cirpo#hasConfirmationAnalyst",
@@ -1329,7 +1344,7 @@
       "undefined" : "Inverse of hasCoaAssignedAnalyst. Links an analyst to the courses of action they are assigned to execute."
     },
     "attributes" : [ "object" ],
-    "id" : "45"
+    "id" : "44"
   }, {
     "iri" : "https://w3id.org/cirpo#hasChannel",
     "baseIri" : "https://w3id.org/cirpo",
@@ -1376,7 +1391,7 @@
   }, {
     "range" : "7",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "51"
   }, {
     "iri" : "https://w3id.org/cirpo#hasChatMessageDateTime",
@@ -1395,22 +1410,22 @@
   }, {
     "range" : "35",
     "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "54"
   }, {
     "range" : "35",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "55"
   }, {
     "range" : "35",
     "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "56"
   }, {
     "range" : "7",
     "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "57"
   }, {
     "iri" : "https://w3id.org/cirpo#hasConfirmationDateTime",
@@ -1429,17 +1444,17 @@
   }, {
     "range" : "7",
     "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "60"
   }, {
     "range" : "18",
     "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "61"
   }, {
     "range" : "35",
     "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "62"
   }, {
     "iri" : "https://w3id.org/cirpo#hasCoaDescription",
@@ -1458,12 +1473,12 @@
   }, {
     "range" : "18",
     "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "65"
   }, {
     "range" : "2",
     "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "66"
   }, {
     "iri" : "https://w3id.org/cirpo#createdArtefact",
@@ -1523,7 +1538,7 @@
     "id" : "72"
   }, {
     "iri" : "https://w3id.org/cirpo#hasCoaAssignedAnalyst",
-    "inverse" : "45",
+    "inverse" : "44",
     "baseIri" : "https://w3id.org/cirpo",
     "range" : "1",
     "label" : {
@@ -1608,6 +1623,20 @@
     "attributes" : [ "datatype" ],
     "id" : "85"
   }, {
+    "iri" : "https://w3id.org/cirpo#hasEventActivity",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "hasEventActivity",
+      "undefined" : "has event activity"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "Description of the specific activity within a security event."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
     "iri" : "https://w3id.org/cirpo#hasArtefactCreationDateTime",
     "baseIri" : "https://w3id.org/cirpo",
     "range" : "36",
@@ -1618,20 +1647,6 @@
     "domain" : "38",
     "comment" : {
       "undefined" : "Timestamp when the artefact was collected."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "88"
-  }, {
-    "iri" : "https://w3id.org/cirpo#hasEventActivity",
-    "baseIri" : "https://w3id.org/cirpo",
-    "range" : "82",
-    "label" : {
-      "IRI-based" : "hasEventActivity",
-      "undefined" : "has event activity"
-    },
-    "domain" : "47",
-    "comment" : {
-      "undefined" : "Description of the specific activity within a security event."
     },
     "attributes" : [ "datatype" ],
     "id" : "89"
@@ -1657,7 +1672,7 @@
       "IRI-based" : "hasEventActivityDateTime",
       "undefined" : "has event activity datetime"
     },
-    "domain" : "47",
+    "domain" : "46",
     "comment" : {
       "undefined" : "Timestamp when the specific security event activity occurred."
     },
@@ -1723,7 +1738,7 @@
   }, {
     "range" : "22",
     "domain" : "105",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "104"
   }, {
     "iri" : "http://www.w3.org/ns/prov#used",
@@ -1738,7 +1753,7 @@
     "comment" : {
       "undefined" : "Indicates that a course of action used specific analysis"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "106"
   }, {
     "iri" : "https://w3id.org/cirpo#hasIncidentId",
@@ -1813,12 +1828,12 @@
   }, {
     "range" : "22",
     "domain" : "115",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "114"
   }, {
     "range" : "22",
     "domain" : "117",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "116"
   }, {
     "iri" : "https://w3id.org/cirpo#isRelatedToIncident",
@@ -1837,12 +1852,12 @@
   }, {
     "range" : "22",
     "domain" : "100",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "118"
   }, {
     "range" : "18",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "119"
   }, {
     "iri" : "https://w3id.org/cirpo#wasPostedTo",
@@ -1861,32 +1876,32 @@
   }, {
     "range" : "22",
     "domain" : "102",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "120"
   }, {
     "range" : "22",
     "domain" : "110",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "121"
   }, {
     "range" : "1",
     "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "122"
   }, {
     "range" : "1",
-    "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "123"
   }, {
     "range" : "18",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "124"
   }, {
     "range" : "35",
-    "domain" : "47",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "125"
   }, {
     "iri" : "https://w3id.org/cirpo#generatedChat",
@@ -1947,20 +1962,6 @@
     "attributes" : [ "object" ],
     "id" : "129"
   }, {
-    "iri" : "https://w3id.org/cirpo#hasCoaStartDateTime",
-    "baseIri" : "https://w3id.org/cirpo",
-    "range" : "93",
-    "label" : {
-      "IRI-based" : "hasCoaStartDateTime",
-      "undefined" : "has COA start datetime"
-    },
-    "domain" : "22",
-    "comment" : {
-      "undefined" : "Timestamp when execution of the course of action was initiated."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "131"
-  }, {
     "iri" : "https://w3id.org/cirpo#hasIncidentDescription",
     "baseIri" : "https://w3id.org/cirpo",
     "range" : "80",
@@ -1971,6 +1972,20 @@
     "domain" : "2",
     "comment" : {
       "undefined" : "Detailed description of an incident. "
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "131"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasCoaStartDateTime",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "hasCoaStartDateTime",
+      "undefined" : "has COA start datetime"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Timestamp when execution of the course of action was initiated."
     },
     "attributes" : [ "datatype" ],
     "id" : "132"
@@ -1990,8 +2005,8 @@
     "id" : "133"
   }, {
     "range" : "1",
-    "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "134"
   }, {
     "iri" : "https://w3id.org/cirpo#isAnalysisOf",
@@ -2020,7 +2035,7 @@
     "comment" : {
       "undefined" : "Indicates the security event that generated this analysis"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "136"
   }, {
     "iri" : "https://w3id.org/cirpo#hasCoaStatus",
@@ -2039,7 +2054,7 @@
   }, {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "138"
   }, {
     "iri" : "https://w3id.org/cirpo#hasAnalystEmail",
@@ -2058,32 +2073,32 @@
   }, {
     "range" : "18",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "140"
   }, {
     "range" : "7",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "141"
   }, {
     "range" : "35",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "142"
   }, {
     "range" : "22",
     "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "143"
   }, {
     "range" : "2",
     "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "144"
   }, {
     "range" : "18",
     "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "145"
   }, {
     "iri" : "https://w3id.org/cirpo#hasCoaCreationAnalyst",
@@ -2103,22 +2118,8 @@
   }, {
     "range" : "7",
     "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "147"
-  }, {
-    "iri" : "https://w3id.org/cirpo#hasCoaEndDateTime",
-    "baseIri" : "https://w3id.org/cirpo",
-    "range" : "96",
-    "label" : {
-      "IRI-based" : "hasCoaEndDateTime",
-      "undefined" : "has COA end datetime"
-    },
-    "domain" : "22",
-    "comment" : {
-      "undefined" : "Timestamp when execution of the course of action was completed."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "148"
   }, {
     "iri" : "https://w3id.org/cirpo#hasChatSentiment",
     "baseIri" : "https://w3id.org/cirpo",
@@ -2132,16 +2133,30 @@
       "undefined" : "The sentiment or tone of the communication."
     },
     "attributes" : [ "datatype" ],
+    "id" : "148"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasCoaEndDateTime",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasCoaEndDateTime",
+      "undefined" : "has COA end datetime"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Timestamp when execution of the course of action was completed."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "149"
   }, {
     "range" : "38",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "150"
   }, {
     "range" : "22",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "151"
   }, {
     "iri" : "https://w3id.org/cirpo#hasEndDateTime",
@@ -2170,7 +2185,7 @@
     "comment" : {
       "undefined" : "Indicates the analyst who performed this activity"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "153"
   }, {
     "iri" : "https://w3id.org/cirpo#isEventOf",
@@ -2238,7 +2253,7 @@
       "IRI-based" : "hasEventDescription",
       "undefined" : "has event description"
     },
-    "domain" : "47",
+    "domain" : "46",
     "comment" : {
       "undefined" : "Detailed description of the security event."
     },

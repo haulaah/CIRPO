@@ -25,6 +25,9 @@
             </rdf:Description>
         </terms:creator>
         <terms:creator rdf:nodeID="genid3"/>
+        <terms:creator>Cormac Doherty</terms:creator>
+        <terms:creator>Haula Galadima</terms:creator>
+        <terms:creator>Rob Brennan</terms:creator>
         <terms:description>An ontology for modeling cybersecurity incident response processes</terms:description>
         <terms:isVersionOf rdf:resource="https://doi.org/10.5281/zenodo.20597896"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-06-12</terms:issued>

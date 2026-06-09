@@ -15,6 +15,9 @@ _:genid2 <http://xmlns.com/foaf/0.1/name> "Cormac Doherty" .
 <https://w3id.org/cirpo> <http://purl.org/dc/terms/creator> _:genid3 .
 _:genid3 <http://xmlns.com/foaf/0.1/name> "Rob Brennan" .
 _:genid3 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://orcid.org/0000-0001-7099-6788> .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/creator> "Cormac Doherty" .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/creator> "Haula Galadima" .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/creator> "Rob Brennan" .
 <https://w3id.org/cirpo> <http://purl.org/dc/terms/description> "An ontology for modeling cybersecurity incident response processes" .
 <https://w3id.org/cirpo> <http://purl.org/dc/terms/isVersionOf> <https://doi.org/10.5281/zenodo.20597896> .
 <https://w3id.org/cirpo> <http://purl.org/dc/terms/issued> "2026-06-12"^^<http://www.w3.org/2001/XMLSchema#date> .

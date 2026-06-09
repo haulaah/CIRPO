@@ -1,53 +1,76 @@
 [ {
   "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://haulaah.github.io/CIRPO#Analyst"
-    }, {
-      "@id" : "https://haulaah.github.io/CIRPO#Artefact"
-    }, {
-      "@id" : "https://haulaah.github.io/CIRPO#SecurityEvent"
-    } ]
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://orcid.org/0009-0003-2485-3067"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Haula Galadima"
   } ]
 }, {
-  "@id" : "_:genid12",
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
+      "@id" : "https://w3id.org/cirpo#Analyst"
     }, {
-      "@id" : "https://haulaah.github.io/CIRPO#SecurityEvent"
+      "@id" : "https://w3id.org/cirpo#Artefact"
+    }, {
+      "@id" : "https://w3id.org/cirpo#SecurityEvent"
     } ]
   } ]
 }, {
   "@id" : "_:genid15",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "https://haulaah.github.io/CIRPO#Analyst"
-    }, {
-      "@id" : "https://haulaah.github.io/CIRPO#Artefact"
-    }, {
-      "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
-    }, {
-      "@id" : "https://haulaah.github.io/CIRPO#Incident"
-    }, {
-      "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
-    }, {
-      "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
-    }, {
-      "@id" : "https://haulaah.github.io/CIRPO#SecurityEvent"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
+      "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
     }, {
-      "@id" : "https://haulaah.github.io/CIRPO#SecurityEvent"
+      "@id" : "https://w3id.org/cirpo#SecurityEvent"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/cirpo#Analyst"
+    }, {
+      "@id" : "https://w3id.org/cirpo#Artefact"
+    }, {
+      "@id" : "https://w3id.org/cirpo#CourseOfAction"
+    }, {
+      "@id" : "https://w3id.org/cirpo#Incident"
+    }, {
+      "@id" : "https://w3id.org/cirpo#ResponderCommunication"
+    }, {
+      "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
+    }, {
+      "@id" : "https://w3id.org/cirpo#SecurityEvent"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Cormac Doherty"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://orcid.org/0000-0001-7099-6788"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Rob Brennan"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/cirpo#Analyst"
+    }, {
+      "@id" : "https://w3id.org/cirpo#Artefact"
+    }, {
+      "@id" : "https://w3id.org/cirpo#SecurityEvent"
     } ]
   } ]
 }, {
@@ -55,13 +78,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+      "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
     }, {
-      "@id" : "https://haulaah.github.io/CIRPO#Artefact"
-    }, {
-      "@id" : "https://haulaah.github.io/CIRPO#SecurityEvent"
+      "@id" : "https://w3id.org/cirpo#SecurityEvent"
     } ]
   } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/accessRights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -72,7 +102,16 @@
   "@id" : "http://purl.org/dc/terms/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/isVersionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
@@ -87,16 +126,16 @@
     "@value" : "Indicates that a course of action used specific analysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "used"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
+    "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#wasUsedBy"
+    "@id" : "https://w3id.org/cirpo#wasUsedBy"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith",
@@ -105,16 +144,16 @@
     "@value" : "Indicates association with an incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid1"
+    "@id" : "_:genid4"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "was associated with"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#hadAssociationWith"
+    "@id" : "https://w3id.org/cirpo#hadAssociationWith"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy",
@@ -123,16 +162,16 @@
     "@value" : "Indicates the security event that generated this analysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
+    "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "was generated by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityEvent"
+    "@id" : "https://w3id.org/cirpo#SecurityEvent"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#generated"
+    "@id" : "https://w3id.org/cirpo#generated"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasPerformedBy",
@@ -141,41 +180,92 @@
     "@value" : "Indicates the analyst who performed this activity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid5"
+    "@id" : "_:genid8"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "was performed by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#performed"
+    "@id" : "https://w3id.org/cirpo#performed"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/cirpo"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cirpo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/subject" : [ {
+    "@value" : "CSIRT"
+  }, {
+    "@value" : "cybersecurity"
+  }, {
+    "@value" : "incident response"
+  }, {
+    "@value" : "ontology"
+  } ],
+  "http://purl.org/dc/terms/accessRights" : [ {
+    "@value" : "public"
+  } ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Galadima, H., Doherty, C., & Brennan, R. (2026). Cyber Incident Response Process Ontology (CIRPO) Version 7.0. Zenodo. https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER"
+  } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2026-05-03"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Haula Galadima, Cormac Doherty, Rob Brennan"
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "An ontology for modeling cybersecurity incident response processes"
   } ],
+  "http://purl.org/dc/terms/isVersionOf" : [ {
+    "@id" : "https://doi.org/10.5281/zenodo.20597896"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-06-12"
+  } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "CCI & ADAPT, School of Computer Science, University College Dublin"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "Cyber Incident Response Process Ontology (CIRPO)"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://github.com/moreiragb/csiho"
+  }, {
+    "@id" : "https://haulaah.github.io/CIRPO/"
+  }, {
+    "@id" : "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf"
+  } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@id" : "https://w3id.org/cirpo/versions/6.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/cirpo/versions/7.0"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "6.0"
+    "@value" : "7.0"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#Analysis",
+  "@id" : "https://w3id.org/cirpo#Analysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Activities to assess security incidents."
@@ -184,10 +274,10 @@
     "@value" : "Analysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#Analyst",
+  "@id" : "https://w3id.org/cirpo#Analyst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A security analyst who investigates and responds to incidents."
@@ -196,7 +286,7 @@
     "@value" : "Analyst"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#Artefact",
+  "@id" : "https://w3id.org/cirpo#Artefact",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An observable piece of evidence collected from an incident."
@@ -205,7 +295,7 @@
     "@value" : "Artefact"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#ChatChannel",
+  "@id" : "https://w3id.org/cirpo#ChatChannel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A communication channel where responders exchange messages"
@@ -214,10 +304,10 @@
     "@value" : "Chat Channel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
+    "@id" : "https://w3id.org/cirpo#ResponderCommunication"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#ChatMessage",
+  "@id" : "https://w3id.org/cirpo#ChatMessage",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A message posted by a responder within a chat channel."
@@ -226,10 +316,10 @@
     "@value" : "Chat Message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
+    "@id" : "https://w3id.org/cirpo#ResponderCommunication"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#Containment",
+  "@id" : "https://w3id.org/cirpo#Containment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Actions to limit the spread and impact of an incident."
@@ -238,10 +328,10 @@
     "@value" : "Containment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction",
+  "@id" : "https://w3id.org/cirpo#CourseOfAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A planned response action to a security incident."
@@ -250,7 +340,7 @@
     "@value" : "Course of Action"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#Detection",
+  "@id" : "https://w3id.org/cirpo#Detection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Activities in detection of security incidents."
@@ -259,10 +349,10 @@
     "@value" : "Detection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#Eradication",
+  "@id" : "https://w3id.org/cirpo#Eradication",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Actions to remove threats and root causes from affected systems."
@@ -271,10 +361,10 @@
     "@value" : "Eradication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#Incident",
+  "@id" : "https://w3id.org/cirpo#Incident",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A security incident that requires investigation and response."
@@ -283,7 +373,7 @@
     "@value" : "Incident"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#PostIncidentActivity",
+  "@id" : "https://w3id.org/cirpo#PostIncidentActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Activities conducted after incident resolution (e.g., lessons learned, reporting)."
@@ -292,10 +382,10 @@
     "@value" : "Post-Incident Activity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#Recovery",
+  "@id" : "https://w3id.org/cirpo#Recovery",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Actions to restore systems to normal operation."
@@ -304,10 +394,10 @@
     "@value" : "Recovery"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication",
+  "@id" : "https://w3id.org/cirpo#ResponderCommunication",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : " Any communication resource involved in incident response activities,including channels and individual chat messages"
@@ -316,7 +406,7 @@
     "@value" : "Responder Communication"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis",
+  "@id" : "https://w3id.org/cirpo#SecurityAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The analysis of observables from security events leading to an incident"
@@ -325,7 +415,7 @@
     "@value" : "Security Analysis"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#SecurityEvent",
+  "@id" : "https://w3id.org/cirpo#SecurityEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An observable occurrence relevant to system security (e.g., alert from SIEM, IDS)."
@@ -334,7 +424,7 @@
     "@value" : "Security Event"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#SecurityEventAction",
+  "@id" : "https://w3id.org/cirpo#SecurityEventAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A specific action taken or observed within a security event."
@@ -343,10 +433,10 @@
     "@value" : "Security Event Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityEvent"
+    "@id" : "https://w3id.org/cirpo#SecurityEvent"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#Tier1",
+  "@id" : "https://w3id.org/cirpo#Tier1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "First responder performing initial triage and categorization."
@@ -355,10 +445,10 @@
     "@value" : "Tier 1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#Tier2",
+  "@id" : "https://w3id.org/cirpo#Tier2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Incident responder handling deeper investigation and analysis."
@@ -367,10 +457,10 @@
     "@value" : "Tier 2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#Tier3",
+  "@id" : "https://w3id.org/cirpo#Tier3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Senior analyst or subject matter expert handling complex investigations."
@@ -379,175 +469,175 @@
     "@value" : "Tier 3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#assignedToCoa",
+  "@id" : "https://w3id.org/cirpo#assignedToCoa",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of hasCoaAssignedAnalyst. Links an analyst to the courses of action they are assigned to execute."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "assigned to COA"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#confirmedIncident",
+  "@id" : "https://w3id.org/cirpo#confirmedIncident",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of hasConfirmationAnalyst. Links an analyst to the incidents they confirmed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "confirmed incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#containsChat",
+  "@id" : "https://w3id.org/cirpo#containsChat",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Indicates that a channel contains chat messages."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ChatChannel"
+    "@id" : "https://w3id.org/cirpo#ChatChannel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "contains chat"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
+    "@id" : "https://w3id.org/cirpo#ChatMessage"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#wasPostedTo"
+    "@id" : "https://w3id.org/cirpo#wasPostedTo"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#createdArtefact",
+  "@id" : "https://w3id.org/cirpo#createdArtefact",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of hasArtefactCreationAnalyst. Links an analyst to the artefacts they created."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "created artefact"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Artefact"
+    "@id" : "https://w3id.org/cirpo#Artefact"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#createdCoa",
+  "@id" : "https://w3id.org/cirpo#createdCoa",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of hasCoaCreationAnalyst. Links an analyst to the courses of action they created."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "created COA"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#generated",
+  "@id" : "https://w3id.org/cirpo#generated",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of prov:wasGeneratedBy. Indicates a security event generated an analysis."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityEvent"
+    "@id" : "https://w3id.org/cirpo#SecurityEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "generated"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
+    "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#generatedChat",
+  "@id" : "https://w3id.org/cirpo#generatedChat",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of hasChatAnalyst."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "generated chat"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
+    "@id" : "https://w3id.org/cirpo#ChatMessage"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hadAssociationWith",
+  "@id" : "https://w3id.org/cirpo#hadAssociationWith",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of prov:wasAssociatedWith. Indicates an incident's associated analyst, artefact, or security event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "had association with"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid8"
+    "@id" : "_:genid11"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasAnalysis",
+  "@id" : "https://w3id.org/cirpo#hasAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Links an incident to the security analyses performed on it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has analysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
+    "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#isAnalysisOf"
+    "@id" : "https://w3id.org/cirpo#isAnalysisOf"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasAnalysisPerformingAnalyst",
+  "@id" : "https://w3id.org/cirpo#hasAnalysisPerformingAnalyst",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Links a security analysis to the analyst who performed it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
+    "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has analysis performing analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#performedAnalysis"
+    "@id" : "https://w3id.org/cirpo#performedAnalysis"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasAnalystEmail",
+  "@id" : "https://w3id.org/cirpo#hasAnalystEmail",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Email address of the analyst."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has analyst email"
@@ -556,13 +646,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasAnalystId",
+  "@id" : "https://w3id.org/cirpo#hasAnalystId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Unique identifier for an analyst."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has analyst ID"
@@ -571,49 +661,49 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasArtefact",
+  "@id" : "https://w3id.org/cirpo#hasArtefact",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Links an incident to related artefacts/observables collected during the investigation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has artefact"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Artefact"
+    "@id" : "https://w3id.org/cirpo#Artefact"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#isArtefactOf"
+    "@id" : "https://w3id.org/cirpo#isArtefactOf"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasArtefactCreationAnalyst",
+  "@id" : "https://w3id.org/cirpo#hasArtefactCreationAnalyst",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Links an artefact to the analyst who collected, created, or documented it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Artefact"
+    "@id" : "https://w3id.org/cirpo#Artefact"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has artefact creation analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#createdArtefact"
+    "@id" : "https://w3id.org/cirpo#createdArtefact"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasArtefactCreationDateTime",
+  "@id" : "https://w3id.org/cirpo#hasArtefactCreationDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Timestamp when the artefact was collected."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Artefact"
+    "@id" : "https://w3id.org/cirpo#Artefact"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has artefact creation datetime"
@@ -622,13 +712,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasArtefactDataValue",
+  "@id" : "https://w3id.org/cirpo#hasArtefactDataValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The actual content or value of the artefact ."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Artefact"
+    "@id" : "https://w3id.org/cirpo#Artefact"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has artefact data value"
@@ -637,13 +727,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasArtefactType",
+  "@id" : "https://w3id.org/cirpo#hasArtefactType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Classification of the artefact."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Artefact"
+    "@id" : "https://w3id.org/cirpo#Artefact"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has artefact type"
@@ -652,52 +742,49 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasChannel",
+  "@id" : "https://w3id.org/cirpo#hasChannel",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Links an incident to its chat channel."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has channel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ChatChannel"
+    "@id" : "https://w3id.org/cirpo#ChatChannel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#hasResponderCommunication"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#isChannelOf"
+    "@id" : "https://w3id.org/cirpo#hasResponderCommunication"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasChatAnalyst",
+  "@id" : "https://w3id.org/cirpo#hasChatAnalyst",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Links a chat message to the analyst who authored it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
+    "@id" : "https://w3id.org/cirpo#ChatMessage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has chat analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#generatedChat"
+    "@id" : "https://w3id.org/cirpo#generatedChat"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasChatChannelId",
+  "@id" : "https://w3id.org/cirpo#hasChatChannelId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Unique identifier of the communication channel (channel_id)."
+    "@value" : "Unique identifier of the communication channel."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ChatChannel"
+    "@id" : "https://w3id.org/cirpo#ChatChannel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has chat channel ID"
@@ -706,13 +793,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasChatChannelName",
+  "@id" : "https://w3id.org/cirpo#hasChatChannelName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Name of the communication channel (channel_name)."
+    "@value" : "Name of the communication channel."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ChatChannel"
+    "@id" : "https://w3id.org/cirpo#ChatChannel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has chat channel name"
@@ -721,13 +808,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasChatMessage",
+  "@id" : "https://w3id.org/cirpo#hasChatMessage",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The content or body of the communication message."
+    "@value" : "The content or body of the message."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
+    "@id" : "https://w3id.org/cirpo#ChatMessage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has chat message"
@@ -736,13 +823,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasChatMessageDateTime",
+  "@id" : "https://w3id.org/cirpo#hasChatMessageDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Timestamp when the communication occurred."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
+    "@id" : "https://w3id.org/cirpo#ChatMessage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has chat message datetime"
@@ -751,13 +838,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasChatMessageId",
+  "@id" : "https://w3id.org/cirpo#hasChatMessageId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Unique identifier of the chat message (post_id)."
+    "@value" : "Unique identifier of the chat message."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
+    "@id" : "https://w3id.org/cirpo#ChatMessage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has chat message ID"
@@ -766,13 +853,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasChatSentiment",
+  "@id" : "https://w3id.org/cirpo#hasChatSentiment",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The sentiment or tone of the communication."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
+    "@id" : "https://w3id.org/cirpo#ChatMessage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has chat sentiment"
@@ -781,67 +868,67 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasCoa",
+  "@id" : "https://w3id.org/cirpo#hasCoa",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Links an incident to the response actions (COA) taken to resolve it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has course of action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#isCoaOf"
+    "@id" : "https://w3id.org/cirpo#isCoaOf"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasCoaAssignedAnalyst",
+  "@id" : "https://w3id.org/cirpo#hasCoaAssignedAnalyst",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Links a course of action to the analyst responsible for executing it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has COA assigned analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#assignedToCoa"
+    "@id" : "https://w3id.org/cirpo#assignedToCoa"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasCoaCreationAnalyst",
+  "@id" : "https://w3id.org/cirpo#hasCoaCreationAnalyst",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Links a course of action to the analyst who created or planned it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has COA creation analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#createdCoa"
+    "@id" : "https://w3id.org/cirpo#createdCoa"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasCoaCreationDateTime",
+  "@id" : "https://w3id.org/cirpo#hasCoaCreationDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Timestamp when the course of action was created."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has COA creation datetime"
@@ -850,13 +937,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasCoaDescription",
+  "@id" : "https://w3id.org/cirpo#hasCoaDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Narrative description of the course of action and its intended effect."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has COA description"
@@ -865,13 +952,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasCoaEndDateTime",
+  "@id" : "https://w3id.org/cirpo#hasCoaEndDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Timestamp when execution of the course of action was completed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has COA end datetime"
@@ -880,13 +967,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasCoaStartDateTime",
+  "@id" : "https://w3id.org/cirpo#hasCoaStartDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Timestamp when execution of the course of action was initiated."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has COA start datetime"
@@ -895,13 +982,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasCoaStatus",
+  "@id" : "https://w3id.org/cirpo#hasCoaStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Current execution status of the course of action."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has COA status"
@@ -910,31 +997,31 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasConfirmationAnalyst",
+  "@id" : "https://w3id.org/cirpo#hasConfirmationAnalyst",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Links an incident to the analyst who confirmed it as a genuine security incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has confirmation analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#confirmedIncident"
+    "@id" : "https://w3id.org/cirpo#confirmedIncident"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasConfirmationDateTime",
+  "@id" : "https://w3id.org/cirpo#hasConfirmationDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Timestamp when the incident was confirmed"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has confirmation datetime"
@@ -943,13 +1030,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasEndDateTime",
+  "@id" : "https://w3id.org/cirpo#hasEndDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Timestamp when incident response was formally concluded."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has end datetime"
@@ -958,31 +1045,31 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasEvent",
+  "@id" : "https://w3id.org/cirpo#hasEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Links an incident to one or more related security events that triggered or are part of it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityEvent"
+    "@id" : "https://w3id.org/cirpo#SecurityEvent"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#isEventOf"
+    "@id" : "https://w3id.org/cirpo#isEventOf"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasEventActivity",
+  "@id" : "https://w3id.org/cirpo#hasEventActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Description of the specific activity within a security event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityEventAction"
+    "@id" : "https://w3id.org/cirpo#SecurityEventAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has event activity"
@@ -991,13 +1078,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasEventActivityDateTime",
+  "@id" : "https://w3id.org/cirpo#hasEventActivityDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Timestamp when the specific security event activity occurred."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityEventAction"
+    "@id" : "https://w3id.org/cirpo#SecurityEventAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has event activity datetime"
@@ -1006,13 +1093,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasEventDescription",
+  "@id" : "https://w3id.org/cirpo#hasEventDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Detailed description of the security event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityEventAction"
+    "@id" : "https://w3id.org/cirpo#SecurityEventAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has event description"
@@ -1021,13 +1108,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasEventId",
+  "@id" : "https://w3id.org/cirpo#hasEventId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Unique identifier for a security event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityEvent"
+    "@id" : "https://w3id.org/cirpo#SecurityEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has event ID"
@@ -1036,13 +1123,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasEventTitle",
+  "@id" : "https://w3id.org/cirpo#hasEventTitle",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Short description or name for the security event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityEvent"
+    "@id" : "https://w3id.org/cirpo#SecurityEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has event title"
@@ -1051,13 +1138,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasIncidentCreationDateTime",
+  "@id" : "https://w3id.org/cirpo#hasIncidentCreationDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Timestamp when the incident record was first created."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has incident creation datetime"
@@ -1066,13 +1153,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasIncidentDescription",
+  "@id" : "https://w3id.org/cirpo#hasIncidentDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Detailed description of an incident. "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has incident description"
@@ -1081,13 +1168,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasIncidentId",
+  "@id" : "https://w3id.org/cirpo#hasIncidentId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Unique identifier for an incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has incident ID"
@@ -1096,13 +1183,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasIncidentName",
+  "@id" : "https://w3id.org/cirpo#hasIncidentName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Title of the incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has incident name"
@@ -1111,13 +1198,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasIncidentSeverity",
+  "@id" : "https://w3id.org/cirpo#hasIncidentSeverity",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The severity level of an incident (Low, Medium, High, Critical)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has incident severity"
@@ -1126,13 +1213,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasIncidentStage",
+  "@id" : "https://w3id.org/cirpo#hasIncidentStage",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Current stage in the incident lifecycle."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has incident stage"
@@ -1141,13 +1228,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasIncidentStatus",
+  "@id" : "https://w3id.org/cirpo#hasIncidentStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Current status of the incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has incident status"
@@ -1156,31 +1243,31 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasResponderCommunication",
+  "@id" : "https://w3id.org/cirpo#hasResponderCommunication",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Links an incident to any responder communication resource."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has responder communication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
+    "@id" : "https://w3id.org/cirpo#ResponderCommunication"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#isRelatedToIncident"
+    "@id" : "https://w3id.org/cirpo#isRelatedToIncident"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasSecurityAnalysisDataValue",
+  "@id" : "https://w3id.org/cirpo#hasSecurityAnalysisDataValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The data value to be analysed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
+    "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has security analysis data value"
@@ -1189,13 +1276,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasSecurityAnalysisDateTime",
+  "@id" : "https://w3id.org/cirpo#hasSecurityAnalysisDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Timestamp when the security analysis was performed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
+    "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has security analysis datetime"
@@ -1204,13 +1291,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasSecurityAnalysisDetails",
+  "@id" : "https://w3id.org/cirpo#hasSecurityAnalysisDetails",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Detailed findings from the analysis."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
+    "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has security analysis details"
@@ -1219,13 +1306,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#hasSecurityAnalysisType",
+  "@id" : "https://w3id.org/cirpo#hasSecurityAnalysisType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The type of analysis performed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
+    "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has security analysis data type"
@@ -1234,153 +1321,156 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#isAnalysisOf",
+  "@id" : "https://w3id.org/cirpo#isAnalysisOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of hasAnalysis. Links an analysis back to its incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
+    "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is analysis of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#isArtefactOf",
+  "@id" : "https://w3id.org/cirpo#isArtefactOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of hasArtefact. Links an artefact back to its incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Artefact"
+    "@id" : "https://w3id.org/cirpo#Artefact"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is artefact of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#isChannelOf",
+  "@id" : "https://w3id.org/cirpo#isChannelOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of hasChannel."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ChatChannel"
+    "@id" : "https://w3id.org/cirpo#ChatChannel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is channel of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/cirpo#hasChannel"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#isCoaOf",
+  "@id" : "https://w3id.org/cirpo#isCoaOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of hasCoa. Links a course of action back to its incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is COA of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#isEventOf",
+  "@id" : "https://w3id.org/cirpo#isEventOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of hasEvent. Links a security event back to its parent incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityEvent"
+    "@id" : "https://w3id.org/cirpo#SecurityEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is event of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#isRelatedToIncident",
+  "@id" : "https://w3id.org/cirpo#isRelatedToIncident",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of hasResponderCommunication. Links any responder communication back to the incident it is associated with."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ResponderCommunication"
+    "@id" : "https://w3id.org/cirpo#ResponderCommunication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is related to incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Incident"
+    "@id" : "https://w3id.org/cirpo#Incident"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#performed",
+  "@id" : "https://w3id.org/cirpo#performed",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of prov:wasPerformedBy. Indicates an analyst performed an activity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "performed"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid12"
+    "@id" : "_:genid15"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#performedAnalysis",
+  "@id" : "https://w3id.org/cirpo#performedAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of hasAnalysisPerformingAnalyst. Links an analyst to the analyses they performed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#Analyst"
+    "@id" : "https://w3id.org/cirpo#Analyst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "performed analysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
+    "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#wasPostedTo",
+  "@id" : "https://w3id.org/cirpo#wasPostedTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Indicates the channel where the chat message was posted."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ChatMessage"
+    "@id" : "https://w3id.org/cirpo#ChatMessage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "was posted to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#ChatChannel"
+    "@id" : "https://w3id.org/cirpo#ChatChannel"
   } ]
 }, {
-  "@id" : "https://haulaah.github.io/CIRPO#wasUsedBy",
+  "@id" : "https://w3id.org/cirpo#wasUsedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of prov:used. Indicates an analysis was used by a course of action."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#SecurityAnalysis"
+    "@id" : "https://w3id.org/cirpo#SecurityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "was used by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://haulaah.github.io/CIRPO#CourseOfAction"
+    "@id" : "https://w3id.org/cirpo#CourseOfAction"
   } ]
 } ]

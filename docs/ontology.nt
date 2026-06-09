@@ -1,10 +1,31 @@
-<https://haulaah.github.io/CIRPO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://haulaah.github.io/CIRPO> <http://purl.org/dc/terms/created> "2026-05-03"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://haulaah.github.io/CIRPO> <http://purl.org/dc/terms/creator> "Haula Galadima, Cormac Doherty, Rob Brennan" .
-<https://haulaah.github.io/CIRPO> <http://purl.org/dc/terms/description> "An ontology for modeling cybersecurity incident response processes" .
-<https://haulaah.github.io/CIRPO> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://haulaah.github.io/CIRPO> <http://purl.org/dc/terms/title> "Cyber Incident Response Process Ontology (CIRPO)" .
-<https://haulaah.github.io/CIRPO> <http://www.w3.org/2002/07/owl#versionInfo> "6.0" .
+<https://w3id.org/cirpo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/cirpo> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/cirpo/versions/7.0> .
+<https://w3id.org/cirpo> <http://purl.org/dc/elements/1.1/subject> "CSIRT" .
+<https://w3id.org/cirpo> <http://purl.org/dc/elements/1.1/subject> "cybersecurity" .
+<https://w3id.org/cirpo> <http://purl.org/dc/elements/1.1/subject> "incident response" .
+<https://w3id.org/cirpo> <http://purl.org/dc/elements/1.1/subject> "ontology" .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/accessRights> "public" .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/bibliographicCitation> "Galadima, H., Doherty, C., & Brennan, R. (2026). Cyber Incident Response Process Ontology (CIRPO) Version 7.0. Zenodo. https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER" .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/created> "2026-05-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/creator> _:genid1 .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Haula Galadima" .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://orcid.org/0009-0003-2485-3067> .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/creator> _:genid2 .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Cormac Doherty" .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/creator> _:genid3 .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Rob Brennan" .
+_:genid3 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://orcid.org/0000-0001-7099-6788> .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/description> "An ontology for modeling cybersecurity incident response processes" .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/isVersionOf> <https://doi.org/10.5281/zenodo.20597896> .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/issued> "2026-06-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/publisher> "CCI & ADAPT, School of Computer Science, University College Dublin" .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/title> "Cyber Incident Response Process Ontology (CIRPO)" .
+<https://w3id.org/cirpo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/moreiragb/csiho> .
+<https://w3id.org/cirpo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://haulaah.github.io/CIRPO/> .
+<https://w3id.org/cirpo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf> .
+<https://w3id.org/cirpo> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/cirpo/versions/6.0> .
+<https://w3id.org/cirpo> <http://www.w3.org/2002/07/owl#versionInfo> "7.0" .
 # 
 # 
 # #################################################################
@@ -13,6 +34,15 @@
 # #
 # #################################################################
 # 
+# 
+# http://purl.org/dc/elements/1.1/subject
+<http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/accessRights
+<http://purl.org/dc/terms/accessRights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -23,11 +53,23 @@
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/isVersionOf
+<http://purl.org/dc/terms/isVersionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -52,297 +94,297 @@
 # 
 # http://www.w3.org/ns/prov#used
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/prov#used> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#wasUsedBy> .
-<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#wasUsedBy> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#CourseOfAction> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#SecurityAnalysis> .
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a course of action used specific analysis" .
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#label> "used" .
 # 
 # http://www.w3.org/ns/prov#wasAssociatedWith
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#hadAssociationWith> .
-<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#SecurityEvent> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#Artefact> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#Analyst> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Incident> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#hadAssociationWith> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#SecurityEvent> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#Artefact> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#Analyst> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Incident> .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates association with an incident" .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "was associated with" .
 # 
 # http://www.w3.org/ns/prov#wasGeneratedBy
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#generated> .
-<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
-<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#SecurityEvent> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#generated> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityAnalysis> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#SecurityEvent> .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the security event that generated this analysis" .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#label> "was generated by" .
 # 
 # http://www.w3.org/ns/prov#wasPerformedBy
 <http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#performed> .
-<http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid5 .
-_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#SecurityEvent> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Analyst> .
+<http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#performed> .
+<http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#SecurityEvent> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#SecurityAnalysis> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Analyst> .
 <http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the analyst who performed this activity" .
 <http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "was performed by" .
 # 
-# https://haulaah.github.io/CIRPO#assignedToCoa
-<https://haulaah.github.io/CIRPO#assignedToCoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#assignedToCoa> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#assignedToCoa> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#assignedToCoa> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasCoaAssignedAnalyst. Links an analyst to the courses of action they are assigned to execute." .
-<https://haulaah.github.io/CIRPO#assignedToCoa> <http://www.w3.org/2000/01/rdf-schema#label> "assigned to COA" .
+# https://w3id.org/cirpo#assignedToCoa
+<https://w3id.org/cirpo#assignedToCoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#assignedToCoa> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#assignedToCoa> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#assignedToCoa> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasCoaAssignedAnalyst. Links an analyst to the courses of action they are assigned to execute." .
+<https://w3id.org/cirpo#assignedToCoa> <http://www.w3.org/2000/01/rdf-schema#label> "assigned to COA" .
 # 
-# https://haulaah.github.io/CIRPO#confirmedIncident
-<https://haulaah.github.io/CIRPO#confirmedIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#confirmedIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#confirmedIncident> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#confirmedIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasConfirmationAnalyst. Links an analyst to the incidents they confirmed." .
-<https://haulaah.github.io/CIRPO#confirmedIncident> <http://www.w3.org/2000/01/rdf-schema#label> "confirmed incident" .
+# https://w3id.org/cirpo#confirmedIncident
+<https://w3id.org/cirpo#confirmedIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#confirmedIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#confirmedIncident> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#confirmedIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasConfirmationAnalyst. Links an analyst to the incidents they confirmed." .
+<https://w3id.org/cirpo#confirmedIncident> <http://www.w3.org/2000/01/rdf-schema#label> "confirmed incident" .
 # 
-# https://haulaah.github.io/CIRPO#containsChat
-<https://haulaah.github.io/CIRPO#containsChat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#containsChat> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#wasPostedTo> .
-<https://haulaah.github.io/CIRPO#containsChat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatChannel> .
-<https://haulaah.github.io/CIRPO#containsChat> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#ChatMessage> .
-<https://haulaah.github.io/CIRPO#containsChat> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a channel contains chat messages." .
-<https://haulaah.github.io/CIRPO#containsChat> <http://www.w3.org/2000/01/rdf-schema#label> "contains chat" .
+# https://w3id.org/cirpo#containsChat
+<https://w3id.org/cirpo#containsChat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#containsChat> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#wasPostedTo> .
+<https://w3id.org/cirpo#containsChat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#ChatChannel> .
+<https://w3id.org/cirpo#containsChat> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#ChatMessage> .
+<https://w3id.org/cirpo#containsChat> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a channel contains chat messages." .
+<https://w3id.org/cirpo#containsChat> <http://www.w3.org/2000/01/rdf-schema#label> "contains chat" .
 # 
-# https://haulaah.github.io/CIRPO#createdArtefact
-<https://haulaah.github.io/CIRPO#createdArtefact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#createdArtefact> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#createdArtefact> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Artefact> .
-<https://haulaah.github.io/CIRPO#createdArtefact> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasArtefactCreationAnalyst. Links an analyst to the artefacts they created." .
-<https://haulaah.github.io/CIRPO#createdArtefact> <http://www.w3.org/2000/01/rdf-schema#label> "created artefact" .
+# https://w3id.org/cirpo#createdArtefact
+<https://w3id.org/cirpo#createdArtefact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#createdArtefact> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#createdArtefact> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Artefact> .
+<https://w3id.org/cirpo#createdArtefact> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasArtefactCreationAnalyst. Links an analyst to the artefacts they created." .
+<https://w3id.org/cirpo#createdArtefact> <http://www.w3.org/2000/01/rdf-schema#label> "created artefact" .
 # 
-# https://haulaah.github.io/CIRPO#createdCoa
-<https://haulaah.github.io/CIRPO#createdCoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#createdCoa> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#createdCoa> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#createdCoa> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasCoaCreationAnalyst. Links an analyst to the courses of action they created." .
-<https://haulaah.github.io/CIRPO#createdCoa> <http://www.w3.org/2000/01/rdf-schema#label> "created COA" .
+# https://w3id.org/cirpo#createdCoa
+<https://w3id.org/cirpo#createdCoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#createdCoa> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#createdCoa> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#createdCoa> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasCoaCreationAnalyst. Links an analyst to the courses of action they created." .
+<https://w3id.org/cirpo#createdCoa> <http://www.w3.org/2000/01/rdf-schema#label> "created COA" .
 # 
-# https://haulaah.github.io/CIRPO#generated
-<https://haulaah.github.io/CIRPO#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#generated> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityEvent> .
-<https://haulaah.github.io/CIRPO#generated> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
-<https://haulaah.github.io/CIRPO#generated> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of prov:wasGeneratedBy. Indicates a security event generated an analysis." .
-<https://haulaah.github.io/CIRPO#generated> <http://www.w3.org/2000/01/rdf-schema#label> "generated" .
+# https://w3id.org/cirpo#generated
+<https://w3id.org/cirpo#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#generated> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityEvent> .
+<https://w3id.org/cirpo#generated> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#SecurityAnalysis> .
+<https://w3id.org/cirpo#generated> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of prov:wasGeneratedBy. Indicates a security event generated an analysis." .
+<https://w3id.org/cirpo#generated> <http://www.w3.org/2000/01/rdf-schema#label> "generated" .
 # 
-# https://haulaah.github.io/CIRPO#generatedChat
-<https://haulaah.github.io/CIRPO#generatedChat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#generatedChat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#generatedChat> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#ChatMessage> .
-<https://haulaah.github.io/CIRPO#generatedChat> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasChatAnalyst." .
-<https://haulaah.github.io/CIRPO#generatedChat> <http://www.w3.org/2000/01/rdf-schema#label> "generated chat" .
+# https://w3id.org/cirpo#generatedChat
+<https://w3id.org/cirpo#generatedChat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#generatedChat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#generatedChat> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#ChatMessage> .
+<https://w3id.org/cirpo#generatedChat> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasChatAnalyst." .
+<https://w3id.org/cirpo#generatedChat> <http://www.w3.org/2000/01/rdf-schema#label> "generated chat" .
 # 
-# https://haulaah.github.io/CIRPO#hadAssociationWith
-<https://haulaah.github.io/CIRPO#hadAssociationWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hadAssociationWith> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hadAssociationWith> <http://www.w3.org/2000/01/rdf-schema#range> _:genid8 .
-_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#SecurityEvent> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#Artefact> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#Analyst> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#hadAssociationWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of prov:wasAssociatedWith. Indicates an incident's associated analyst, artefact, or security event." .
-<https://haulaah.github.io/CIRPO#hadAssociationWith> <http://www.w3.org/2000/01/rdf-schema#label> "had association with" .
-# 
-# https://haulaah.github.io/CIRPO#hasAnalysis
-<https://haulaah.github.io/CIRPO#hasAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hasAnalysis> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#isAnalysisOf> .
-<https://haulaah.github.io/CIRPO#hasAnalysis> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasAnalysis> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
-<https://haulaah.github.io/CIRPO#hasAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to the security analyses performed on it." .
-<https://haulaah.github.io/CIRPO#hasAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "has analysis" .
-# 
-# https://haulaah.github.io/CIRPO#hasAnalysisPerformingAnalyst
-<https://haulaah.github.io/CIRPO#hasAnalysisPerformingAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hasAnalysisPerformingAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#performedAnalysis> .
-<https://haulaah.github.io/CIRPO#hasAnalysisPerformingAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
-<https://haulaah.github.io/CIRPO#hasAnalysisPerformingAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#hasAnalysisPerformingAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a security analysis to the analyst who performed it." .
-<https://haulaah.github.io/CIRPO#hasAnalysisPerformingAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has analysis performing analyst" .
-# 
-# https://haulaah.github.io/CIRPO#hasArtefact
-<https://haulaah.github.io/CIRPO#hasArtefact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hasArtefact> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#isArtefactOf> .
-<https://haulaah.github.io/CIRPO#hasArtefact> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasArtefact> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Artefact> .
-<https://haulaah.github.io/CIRPO#hasArtefact> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to related artefacts/observables collected during the investigation." .
-<https://haulaah.github.io/CIRPO#hasArtefact> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact" .
-# 
-# https://haulaah.github.io/CIRPO#hasArtefactCreationAnalyst
-<https://haulaah.github.io/CIRPO#hasArtefactCreationAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hasArtefactCreationAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#createdArtefact> .
-<https://haulaah.github.io/CIRPO#hasArtefactCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Artefact> .
-<https://haulaah.github.io/CIRPO#hasArtefactCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#hasArtefactCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an artefact to the analyst who collected, created, or documented it." .
-<https://haulaah.github.io/CIRPO#hasArtefactCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact creation analyst" .
-# 
-# https://haulaah.github.io/CIRPO#hasChannel
-<https://haulaah.github.io/CIRPO#hasChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hasChannel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://haulaah.github.io/CIRPO#hasResponderCommunication> .
-<https://haulaah.github.io/CIRPO#hasChannel> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#isChannelOf> .
-<https://haulaah.github.io/CIRPO#hasChannel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasChannel> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#ChatChannel> .
-<https://haulaah.github.io/CIRPO#hasChannel> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to its chat channel." .
-<https://haulaah.github.io/CIRPO#hasChannel> <http://www.w3.org/2000/01/rdf-schema#label> "has channel" .
-# 
-# https://haulaah.github.io/CIRPO#hasChatAnalyst
-<https://haulaah.github.io/CIRPO#hasChatAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hasChatAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#generatedChat> .
-<https://haulaah.github.io/CIRPO#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatMessage> .
-<https://haulaah.github.io/CIRPO#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a chat message to the analyst who authored it." .
-<https://haulaah.github.io/CIRPO#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has chat analyst" .
-# 
-# https://haulaah.github.io/CIRPO#hasCoa
-<https://haulaah.github.io/CIRPO#hasCoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hasCoa> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#isCoaOf> .
-<https://haulaah.github.io/CIRPO#hasCoa> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasCoa> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#hasCoa> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to the response actions (COA) taken to resolve it." .
-<https://haulaah.github.io/CIRPO#hasCoa> <http://www.w3.org/2000/01/rdf-schema#label> "has course of action" .
-# 
-# https://haulaah.github.io/CIRPO#hasCoaAssignedAnalyst
-<https://haulaah.github.io/CIRPO#hasCoaAssignedAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hasCoaAssignedAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#assignedToCoa> .
-<https://haulaah.github.io/CIRPO#hasCoaAssignedAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#hasCoaAssignedAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#hasCoaAssignedAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a course of action to the analyst responsible for executing it." .
-<https://haulaah.github.io/CIRPO#hasCoaAssignedAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has COA assigned analyst" .
-# 
-# https://haulaah.github.io/CIRPO#hasCoaCreationAnalyst
-<https://haulaah.github.io/CIRPO#hasCoaCreationAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hasCoaCreationAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#createdCoa> .
-<https://haulaah.github.io/CIRPO#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a course of action to the analyst who created or planned it." .
-<https://haulaah.github.io/CIRPO#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has COA creation analyst" .
-# 
-# https://haulaah.github.io/CIRPO#hasConfirmationAnalyst
-<https://haulaah.github.io/CIRPO#hasConfirmationAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hasConfirmationAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#confirmedIncident> .
-<https://haulaah.github.io/CIRPO#hasConfirmationAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasConfirmationAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#hasConfirmationAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to the analyst who confirmed it as a genuine security incident." .
-<https://haulaah.github.io/CIRPO#hasConfirmationAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has confirmation analyst" .
-# 
-# https://haulaah.github.io/CIRPO#hasEvent
-<https://haulaah.github.io/CIRPO#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hasEvent> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#isEventOf> .
-<https://haulaah.github.io/CIRPO#hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#SecurityEvent> .
-<https://haulaah.github.io/CIRPO#hasEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to one or more related security events that triggered or are part of it." .
-<https://haulaah.github.io/CIRPO#hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "has event" .
-# 
-# https://haulaah.github.io/CIRPO#hasResponderCommunication
-<https://haulaah.github.io/CIRPO#hasResponderCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#hasResponderCommunication> <http://www.w3.org/2002/07/owl#inverseOf> <https://haulaah.github.io/CIRPO#isRelatedToIncident> .
-<https://haulaah.github.io/CIRPO#hasResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
-<https://haulaah.github.io/CIRPO#hasResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to any responder communication resource." .
-<https://haulaah.github.io/CIRPO#hasResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#label> "has responder communication" .
-# 
-# https://haulaah.github.io/CIRPO#isAnalysisOf
-<https://haulaah.github.io/CIRPO#isAnalysisOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#isAnalysisOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
-<https://haulaah.github.io/CIRPO#isAnalysisOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#isAnalysisOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasAnalysis. Links an analysis back to its incident." .
-<https://haulaah.github.io/CIRPO#isAnalysisOf> <http://www.w3.org/2000/01/rdf-schema#label> "is analysis of" .
-# 
-# https://haulaah.github.io/CIRPO#isArtefactOf
-<https://haulaah.github.io/CIRPO#isArtefactOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#isArtefactOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Artefact> .
-<https://haulaah.github.io/CIRPO#isArtefactOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#isArtefactOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasArtefact. Links an artefact back to its incident." .
-<https://haulaah.github.io/CIRPO#isArtefactOf> <http://www.w3.org/2000/01/rdf-schema#label> "is artefact of" .
-# 
-# https://haulaah.github.io/CIRPO#isChannelOf
-<https://haulaah.github.io/CIRPO#isChannelOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#isChannelOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatChannel> .
-<https://haulaah.github.io/CIRPO#isChannelOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#isChannelOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasChannel." .
-<https://haulaah.github.io/CIRPO#isChannelOf> <http://www.w3.org/2000/01/rdf-schema#label> "is channel of" .
-# 
-# https://haulaah.github.io/CIRPO#isCoaOf
-<https://haulaah.github.io/CIRPO#isCoaOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#isCoaOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#isCoaOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#isCoaOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasCoa. Links a course of action back to its incident." .
-<https://haulaah.github.io/CIRPO#isCoaOf> <http://www.w3.org/2000/01/rdf-schema#label> "is COA of" .
-# 
-# https://haulaah.github.io/CIRPO#isEventOf
-<https://haulaah.github.io/CIRPO#isEventOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#isEventOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityEvent> .
-<https://haulaah.github.io/CIRPO#isEventOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#isEventOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasEvent. Links a security event back to its parent incident." .
-<https://haulaah.github.io/CIRPO#isEventOf> <http://www.w3.org/2000/01/rdf-schema#label> "is event of" .
-# 
-# https://haulaah.github.io/CIRPO#isRelatedToIncident
-<https://haulaah.github.io/CIRPO#isRelatedToIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#isRelatedToIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
-<https://haulaah.github.io/CIRPO#isRelatedToIncident> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#isRelatedToIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasResponderCommunication. Links any responder communication back to the incident it is associated with." .
-<https://haulaah.github.io/CIRPO#isRelatedToIncident> <http://www.w3.org/2000/01/rdf-schema#label> "is related to incident" .
-# 
-# https://haulaah.github.io/CIRPO#performed
-<https://haulaah.github.io/CIRPO#performed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#performed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#performed> <http://www.w3.org/2000/01/rdf-schema#range> _:genid12 .
-_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+# https://w3id.org/cirpo#hadAssociationWith
+<https://w3id.org/cirpo#hadAssociationWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#hadAssociationWith> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hadAssociationWith> <http://www.w3.org/2000/01/rdf-schema#range> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#SecurityEvent> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#SecurityEvent> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#Artefact> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#Analyst> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#performed> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of prov:wasPerformedBy. Indicates an analyst performed an activity." .
-<https://haulaah.github.io/CIRPO#performed> <http://www.w3.org/2000/01/rdf-schema#label> "performed" .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#hadAssociationWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of prov:wasAssociatedWith. Indicates an incident's associated analyst, artefact, or security event." .
+<https://w3id.org/cirpo#hadAssociationWith> <http://www.w3.org/2000/01/rdf-schema#label> "had association with" .
 # 
-# https://haulaah.github.io/CIRPO#performedAnalysis
-<https://haulaah.github.io/CIRPO#performedAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#performedAnalysis> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#performedAnalysis> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
-<https://haulaah.github.io/CIRPO#performedAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasAnalysisPerformingAnalyst. Links an analyst to the analyses they performed." .
-<https://haulaah.github.io/CIRPO#performedAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "performed analysis" .
+# https://w3id.org/cirpo#hasAnalysis
+<https://w3id.org/cirpo#hasAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#hasAnalysis> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#isAnalysisOf> .
+<https://w3id.org/cirpo#hasAnalysis> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasAnalysis> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#SecurityAnalysis> .
+<https://w3id.org/cirpo#hasAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to the security analyses performed on it." .
+<https://w3id.org/cirpo#hasAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "has analysis" .
 # 
-# https://haulaah.github.io/CIRPO#wasPostedTo
-<https://haulaah.github.io/CIRPO#wasPostedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#wasPostedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatMessage> .
-<https://haulaah.github.io/CIRPO#wasPostedTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#ChatChannel> .
-<https://haulaah.github.io/CIRPO#wasPostedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the channel where the chat message was posted." .
-<https://haulaah.github.io/CIRPO#wasPostedTo> <http://www.w3.org/2000/01/rdf-schema#label> "was posted to" .
+# https://w3id.org/cirpo#hasAnalysisPerformingAnalyst
+<https://w3id.org/cirpo#hasAnalysisPerformingAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#hasAnalysisPerformingAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#performedAnalysis> .
+<https://w3id.org/cirpo#hasAnalysisPerformingAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityAnalysis> .
+<https://w3id.org/cirpo#hasAnalysisPerformingAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#hasAnalysisPerformingAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a security analysis to the analyst who performed it." .
+<https://w3id.org/cirpo#hasAnalysisPerformingAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has analysis performing analyst" .
 # 
-# https://haulaah.github.io/CIRPO#wasUsedBy
-<https://haulaah.github.io/CIRPO#wasUsedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://haulaah.github.io/CIRPO#wasUsedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
-<https://haulaah.github.io/CIRPO#wasUsedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#wasUsedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of prov:used. Indicates an analysis was used by a course of action." .
-<https://haulaah.github.io/CIRPO#wasUsedBy> <http://www.w3.org/2000/01/rdf-schema#label> "was used by" .
+# https://w3id.org/cirpo#hasArtefact
+<https://w3id.org/cirpo#hasArtefact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#hasArtefact> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#isArtefactOf> .
+<https://w3id.org/cirpo#hasArtefact> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasArtefact> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Artefact> .
+<https://w3id.org/cirpo#hasArtefact> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to related artefacts/observables collected during the investigation." .
+<https://w3id.org/cirpo#hasArtefact> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact" .
+# 
+# https://w3id.org/cirpo#hasArtefactCreationAnalyst
+<https://w3id.org/cirpo#hasArtefactCreationAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#hasArtefactCreationAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#createdArtefact> .
+<https://w3id.org/cirpo#hasArtefactCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Artefact> .
+<https://w3id.org/cirpo#hasArtefactCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#hasArtefactCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an artefact to the analyst who collected, created, or documented it." .
+<https://w3id.org/cirpo#hasArtefactCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact creation analyst" .
+# 
+# https://w3id.org/cirpo#hasChannel
+<https://w3id.org/cirpo#hasChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#hasChannel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/cirpo#hasResponderCommunication> .
+<https://w3id.org/cirpo#hasChannel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasChannel> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#ChatChannel> .
+<https://w3id.org/cirpo#hasChannel> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to its chat channel." .
+<https://w3id.org/cirpo#hasChannel> <http://www.w3.org/2000/01/rdf-schema#label> "has channel" .
+# 
+# https://w3id.org/cirpo#hasChatAnalyst
+<https://w3id.org/cirpo#hasChatAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#hasChatAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#generatedChat> .
+<https://w3id.org/cirpo#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#ChatMessage> .
+<https://w3id.org/cirpo#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a chat message to the analyst who authored it." .
+<https://w3id.org/cirpo#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has chat analyst" .
+# 
+# https://w3id.org/cirpo#hasCoa
+<https://w3id.org/cirpo#hasCoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#hasCoa> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#isCoaOf> .
+<https://w3id.org/cirpo#hasCoa> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasCoa> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#hasCoa> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to the response actions (COA) taken to resolve it." .
+<https://w3id.org/cirpo#hasCoa> <http://www.w3.org/2000/01/rdf-schema#label> "has course of action" .
+# 
+# https://w3id.org/cirpo#hasCoaAssignedAnalyst
+<https://w3id.org/cirpo#hasCoaAssignedAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#hasCoaAssignedAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#assignedToCoa> .
+<https://w3id.org/cirpo#hasCoaAssignedAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#hasCoaAssignedAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#hasCoaAssignedAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a course of action to the analyst responsible for executing it." .
+<https://w3id.org/cirpo#hasCoaAssignedAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has COA assigned analyst" .
+# 
+# https://w3id.org/cirpo#hasCoaCreationAnalyst
+<https://w3id.org/cirpo#hasCoaCreationAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#hasCoaCreationAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#createdCoa> .
+<https://w3id.org/cirpo#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a course of action to the analyst who created or planned it." .
+<https://w3id.org/cirpo#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has COA creation analyst" .
+# 
+# https://w3id.org/cirpo#hasConfirmationAnalyst
+<https://w3id.org/cirpo#hasConfirmationAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#hasConfirmationAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#confirmedIncident> .
+<https://w3id.org/cirpo#hasConfirmationAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasConfirmationAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#hasConfirmationAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to the analyst who confirmed it as a genuine security incident." .
+<https://w3id.org/cirpo#hasConfirmationAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has confirmation analyst" .
+# 
+# https://w3id.org/cirpo#hasEvent
+<https://w3id.org/cirpo#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#hasEvent> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#isEventOf> .
+<https://w3id.org/cirpo#hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#SecurityEvent> .
+<https://w3id.org/cirpo#hasEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to one or more related security events that triggered or are part of it." .
+<https://w3id.org/cirpo#hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "has event" .
+# 
+# https://w3id.org/cirpo#hasResponderCommunication
+<https://w3id.org/cirpo#hasResponderCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#hasResponderCommunication> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#isRelatedToIncident> .
+<https://w3id.org/cirpo#hasResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#ResponderCommunication> .
+<https://w3id.org/cirpo#hasResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to any responder communication resource." .
+<https://w3id.org/cirpo#hasResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#label> "has responder communication" .
+# 
+# https://w3id.org/cirpo#isAnalysisOf
+<https://w3id.org/cirpo#isAnalysisOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#isAnalysisOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityAnalysis> .
+<https://w3id.org/cirpo#isAnalysisOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#isAnalysisOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasAnalysis. Links an analysis back to its incident." .
+<https://w3id.org/cirpo#isAnalysisOf> <http://www.w3.org/2000/01/rdf-schema#label> "is analysis of" .
+# 
+# https://w3id.org/cirpo#isArtefactOf
+<https://w3id.org/cirpo#isArtefactOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#isArtefactOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Artefact> .
+<https://w3id.org/cirpo#isArtefactOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#isArtefactOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasArtefact. Links an artefact back to its incident." .
+<https://w3id.org/cirpo#isArtefactOf> <http://www.w3.org/2000/01/rdf-schema#label> "is artefact of" .
+# 
+# https://w3id.org/cirpo#isChannelOf
+<https://w3id.org/cirpo#isChannelOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#isChannelOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/cirpo#hasChannel> .
+<https://w3id.org/cirpo#isChannelOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#ChatChannel> .
+<https://w3id.org/cirpo#isChannelOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#isChannelOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasChannel." .
+<https://w3id.org/cirpo#isChannelOf> <http://www.w3.org/2000/01/rdf-schema#label> "is channel of" .
+# 
+# https://w3id.org/cirpo#isCoaOf
+<https://w3id.org/cirpo#isCoaOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#isCoaOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#isCoaOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#isCoaOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasCoa. Links a course of action back to its incident." .
+<https://w3id.org/cirpo#isCoaOf> <http://www.w3.org/2000/01/rdf-schema#label> "is COA of" .
+# 
+# https://w3id.org/cirpo#isEventOf
+<https://w3id.org/cirpo#isEventOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#isEventOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityEvent> .
+<https://w3id.org/cirpo#isEventOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#isEventOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasEvent. Links a security event back to its parent incident." .
+<https://w3id.org/cirpo#isEventOf> <http://www.w3.org/2000/01/rdf-schema#label> "is event of" .
+# 
+# https://w3id.org/cirpo#isRelatedToIncident
+<https://w3id.org/cirpo#isRelatedToIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#isRelatedToIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#ResponderCommunication> .
+<https://w3id.org/cirpo#isRelatedToIncident> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#isRelatedToIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasResponderCommunication. Links any responder communication back to the incident it is associated with." .
+<https://w3id.org/cirpo#isRelatedToIncident> <http://www.w3.org/2000/01/rdf-schema#label> "is related to incident" .
+# 
+# https://w3id.org/cirpo#performed
+<https://w3id.org/cirpo#performed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#performed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#performed> <http://www.w3.org/2000/01/rdf-schema#range> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#unionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#SecurityEvent> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#SecurityAnalysis> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#performed> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of prov:wasPerformedBy. Indicates an analyst performed an activity." .
+<https://w3id.org/cirpo#performed> <http://www.w3.org/2000/01/rdf-schema#label> "performed" .
+# 
+# https://w3id.org/cirpo#performedAnalysis
+<https://w3id.org/cirpo#performedAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#performedAnalysis> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#performedAnalysis> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#SecurityAnalysis> .
+<https://w3id.org/cirpo#performedAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasAnalysisPerformingAnalyst. Links an analyst to the analyses they performed." .
+<https://w3id.org/cirpo#performedAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "performed analysis" .
+# 
+# https://w3id.org/cirpo#wasPostedTo
+<https://w3id.org/cirpo#wasPostedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#wasPostedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#ChatMessage> .
+<https://w3id.org/cirpo#wasPostedTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#ChatChannel> .
+<https://w3id.org/cirpo#wasPostedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the channel where the chat message was posted." .
+<https://w3id.org/cirpo#wasPostedTo> <http://www.w3.org/2000/01/rdf-schema#label> "was posted to" .
+# 
+# https://w3id.org/cirpo#wasUsedBy
+<https://w3id.org/cirpo#wasUsedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cirpo#wasUsedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityAnalysis> .
+<https://w3id.org/cirpo#wasUsedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#wasUsedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of prov:used. Indicates an analysis was used by a course of action." .
+<https://w3id.org/cirpo#wasUsedBy> <http://www.w3.org/2000/01/rdf-schema#label> "was used by" .
 # 
 # 
 # 
@@ -353,243 +395,243 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
-# https://haulaah.github.io/CIRPO#hasAnalystEmail
-<https://haulaah.github.io/CIRPO#hasAnalystEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasAnalystEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#hasAnalystEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasAnalystEmail> <http://www.w3.org/2000/01/rdf-schema#comment> "Email address of the analyst." .
-<https://haulaah.github.io/CIRPO#hasAnalystEmail> <http://www.w3.org/2000/01/rdf-schema#label> "has analyst email" .
+# https://w3id.org/cirpo#hasAnalystEmail
+<https://w3id.org/cirpo#hasAnalystEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasAnalystEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#hasAnalystEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasAnalystEmail> <http://www.w3.org/2000/01/rdf-schema#comment> "Email address of the analyst." .
+<https://w3id.org/cirpo#hasAnalystEmail> <http://www.w3.org/2000/01/rdf-schema#label> "has analyst email" .
 # 
-# https://haulaah.github.io/CIRPO#hasAnalystId
-<https://haulaah.github.io/CIRPO#hasAnalystId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for an analyst." .
-<https://haulaah.github.io/CIRPO#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#label> "has analyst ID" .
+# https://w3id.org/cirpo#hasAnalystId
+<https://w3id.org/cirpo#hasAnalystId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for an analyst." .
+<https://w3id.org/cirpo#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#label> "has analyst ID" .
 # 
-# https://haulaah.github.io/CIRPO#hasArtefactCreationDateTime
-<https://haulaah.github.io/CIRPO#hasArtefactCreationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasArtefactCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Artefact> .
-<https://haulaah.github.io/CIRPO#hasArtefactCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://haulaah.github.io/CIRPO#hasArtefactCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the artefact was collected." .
-<https://haulaah.github.io/CIRPO#hasArtefactCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact creation datetime" .
+# https://w3id.org/cirpo#hasArtefactCreationDateTime
+<https://w3id.org/cirpo#hasArtefactCreationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasArtefactCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Artefact> .
+<https://w3id.org/cirpo#hasArtefactCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/cirpo#hasArtefactCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the artefact was collected." .
+<https://w3id.org/cirpo#hasArtefactCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact creation datetime" .
 # 
-# https://haulaah.github.io/CIRPO#hasArtefactDataValue
-<https://haulaah.github.io/CIRPO#hasArtefactDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasArtefactDataValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Artefact> .
-<https://haulaah.github.io/CIRPO#hasArtefactDataValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasArtefactDataValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The actual content or value of the artefact ." .
-<https://haulaah.github.io/CIRPO#hasArtefactDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact data value" .
+# https://w3id.org/cirpo#hasArtefactDataValue
+<https://w3id.org/cirpo#hasArtefactDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasArtefactDataValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Artefact> .
+<https://w3id.org/cirpo#hasArtefactDataValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasArtefactDataValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The actual content or value of the artefact ." .
+<https://w3id.org/cirpo#hasArtefactDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact data value" .
 # 
-# https://haulaah.github.io/CIRPO#hasArtefactType
-<https://haulaah.github.io/CIRPO#hasArtefactType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Artefact> .
-<https://haulaah.github.io/CIRPO#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of the artefact." .
-<https://haulaah.github.io/CIRPO#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact type" .
+# https://w3id.org/cirpo#hasArtefactType
+<https://w3id.org/cirpo#hasArtefactType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Artefact> .
+<https://w3id.org/cirpo#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of the artefact." .
+<https://w3id.org/cirpo#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact type" .
 # 
-# https://haulaah.github.io/CIRPO#hasChatChannelId
-<https://haulaah.github.io/CIRPO#hasChatChannelId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasChatChannelId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatChannel> .
-<https://haulaah.github.io/CIRPO#hasChatChannelId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasChatChannelId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier of the communication channel (channel_id)." .
-<https://haulaah.github.io/CIRPO#hasChatChannelId> <http://www.w3.org/2000/01/rdf-schema#label> "has chat channel ID" .
+# https://w3id.org/cirpo#hasChatChannelId
+<https://w3id.org/cirpo#hasChatChannelId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasChatChannelId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#ChatChannel> .
+<https://w3id.org/cirpo#hasChatChannelId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasChatChannelId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier of the communication channel." .
+<https://w3id.org/cirpo#hasChatChannelId> <http://www.w3.org/2000/01/rdf-schema#label> "has chat channel ID" .
 # 
-# https://haulaah.github.io/CIRPO#hasChatChannelName
-<https://haulaah.github.io/CIRPO#hasChatChannelName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasChatChannelName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatChannel> .
-<https://haulaah.github.io/CIRPO#hasChatChannelName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasChatChannelName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the communication channel (channel_name)." .
-<https://haulaah.github.io/CIRPO#hasChatChannelName> <http://www.w3.org/2000/01/rdf-schema#label> "has chat channel name" .
+# https://w3id.org/cirpo#hasChatChannelName
+<https://w3id.org/cirpo#hasChatChannelName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasChatChannelName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#ChatChannel> .
+<https://w3id.org/cirpo#hasChatChannelName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasChatChannelName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the communication channel." .
+<https://w3id.org/cirpo#hasChatChannelName> <http://www.w3.org/2000/01/rdf-schema#label> "has chat channel name" .
 # 
-# https://haulaah.github.io/CIRPO#hasChatMessage
-<https://haulaah.github.io/CIRPO#hasChatMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatMessage> .
-<https://haulaah.github.io/CIRPO#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#comment> "The content or body of the communication message." .
-<https://haulaah.github.io/CIRPO#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#label> "has chat message" .
+# https://w3id.org/cirpo#hasChatMessage
+<https://w3id.org/cirpo#hasChatMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#ChatMessage> .
+<https://w3id.org/cirpo#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#comment> "The content or body of the message." .
+<https://w3id.org/cirpo#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#label> "has chat message" .
 # 
-# https://haulaah.github.io/CIRPO#hasChatMessageDateTime
-<https://haulaah.github.io/CIRPO#hasChatMessageDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatMessage> .
-<https://haulaah.github.io/CIRPO#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://haulaah.github.io/CIRPO#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the communication occurred." .
-<https://haulaah.github.io/CIRPO#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has chat message datetime" .
+# https://w3id.org/cirpo#hasChatMessageDateTime
+<https://w3id.org/cirpo#hasChatMessageDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#ChatMessage> .
+<https://w3id.org/cirpo#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/cirpo#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the communication occurred." .
+<https://w3id.org/cirpo#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has chat message datetime" .
 # 
-# https://haulaah.github.io/CIRPO#hasChatMessageId
-<https://haulaah.github.io/CIRPO#hasChatMessageId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasChatMessageId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatMessage> .
-<https://haulaah.github.io/CIRPO#hasChatMessageId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasChatMessageId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier of the chat message (post_id)." .
-<https://haulaah.github.io/CIRPO#hasChatMessageId> <http://www.w3.org/2000/01/rdf-schema#label> "has chat message ID" .
+# https://w3id.org/cirpo#hasChatMessageId
+<https://w3id.org/cirpo#hasChatMessageId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasChatMessageId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#ChatMessage> .
+<https://w3id.org/cirpo#hasChatMessageId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasChatMessageId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier of the chat message." .
+<https://w3id.org/cirpo#hasChatMessageId> <http://www.w3.org/2000/01/rdf-schema#label> "has chat message ID" .
 # 
-# https://haulaah.github.io/CIRPO#hasChatSentiment
-<https://haulaah.github.io/CIRPO#hasChatSentiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#ChatMessage> .
-<https://haulaah.github.io/CIRPO#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#comment> "The sentiment or tone of the communication." .
-<https://haulaah.github.io/CIRPO#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#label> "has chat sentiment" .
+# https://w3id.org/cirpo#hasChatSentiment
+<https://w3id.org/cirpo#hasChatSentiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#ChatMessage> .
+<https://w3id.org/cirpo#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#comment> "The sentiment or tone of the communication." .
+<https://w3id.org/cirpo#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#label> "has chat sentiment" .
 # 
-# https://haulaah.github.io/CIRPO#hasCoaCreationDateTime
-<https://haulaah.github.io/CIRPO#hasCoaCreationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasCoaCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#hasCoaCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://haulaah.github.io/CIRPO#hasCoaCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the course of action was created." .
-<https://haulaah.github.io/CIRPO#hasCoaCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has COA creation datetime" .
+# https://w3id.org/cirpo#hasCoaCreationDateTime
+<https://w3id.org/cirpo#hasCoaCreationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasCoaCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#hasCoaCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/cirpo#hasCoaCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the course of action was created." .
+<https://w3id.org/cirpo#hasCoaCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has COA creation datetime" .
 # 
-# https://haulaah.github.io/CIRPO#hasCoaDescription
-<https://haulaah.github.io/CIRPO#hasCoaDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasCoaDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#hasCoaDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasCoaDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Narrative description of the course of action and its intended effect." .
-<https://haulaah.github.io/CIRPO#hasCoaDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has COA description" .
+# https://w3id.org/cirpo#hasCoaDescription
+<https://w3id.org/cirpo#hasCoaDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasCoaDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#hasCoaDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasCoaDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Narrative description of the course of action and its intended effect." .
+<https://w3id.org/cirpo#hasCoaDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has COA description" .
 # 
-# https://haulaah.github.io/CIRPO#hasCoaEndDateTime
-<https://haulaah.github.io/CIRPO#hasCoaEndDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasCoaEndDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#hasCoaEndDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://haulaah.github.io/CIRPO#hasCoaEndDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when execution of the course of action was completed." .
-<https://haulaah.github.io/CIRPO#hasCoaEndDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has COA end datetime" .
+# https://w3id.org/cirpo#hasCoaEndDateTime
+<https://w3id.org/cirpo#hasCoaEndDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasCoaEndDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#hasCoaEndDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/cirpo#hasCoaEndDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when execution of the course of action was completed." .
+<https://w3id.org/cirpo#hasCoaEndDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has COA end datetime" .
 # 
-# https://haulaah.github.io/CIRPO#hasCoaStartDateTime
-<https://haulaah.github.io/CIRPO#hasCoaStartDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasCoaStartDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#hasCoaStartDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://haulaah.github.io/CIRPO#hasCoaStartDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when execution of the course of action was initiated." .
-<https://haulaah.github.io/CIRPO#hasCoaStartDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has COA start datetime" .
+# https://w3id.org/cirpo#hasCoaStartDateTime
+<https://w3id.org/cirpo#hasCoaStartDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasCoaStartDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#hasCoaStartDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/cirpo#hasCoaStartDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when execution of the course of action was initiated." .
+<https://w3id.org/cirpo#hasCoaStartDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has COA start datetime" .
 # 
-# https://haulaah.github.io/CIRPO#hasCoaStatus
-<https://haulaah.github.io/CIRPO#hasCoaStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Current execution status of the course of action." .
-<https://haulaah.github.io/CIRPO#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has COA status" .
+# https://w3id.org/cirpo#hasCoaStatus
+<https://w3id.org/cirpo#hasCoaStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Current execution status of the course of action." .
+<https://w3id.org/cirpo#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has COA status" .
 # 
-# https://haulaah.github.io/CIRPO#hasConfirmationDateTime
-<https://haulaah.github.io/CIRPO#hasConfirmationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://haulaah.github.io/CIRPO#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the incident was confirmed" .
-<https://haulaah.github.io/CIRPO#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has confirmation datetime" .
+# https://w3id.org/cirpo#hasConfirmationDateTime
+<https://w3id.org/cirpo#hasConfirmationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/cirpo#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the incident was confirmed" .
+<https://w3id.org/cirpo#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has confirmation datetime" .
 # 
-# https://haulaah.github.io/CIRPO#hasEndDateTime
-<https://haulaah.github.io/CIRPO#hasEndDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://haulaah.github.io/CIRPO#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when incident response was formally concluded." .
-<https://haulaah.github.io/CIRPO#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has end datetime" .
+# https://w3id.org/cirpo#hasEndDateTime
+<https://w3id.org/cirpo#hasEndDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/cirpo#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when incident response was formally concluded." .
+<https://w3id.org/cirpo#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has end datetime" .
 # 
-# https://haulaah.github.io/CIRPO#hasEventActivity
-<https://haulaah.github.io/CIRPO#hasEventActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityEventAction> .
-<https://haulaah.github.io/CIRPO#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the specific activity within a security event." .
-<https://haulaah.github.io/CIRPO#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#label> "has event activity" .
+# https://w3id.org/cirpo#hasEventActivity
+<https://w3id.org/cirpo#hasEventActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityEventAction> .
+<https://w3id.org/cirpo#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the specific activity within a security event." .
+<https://w3id.org/cirpo#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#label> "has event activity" .
 # 
-# https://haulaah.github.io/CIRPO#hasEventActivityDateTime
-<https://haulaah.github.io/CIRPO#hasEventActivityDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityEventAction> .
-<https://haulaah.github.io/CIRPO#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://haulaah.github.io/CIRPO#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the specific security event activity occurred." .
-<https://haulaah.github.io/CIRPO#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has event activity datetime" .
+# https://w3id.org/cirpo#hasEventActivityDateTime
+<https://w3id.org/cirpo#hasEventActivityDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityEventAction> .
+<https://w3id.org/cirpo#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/cirpo#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the specific security event activity occurred." .
+<https://w3id.org/cirpo#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has event activity datetime" .
 # 
-# https://haulaah.github.io/CIRPO#hasEventDescription
-<https://haulaah.github.io/CIRPO#hasEventDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityEventAction> .
-<https://haulaah.github.io/CIRPO#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed description of the security event." .
-<https://haulaah.github.io/CIRPO#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has event description" .
+# https://w3id.org/cirpo#hasEventDescription
+<https://w3id.org/cirpo#hasEventDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityEventAction> .
+<https://w3id.org/cirpo#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed description of the security event." .
+<https://w3id.org/cirpo#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has event description" .
 # 
-# https://haulaah.github.io/CIRPO#hasEventId
-<https://haulaah.github.io/CIRPO#hasEventId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasEventId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityEvent> .
-<https://haulaah.github.io/CIRPO#hasEventId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasEventId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for a security event." .
-<https://haulaah.github.io/CIRPO#hasEventId> <http://www.w3.org/2000/01/rdf-schema#label> "has event ID" .
+# https://w3id.org/cirpo#hasEventId
+<https://w3id.org/cirpo#hasEventId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasEventId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityEvent> .
+<https://w3id.org/cirpo#hasEventId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasEventId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for a security event." .
+<https://w3id.org/cirpo#hasEventId> <http://www.w3.org/2000/01/rdf-schema#label> "has event ID" .
 # 
-# https://haulaah.github.io/CIRPO#hasEventTitle
-<https://haulaah.github.io/CIRPO#hasEventTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasEventTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityEvent> .
-<https://haulaah.github.io/CIRPO#hasEventTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasEventTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Short description or name for the security event." .
-<https://haulaah.github.io/CIRPO#hasEventTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has event title" .
+# https://w3id.org/cirpo#hasEventTitle
+<https://w3id.org/cirpo#hasEventTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasEventTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityEvent> .
+<https://w3id.org/cirpo#hasEventTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasEventTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Short description or name for the security event." .
+<https://w3id.org/cirpo#hasEventTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has event title" .
 # 
-# https://haulaah.github.io/CIRPO#hasIncidentCreationDateTime
-<https://haulaah.github.io/CIRPO#hasIncidentCreationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasIncidentCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasIncidentCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://haulaah.github.io/CIRPO#hasIncidentCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the incident record was first created." .
-<https://haulaah.github.io/CIRPO#hasIncidentCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has incident creation datetime" .
+# https://w3id.org/cirpo#hasIncidentCreationDateTime
+<https://w3id.org/cirpo#hasIncidentCreationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasIncidentCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasIncidentCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/cirpo#hasIncidentCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the incident record was first created." .
+<https://w3id.org/cirpo#hasIncidentCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has incident creation datetime" .
 # 
-# https://haulaah.github.io/CIRPO#hasIncidentDescription
-<https://haulaah.github.io/CIRPO#hasIncidentDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed description of an incident. " .
-<https://haulaah.github.io/CIRPO#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has incident description" .
+# https://w3id.org/cirpo#hasIncidentDescription
+<https://w3id.org/cirpo#hasIncidentDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed description of an incident. " .
+<https://w3id.org/cirpo#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has incident description" .
 # 
-# https://haulaah.github.io/CIRPO#hasIncidentId
-<https://haulaah.github.io/CIRPO#hasIncidentId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for an incident." .
-<https://haulaah.github.io/CIRPO#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#label> "has incident ID" .
+# https://w3id.org/cirpo#hasIncidentId
+<https://w3id.org/cirpo#hasIncidentId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for an incident." .
+<https://w3id.org/cirpo#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#label> "has incident ID" .
 # 
-# https://haulaah.github.io/CIRPO#hasIncidentName
-<https://haulaah.github.io/CIRPO#hasIncidentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasIncidentName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasIncidentName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasIncidentName> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of the incident." .
-<https://haulaah.github.io/CIRPO#hasIncidentName> <http://www.w3.org/2000/01/rdf-schema#label> "has incident name" .
+# https://w3id.org/cirpo#hasIncidentName
+<https://w3id.org/cirpo#hasIncidentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasIncidentName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasIncidentName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasIncidentName> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of the incident." .
+<https://w3id.org/cirpo#hasIncidentName> <http://www.w3.org/2000/01/rdf-schema#label> "has incident name" .
 # 
-# https://haulaah.github.io/CIRPO#hasIncidentSeverity
-<https://haulaah.github.io/CIRPO#hasIncidentSeverity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity level of an incident (Low, Medium, High, Critical)." .
-<https://haulaah.github.io/CIRPO#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#label> "has incident severity" .
+# https://w3id.org/cirpo#hasIncidentSeverity
+<https://w3id.org/cirpo#hasIncidentSeverity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity level of an incident (Low, Medium, High, Critical)." .
+<https://w3id.org/cirpo#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#label> "has incident severity" .
 # 
-# https://haulaah.github.io/CIRPO#hasIncidentStage
-<https://haulaah.github.io/CIRPO#hasIncidentStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasIncidentStage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasIncidentStage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasIncidentStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Current stage in the incident lifecycle." .
-<https://haulaah.github.io/CIRPO#hasIncidentStage> <http://www.w3.org/2000/01/rdf-schema#label> "has incident stage" .
+# https://w3id.org/cirpo#hasIncidentStage
+<https://w3id.org/cirpo#hasIncidentStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasIncidentStage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasIncidentStage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasIncidentStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Current stage in the incident lifecycle." .
+<https://w3id.org/cirpo#hasIncidentStage> <http://www.w3.org/2000/01/rdf-schema#label> "has incident stage" .
 # 
-# https://haulaah.github.io/CIRPO#hasIncidentStatus
-<https://haulaah.github.io/CIRPO#hasIncidentStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasIncidentStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#Incident> .
-<https://haulaah.github.io/CIRPO#hasIncidentStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasIncidentStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Current status of the incident." .
-<https://haulaah.github.io/CIRPO#hasIncidentStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has incident status" .
+# https://w3id.org/cirpo#hasIncidentStatus
+<https://w3id.org/cirpo#hasIncidentStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasIncidentStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#Incident> .
+<https://w3id.org/cirpo#hasIncidentStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasIncidentStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Current status of the incident." .
+<https://w3id.org/cirpo#hasIncidentStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has incident status" .
 # 
-# https://haulaah.github.io/CIRPO#hasSecurityAnalysisDataValue
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The data value to be analysed." .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis data value" .
+# https://w3id.org/cirpo#hasSecurityAnalysisDataValue
+<https://w3id.org/cirpo#hasSecurityAnalysisDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityAnalysis> .
+<https://w3id.org/cirpo#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The data value to be analysed." .
+<https://w3id.org/cirpo#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis data value" .
 # 
-# https://haulaah.github.io/CIRPO#hasSecurityAnalysisDateTime
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the security analysis was performed." .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis datetime" .
+# https://w3id.org/cirpo#hasSecurityAnalysisDateTime
+<https://w3id.org/cirpo#hasSecurityAnalysisDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasSecurityAnalysisDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityAnalysis> .
+<https://w3id.org/cirpo#hasSecurityAnalysisDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/cirpo#hasSecurityAnalysisDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the security analysis was performed." .
+<https://w3id.org/cirpo#hasSecurityAnalysisDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis datetime" .
 # 
-# https://haulaah.github.io/CIRPO#hasSecurityAnalysisDetails
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed findings from the analysis." .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis details" .
+# https://w3id.org/cirpo#hasSecurityAnalysisDetails
+<https://w3id.org/cirpo#hasSecurityAnalysisDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityAnalysis> .
+<https://w3id.org/cirpo#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed findings from the analysis." .
+<https://w3id.org/cirpo#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis details" .
 # 
-# https://haulaah.github.io/CIRPO#hasSecurityAnalysisType
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of analysis performed." .
-<https://haulaah.github.io/CIRPO#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis data type" .
+# https://w3id.org/cirpo#hasSecurityAnalysisType
+<https://w3id.org/cirpo#hasSecurityAnalysisType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cirpo#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cirpo#SecurityAnalysis> .
+<https://w3id.org/cirpo#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cirpo#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of analysis performed." .
+<https://w3id.org/cirpo#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis data type" .
 # 
 # 
 # 
@@ -600,112 +642,130 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
-# https://haulaah.github.io/CIRPO#Analysis
-<https://haulaah.github.io/CIRPO#Analysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#Analysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#Analysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Activities to assess security incidents." .
-<https://haulaah.github.io/CIRPO#Analysis> <http://www.w3.org/2000/01/rdf-schema#label> "Analysis" .
+# https://w3id.org/cirpo#Analysis
+<https://w3id.org/cirpo#Analysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#Analysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#Analysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Activities to assess security incidents." .
+<https://w3id.org/cirpo#Analysis> <http://www.w3.org/2000/01/rdf-schema#label> "Analysis" .
 # 
-# https://haulaah.github.io/CIRPO#Analyst
-<https://haulaah.github.io/CIRPO#Analyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#Analyst> <http://www.w3.org/2000/01/rdf-schema#comment> "A security analyst who investigates and responds to incidents." .
-<https://haulaah.github.io/CIRPO#Analyst> <http://www.w3.org/2000/01/rdf-schema#label> "Analyst" .
+# https://w3id.org/cirpo#Analyst
+<https://w3id.org/cirpo#Analyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#Analyst> <http://www.w3.org/2000/01/rdf-schema#comment> "A security analyst who investigates and responds to incidents." .
+<https://w3id.org/cirpo#Analyst> <http://www.w3.org/2000/01/rdf-schema#label> "Analyst" .
 # 
-# https://haulaah.github.io/CIRPO#Artefact
-<https://haulaah.github.io/CIRPO#Artefact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#Artefact> <http://www.w3.org/2000/01/rdf-schema#comment> "An observable piece of evidence collected from an incident." .
-<https://haulaah.github.io/CIRPO#Artefact> <http://www.w3.org/2000/01/rdf-schema#label> "Artefact" .
+# https://w3id.org/cirpo#Artefact
+<https://w3id.org/cirpo#Artefact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#Artefact> <http://www.w3.org/2000/01/rdf-schema#comment> "An observable piece of evidence collected from an incident." .
+<https://w3id.org/cirpo#Artefact> <http://www.w3.org/2000/01/rdf-schema#label> "Artefact" .
 # 
-# https://haulaah.github.io/CIRPO#ChatChannel
-<https://haulaah.github.io/CIRPO#ChatChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#ChatChannel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
-<https://haulaah.github.io/CIRPO#ChatChannel> <http://www.w3.org/2000/01/rdf-schema#comment> "A communication channel where responders exchange messages" .
-<https://haulaah.github.io/CIRPO#ChatChannel> <http://www.w3.org/2000/01/rdf-schema#label> "Chat Channel" .
+# https://w3id.org/cirpo#ChatChannel
+<https://w3id.org/cirpo#ChatChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#ChatChannel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cirpo#ResponderCommunication> .
+<https://w3id.org/cirpo#ChatChannel> <http://www.w3.org/2000/01/rdf-schema#comment> "A communication channel where responders exchange messages" .
+<https://w3id.org/cirpo#ChatChannel> <http://www.w3.org/2000/01/rdf-schema#label> "Chat Channel" .
 # 
-# https://haulaah.github.io/CIRPO#ChatMessage
-<https://haulaah.github.io/CIRPO#ChatMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#ChatMessage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
-<https://haulaah.github.io/CIRPO#ChatMessage> <http://www.w3.org/2000/01/rdf-schema#comment> "A message posted by a responder within a chat channel." .
-<https://haulaah.github.io/CIRPO#ChatMessage> <http://www.w3.org/2000/01/rdf-schema#label> "Chat Message" .
+# https://w3id.org/cirpo#ChatMessage
+<https://w3id.org/cirpo#ChatMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#ChatMessage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cirpo#ResponderCommunication> .
+<https://w3id.org/cirpo#ChatMessage> <http://www.w3.org/2000/01/rdf-schema#comment> "A message posted by a responder within a chat channel." .
+<https://w3id.org/cirpo#ChatMessage> <http://www.w3.org/2000/01/rdf-schema#label> "Chat Message" .
 # 
-# https://haulaah.github.io/CIRPO#Containment
-<https://haulaah.github.io/CIRPO#Containment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#Containment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#Containment> <http://www.w3.org/2000/01/rdf-schema#comment> "Actions to limit the spread and impact of an incident." .
-<https://haulaah.github.io/CIRPO#Containment> <http://www.w3.org/2000/01/rdf-schema#label> "Containment" .
+# https://w3id.org/cirpo#Containment
+<https://w3id.org/cirpo#Containment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#Containment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#Containment> <http://www.w3.org/2000/01/rdf-schema#comment> "Actions to limit the spread and impact of an incident." .
+<https://w3id.org/cirpo#Containment> <http://www.w3.org/2000/01/rdf-schema#label> "Containment" .
 # 
-# https://haulaah.github.io/CIRPO#CourseOfAction
-<https://haulaah.github.io/CIRPO#CourseOfAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#CourseOfAction> <http://www.w3.org/2000/01/rdf-schema#comment> "A planned response action to a security incident." .
-<https://haulaah.github.io/CIRPO#CourseOfAction> <http://www.w3.org/2000/01/rdf-schema#label> "Course of Action" .
+# https://w3id.org/cirpo#CourseOfAction
+<https://w3id.org/cirpo#CourseOfAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#CourseOfAction> <http://www.w3.org/2000/01/rdf-schema#comment> "A planned response action to a security incident." .
+<https://w3id.org/cirpo#CourseOfAction> <http://www.w3.org/2000/01/rdf-schema#label> "Course of Action" .
 # 
-# https://haulaah.github.io/CIRPO#Detection
-<https://haulaah.github.io/CIRPO#Detection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#Detection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#Detection> <http://www.w3.org/2000/01/rdf-schema#comment> "Activities in detection of security incidents." .
-<https://haulaah.github.io/CIRPO#Detection> <http://www.w3.org/2000/01/rdf-schema#label> "Detection" .
+# https://w3id.org/cirpo#Detection
+<https://w3id.org/cirpo#Detection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#Detection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#Detection> <http://www.w3.org/2000/01/rdf-schema#comment> "Activities in detection of security incidents." .
+<https://w3id.org/cirpo#Detection> <http://www.w3.org/2000/01/rdf-schema#label> "Detection" .
 # 
-# https://haulaah.github.io/CIRPO#Eradication
-<https://haulaah.github.io/CIRPO#Eradication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#Eradication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#Eradication> <http://www.w3.org/2000/01/rdf-schema#comment> "Actions to remove threats and root causes from affected systems." .
-<https://haulaah.github.io/CIRPO#Eradication> <http://www.w3.org/2000/01/rdf-schema#label> "Eradication" .
+# https://w3id.org/cirpo#Eradication
+<https://w3id.org/cirpo#Eradication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#Eradication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#Eradication> <http://www.w3.org/2000/01/rdf-schema#comment> "Actions to remove threats and root causes from affected systems." .
+<https://w3id.org/cirpo#Eradication> <http://www.w3.org/2000/01/rdf-schema#label> "Eradication" .
 # 
-# https://haulaah.github.io/CIRPO#Incident
-<https://haulaah.github.io/CIRPO#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "A security incident that requires investigation and response." .
-<https://haulaah.github.io/CIRPO#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident" .
+# https://w3id.org/cirpo#Incident
+<https://w3id.org/cirpo#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "A security incident that requires investigation and response." .
+<https://w3id.org/cirpo#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident" .
 # 
-# https://haulaah.github.io/CIRPO#PostIncidentActivity
-<https://haulaah.github.io/CIRPO#PostIncidentActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#PostIncidentActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#PostIncidentActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Activities conducted after incident resolution (e.g., lessons learned, reporting)." .
-<https://haulaah.github.io/CIRPO#PostIncidentActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Post-Incident Activity" .
+# https://w3id.org/cirpo#PostIncidentActivity
+<https://w3id.org/cirpo#PostIncidentActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#PostIncidentActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#PostIncidentActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Activities conducted after incident resolution (e.g., lessons learned, reporting)." .
+<https://w3id.org/cirpo#PostIncidentActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Post-Incident Activity" .
 # 
-# https://haulaah.github.io/CIRPO#Recovery
-<https://haulaah.github.io/CIRPO#Recovery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#Recovery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#CourseOfAction> .
-<https://haulaah.github.io/CIRPO#Recovery> <http://www.w3.org/2000/01/rdf-schema#comment> "Actions to restore systems to normal operation." .
-<https://haulaah.github.io/CIRPO#Recovery> <http://www.w3.org/2000/01/rdf-schema#label> "Recovery" .
+# https://w3id.org/cirpo#Recovery
+<https://w3id.org/cirpo#Recovery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#Recovery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cirpo#CourseOfAction> .
+<https://w3id.org/cirpo#Recovery> <http://www.w3.org/2000/01/rdf-schema#comment> "Actions to restore systems to normal operation." .
+<https://w3id.org/cirpo#Recovery> <http://www.w3.org/2000/01/rdf-schema#label> "Recovery" .
 # 
-# https://haulaah.github.io/CIRPO#ResponderCommunication
-<https://haulaah.github.io/CIRPO#ResponderCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#ResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> " Any communication resource involved in incident response activities,including channels and individual chat messages" .
-<https://haulaah.github.io/CIRPO#ResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#label> "Responder Communication" .
+# https://w3id.org/cirpo#ResponderCommunication
+<https://w3id.org/cirpo#ResponderCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#ResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> " Any communication resource involved in incident response activities,including channels and individual chat messages" .
+<https://w3id.org/cirpo#ResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#label> "Responder Communication" .
 # 
-# https://haulaah.github.io/CIRPO#SecurityAnalysis
-<https://haulaah.github.io/CIRPO#SecurityAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#SecurityAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "The analysis of observables from security events leading to an incident" .
-<https://haulaah.github.io/CIRPO#SecurityAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Security Analysis" .
+# https://w3id.org/cirpo#SecurityAnalysis
+<https://w3id.org/cirpo#SecurityAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#SecurityAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "The analysis of observables from security events leading to an incident" .
+<https://w3id.org/cirpo#SecurityAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Security Analysis" .
 # 
-# https://haulaah.github.io/CIRPO#SecurityEvent
-<https://haulaah.github.io/CIRPO#SecurityEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#SecurityEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An observable occurrence relevant to system security (e.g., alert from SIEM, IDS)." .
-<https://haulaah.github.io/CIRPO#SecurityEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Security Event" .
+# https://w3id.org/cirpo#SecurityEvent
+<https://w3id.org/cirpo#SecurityEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#SecurityEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An observable occurrence relevant to system security (e.g., alert from SIEM, IDS)." .
+<https://w3id.org/cirpo#SecurityEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Security Event" .
 # 
-# https://haulaah.github.io/CIRPO#SecurityEventAction
-<https://haulaah.github.io/CIRPO#SecurityEventAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#SecurityEventAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#SecurityEvent> .
-<https://haulaah.github.io/CIRPO#SecurityEventAction> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific action taken or observed within a security event." .
-<https://haulaah.github.io/CIRPO#SecurityEventAction> <http://www.w3.org/2000/01/rdf-schema#label> "Security Event Action" .
+# https://w3id.org/cirpo#SecurityEventAction
+<https://w3id.org/cirpo#SecurityEventAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#SecurityEventAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cirpo#SecurityEvent> .
+<https://w3id.org/cirpo#SecurityEventAction> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific action taken or observed within a security event." .
+<https://w3id.org/cirpo#SecurityEventAction> <http://www.w3.org/2000/01/rdf-schema#label> "Security Event Action" .
 # 
-# https://haulaah.github.io/CIRPO#Tier1
-<https://haulaah.github.io/CIRPO#Tier1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#Tier1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#Tier1> <http://www.w3.org/2000/01/rdf-schema#comment> "First responder performing initial triage and categorization." .
-<https://haulaah.github.io/CIRPO#Tier1> <http://www.w3.org/2000/01/rdf-schema#label> "Tier 1" .
+# https://w3id.org/cirpo#Tier1
+<https://w3id.org/cirpo#Tier1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#Tier1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#Tier1> <http://www.w3.org/2000/01/rdf-schema#comment> "First responder performing initial triage and categorization." .
+<https://w3id.org/cirpo#Tier1> <http://www.w3.org/2000/01/rdf-schema#label> "Tier 1" .
 # 
-# https://haulaah.github.io/CIRPO#Tier2
-<https://haulaah.github.io/CIRPO#Tier2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#Tier2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#Tier2> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident responder handling deeper investigation and analysis." .
-<https://haulaah.github.io/CIRPO#Tier2> <http://www.w3.org/2000/01/rdf-schema#label> "Tier 2" .
+# https://w3id.org/cirpo#Tier2
+<https://w3id.org/cirpo#Tier2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#Tier2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#Tier2> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident responder handling deeper investigation and analysis." .
+<https://w3id.org/cirpo#Tier2> <http://www.w3.org/2000/01/rdf-schema#label> "Tier 2" .
 # 
-# https://haulaah.github.io/CIRPO#Tier3
-<https://haulaah.github.io/CIRPO#Tier3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://haulaah.github.io/CIRPO#Tier3> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://haulaah.github.io/CIRPO#Analyst> .
-<https://haulaah.github.io/CIRPO#Tier3> <http://www.w3.org/2000/01/rdf-schema#comment> "Senior analyst or subject matter expert handling complex investigations." .
-<https://haulaah.github.io/CIRPO#Tier3> <http://www.w3.org/2000/01/rdf-schema#label> "Tier 3" .
+# https://w3id.org/cirpo#Tier3
+<https://w3id.org/cirpo#Tier3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cirpo#Tier3> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cirpo#Analyst> .
+<https://w3id.org/cirpo#Tier3> <http://www.w3.org/2000/01/rdf-schema#comment> "Senior analyst or subject matter expert handling complex investigations." .
+<https://w3id.org/cirpo#Tier3> <http://www.w3.org/2000/01/rdf-schema#label> "Tier 3" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER
+<https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/cirpo> .
+<https://w3id.org/cirpo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/cirpo
+# 
+# https://w3id.org/cirpo
 # 
 # 
 # 
@@ -716,28 +776,28 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid15 <http://www.w3.org/2002/07/owl#members> _:genid22 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid18 <http://www.w3.org/2002/07/owl#members> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#SecurityEvent> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#SecurityAnalysis> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#ResponderCommunication> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#Incident> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#SecurityEvent> .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#CourseOfAction> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#SecurityAnalysis> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#Artefact> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#ResponderCommunication> .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://haulaah.github.io/CIRPO#Analyst> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#Incident> .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#CourseOfAction> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#Artefact> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cirpo#Analyst> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

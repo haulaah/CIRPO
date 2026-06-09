@@ -1,22 +1,57 @@
-@prefix : <https://haulaah.github.io/CIRPO#> .
+@prefix : <https://w3id.org/cirpo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://haulaah.github.io/CIRPO#> .
+@base <https://w3id.org/cirpo#> .
 
-<https://haulaah.github.io/CIRPO> rdf:type owl:Ontology ;
-                                   <http://purl.org/dc/terms/created> "2026-05-03"^^xsd:date ;
-                                   <http://purl.org/dc/terms/creator> "Haula Galadima, Cormac Doherty, Rob Brennan" ;
-                                   <http://purl.org/dc/terms/description> "An ontology for modeling cybersecurity incident response processes" ;
-                                   <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                                   <http://purl.org/dc/terms/title> "Cyber Incident Response Process Ontology (CIRPO)" ;
-                                   owl:versionInfo "6.0" .
+<https://w3id.org/cirpo> rdf:type owl:Ontology ;
+                          owl:versionIRI <https://w3id.org/cirpo/versions/7.0> ;
+                          <http://purl.org/dc/elements/1.1/subject> "CSIRT" ,
+                                                                    "cybersecurity" ,
+                                                                    "incident response" ,
+                                                                    "ontology" ;
+                          <http://purl.org/dc/terms/accessRights> "public" ;
+                          <http://purl.org/dc/terms/bibliographicCitation> "Galadima, H., Doherty, C., & Brennan, R. (2026). Cyber Incident Response Process Ontology (CIRPO) Version 7.0. Zenodo. https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER" ;
+                          <http://purl.org/dc/terms/created> "2026-05-03"^^xsd:date ;
+                          <http://purl.org/dc/terms/creator> _:genid1 ,
+                                                             [ <http://xmlns.com/foaf/0.1/name> "Cormac Doherty"
+                                                             ] ,
+                                                             _:genid3 ;
+                          <http://purl.org/dc/terms/description> "An ontology for modeling cybersecurity incident response processes" ;
+                          <http://purl.org/dc/terms/isVersionOf> <https://doi.org/10.5281/zenodo.20597896> ;
+                          <http://purl.org/dc/terms/issued> "2026-06-12"^^xsd:date ;
+                          <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                          <http://purl.org/dc/terms/publisher> "CCI & ADAPT, School of Computer Science, University College Dublin" ;
+                          <http://purl.org/dc/terms/title> "Cyber Incident Response Process Ontology (CIRPO)" ;
+                          rdfs:seeAlso <https://github.com/moreiragb/csiho> ,
+                                       <https://haulaah.github.io/CIRPO/> ,
+                                       <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf> ;
+                          owl:priorVersion <https://w3id.org/cirpo/versions/6.0> ;
+                          owl:versionInfo "7.0" .
+
+_:genid1 rdfs:seeAlso <https://orcid.org/0009-0003-2485-3067> ;
+          <http://xmlns.com/foaf/0.1/name> "Haula Galadima" .
+
+_:genid3 rdfs:seeAlso <https://orcid.org/0000-0001-7099-6788> ;
+          <http://xmlns.com/foaf/0.1/name> "Rob Brennan" .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/subject
+<http://purl.org/dc/elements/1.1/subject> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/accessRights
+<http://purl.org/dc/terms/accessRights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
@@ -30,12 +65,28 @@
 <http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/isVersionOf
+<http://purl.org/dc/terms/isVersionOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -95,7 +146,7 @@ xsd:date rdf:type rdfs:Datatype .
                                            rdfs:label "was performed by" .
 
 
-###  https://haulaah.github.io/CIRPO#assignedToCoa
+###  https://w3id.org/cirpo#assignedToCoa
 :assignedToCoa rdf:type owl:ObjectProperty ;
                rdfs:domain :Analyst ;
                rdfs:range :CourseOfAction ;
@@ -103,7 +154,7 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:label "assigned to COA" .
 
 
-###  https://haulaah.github.io/CIRPO#confirmedIncident
+###  https://w3id.org/cirpo#confirmedIncident
 :confirmedIncident rdf:type owl:ObjectProperty ;
                    rdfs:domain :Analyst ;
                    rdfs:range :Incident ;
@@ -111,7 +162,7 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:label "confirmed incident" .
 
 
-###  https://haulaah.github.io/CIRPO#containsChat
+###  https://w3id.org/cirpo#containsChat
 :containsChat rdf:type owl:ObjectProperty ;
               owl:inverseOf :wasPostedTo ;
               rdfs:domain :ChatChannel ;
@@ -120,7 +171,7 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:label "contains chat" .
 
 
-###  https://haulaah.github.io/CIRPO#createdArtefact
+###  https://w3id.org/cirpo#createdArtefact
 :createdArtefact rdf:type owl:ObjectProperty ;
                  rdfs:domain :Analyst ;
                  rdfs:range :Artefact ;
@@ -128,7 +179,7 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "created artefact" .
 
 
-###  https://haulaah.github.io/CIRPO#createdCoa
+###  https://w3id.org/cirpo#createdCoa
 :createdCoa rdf:type owl:ObjectProperty ;
             rdfs:domain :Analyst ;
             rdfs:range :CourseOfAction ;
@@ -136,7 +187,7 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:label "created COA" .
 
 
-###  https://haulaah.github.io/CIRPO#generated
+###  https://w3id.org/cirpo#generated
 :generated rdf:type owl:ObjectProperty ;
            rdfs:domain :SecurityEvent ;
            rdfs:range :SecurityAnalysis ;
@@ -144,7 +195,7 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:label "generated" .
 
 
-###  https://haulaah.github.io/CIRPO#generatedChat
+###  https://w3id.org/cirpo#generatedChat
 :generatedChat rdf:type owl:ObjectProperty ;
                rdfs:domain :Analyst ;
                rdfs:range :ChatMessage ;
@@ -152,7 +203,7 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:label "generated chat" .
 
 
-###  https://haulaah.github.io/CIRPO#hadAssociationWith
+###  https://w3id.org/cirpo#hadAssociationWith
 :hadAssociationWith rdf:type owl:ObjectProperty ;
                     rdfs:domain :Incident ;
                     rdfs:range [ rdf:type owl:Class ;
@@ -165,7 +216,7 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:label "had association with" .
 
 
-###  https://haulaah.github.io/CIRPO#hasAnalysis
+###  https://w3id.org/cirpo#hasAnalysis
 :hasAnalysis rdf:type owl:ObjectProperty ;
              owl:inverseOf :isAnalysisOf ;
              rdfs:domain :Incident ;
@@ -174,7 +225,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "has analysis" .
 
 
-###  https://haulaah.github.io/CIRPO#hasAnalysisPerformingAnalyst
+###  https://w3id.org/cirpo#hasAnalysisPerformingAnalyst
 :hasAnalysisPerformingAnalyst rdf:type owl:ObjectProperty ;
                               owl:inverseOf :performedAnalysis ;
                               rdfs:domain :SecurityAnalysis ;
@@ -183,7 +234,7 @@ xsd:date rdf:type rdfs:Datatype .
                               rdfs:label "has analysis performing analyst" .
 
 
-###  https://haulaah.github.io/CIRPO#hasArtefact
+###  https://w3id.org/cirpo#hasArtefact
 :hasArtefact rdf:type owl:ObjectProperty ;
              owl:inverseOf :isArtefactOf ;
              rdfs:domain :Incident ;
@@ -192,7 +243,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "has artefact" .
 
 
-###  https://haulaah.github.io/CIRPO#hasArtefactCreationAnalyst
+###  https://w3id.org/cirpo#hasArtefactCreationAnalyst
 :hasArtefactCreationAnalyst rdf:type owl:ObjectProperty ;
                             owl:inverseOf :createdArtefact ;
                             rdfs:domain :Artefact ;
@@ -201,17 +252,16 @@ xsd:date rdf:type rdfs:Datatype .
                             rdfs:label "has artefact creation analyst" .
 
 
-###  https://haulaah.github.io/CIRPO#hasChannel
+###  https://w3id.org/cirpo#hasChannel
 :hasChannel rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :hasResponderCommunication ;
-            owl:inverseOf :isChannelOf ;
             rdfs:domain :Incident ;
             rdfs:range :ChatChannel ;
             rdfs:comment "Links an incident to its chat channel." ;
             rdfs:label "has channel" .
 
 
-###  https://haulaah.github.io/CIRPO#hasChatAnalyst
+###  https://w3id.org/cirpo#hasChatAnalyst
 :hasChatAnalyst rdf:type owl:ObjectProperty ;
                 owl:inverseOf :generatedChat ;
                 rdfs:domain :ChatMessage ;
@@ -220,7 +270,7 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "has chat analyst" .
 
 
-###  https://haulaah.github.io/CIRPO#hasCoa
+###  https://w3id.org/cirpo#hasCoa
 :hasCoa rdf:type owl:ObjectProperty ;
         owl:inverseOf :isCoaOf ;
         rdfs:domain :Incident ;
@@ -229,7 +279,7 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:label "has course of action" .
 
 
-###  https://haulaah.github.io/CIRPO#hasCoaAssignedAnalyst
+###  https://w3id.org/cirpo#hasCoaAssignedAnalyst
 :hasCoaAssignedAnalyst rdf:type owl:ObjectProperty ;
                        owl:inverseOf :assignedToCoa ;
                        rdfs:domain :CourseOfAction ;
@@ -238,7 +288,7 @@ xsd:date rdf:type rdfs:Datatype .
                        rdfs:label "has COA assigned analyst" .
 
 
-###  https://haulaah.github.io/CIRPO#hasCoaCreationAnalyst
+###  https://w3id.org/cirpo#hasCoaCreationAnalyst
 :hasCoaCreationAnalyst rdf:type owl:ObjectProperty ;
                        owl:inverseOf :createdCoa ;
                        rdfs:domain :CourseOfAction ;
@@ -247,7 +297,7 @@ xsd:date rdf:type rdfs:Datatype .
                        rdfs:label "has COA creation analyst" .
 
 
-###  https://haulaah.github.io/CIRPO#hasConfirmationAnalyst
+###  https://w3id.org/cirpo#hasConfirmationAnalyst
 :hasConfirmationAnalyst rdf:type owl:ObjectProperty ;
                         owl:inverseOf :confirmedIncident ;
                         rdfs:domain :Incident ;
@@ -256,7 +306,7 @@ xsd:date rdf:type rdfs:Datatype .
                         rdfs:label "has confirmation analyst" .
 
 
-###  https://haulaah.github.io/CIRPO#hasEvent
+###  https://w3id.org/cirpo#hasEvent
 :hasEvent rdf:type owl:ObjectProperty ;
           owl:inverseOf :isEventOf ;
           rdfs:domain :Incident ;
@@ -265,7 +315,7 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:label "has event" .
 
 
-###  https://haulaah.github.io/CIRPO#hasResponderCommunication
+###  https://w3id.org/cirpo#hasResponderCommunication
 :hasResponderCommunication rdf:type owl:ObjectProperty ;
                            owl:inverseOf :isRelatedToIncident ;
                            rdfs:domain :Incident ;
@@ -274,7 +324,7 @@ xsd:date rdf:type rdfs:Datatype .
                            rdfs:label "has responder communication" .
 
 
-###  https://haulaah.github.io/CIRPO#isAnalysisOf
+###  https://w3id.org/cirpo#isAnalysisOf
 :isAnalysisOf rdf:type owl:ObjectProperty ;
               rdfs:domain :SecurityAnalysis ;
               rdfs:range :Incident ;
@@ -282,7 +332,7 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:label "is analysis of" .
 
 
-###  https://haulaah.github.io/CIRPO#isArtefactOf
+###  https://w3id.org/cirpo#isArtefactOf
 :isArtefactOf rdf:type owl:ObjectProperty ;
               rdfs:domain :Artefact ;
               rdfs:range :Incident ;
@@ -290,15 +340,16 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:label "is artefact of" .
 
 
-###  https://haulaah.github.io/CIRPO#isChannelOf
+###  https://w3id.org/cirpo#isChannelOf
 :isChannelOf rdf:type owl:ObjectProperty ;
+             owl:inverseOf :hasChannel ;
              rdfs:domain :ChatChannel ;
              rdfs:range :Incident ;
              rdfs:comment "Inverse of hasChannel." ;
              rdfs:label "is channel of" .
 
 
-###  https://haulaah.github.io/CIRPO#isCoaOf
+###  https://w3id.org/cirpo#isCoaOf
 :isCoaOf rdf:type owl:ObjectProperty ;
          rdfs:domain :CourseOfAction ;
          rdfs:range :Incident ;
@@ -306,7 +357,7 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "is COA of" .
 
 
-###  https://haulaah.github.io/CIRPO#isEventOf
+###  https://w3id.org/cirpo#isEventOf
 :isEventOf rdf:type owl:ObjectProperty ;
            rdfs:domain :SecurityEvent ;
            rdfs:range :Incident ;
@@ -314,7 +365,7 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:label "is event of" .
 
 
-###  https://haulaah.github.io/CIRPO#isRelatedToIncident
+###  https://w3id.org/cirpo#isRelatedToIncident
 :isRelatedToIncident rdf:type owl:ObjectProperty ;
                      rdfs:domain :ResponderCommunication ;
                      rdfs:range :Incident ;
@@ -322,7 +373,7 @@ xsd:date rdf:type rdfs:Datatype .
                      rdfs:label "is related to incident" .
 
 
-###  https://haulaah.github.io/CIRPO#performed
+###  https://w3id.org/cirpo#performed
 :performed rdf:type owl:ObjectProperty ;
            rdfs:domain :Analyst ;
            rdfs:range [ rdf:type owl:Class ;
@@ -334,7 +385,7 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:label "performed" .
 
 
-###  https://haulaah.github.io/CIRPO#performedAnalysis
+###  https://w3id.org/cirpo#performedAnalysis
 :performedAnalysis rdf:type owl:ObjectProperty ;
                    rdfs:domain :Analyst ;
                    rdfs:range :SecurityAnalysis ;
@@ -342,7 +393,7 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:label "performed analysis" .
 
 
-###  https://haulaah.github.io/CIRPO#wasPostedTo
+###  https://w3id.org/cirpo#wasPostedTo
 :wasPostedTo rdf:type owl:ObjectProperty ;
              rdfs:domain :ChatMessage ;
              rdfs:range :ChatChannel ;
@@ -350,7 +401,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "was posted to" .
 
 
-###  https://haulaah.github.io/CIRPO#wasUsedBy
+###  https://w3id.org/cirpo#wasUsedBy
 :wasUsedBy rdf:type owl:ObjectProperty ;
            rdfs:domain :SecurityAnalysis ;
            rdfs:range :CourseOfAction ;
@@ -362,7 +413,7 @@ xsd:date rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
-###  https://haulaah.github.io/CIRPO#hasAnalystEmail
+###  https://w3id.org/cirpo#hasAnalystEmail
 :hasAnalystEmail rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Analyst ;
                  rdfs:range xsd:string ;
@@ -370,7 +421,7 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "has analyst email" .
 
 
-###  https://haulaah.github.io/CIRPO#hasAnalystId
+###  https://w3id.org/cirpo#hasAnalystId
 :hasAnalystId rdf:type owl:DatatypeProperty ;
               rdfs:domain :Analyst ;
               rdfs:range xsd:string ;
@@ -378,7 +429,7 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:label "has analyst ID" .
 
 
-###  https://haulaah.github.io/CIRPO#hasArtefactCreationDateTime
+###  https://w3id.org/cirpo#hasArtefactCreationDateTime
 :hasArtefactCreationDateTime rdf:type owl:DatatypeProperty ;
                              rdfs:domain :Artefact ;
                              rdfs:range xsd:dateTime ;
@@ -386,7 +437,7 @@ xsd:date rdf:type rdfs:Datatype .
                              rdfs:label "has artefact creation datetime" .
 
 
-###  https://haulaah.github.io/CIRPO#hasArtefactDataValue
+###  https://w3id.org/cirpo#hasArtefactDataValue
 :hasArtefactDataValue rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Artefact ;
                       rdfs:range xsd:string ;
@@ -394,7 +445,7 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:label "has artefact data value" .
 
 
-###  https://haulaah.github.io/CIRPO#hasArtefactType
+###  https://w3id.org/cirpo#hasArtefactType
 :hasArtefactType rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Artefact ;
                  rdfs:range xsd:string ;
@@ -402,31 +453,31 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "has artefact type" .
 
 
-###  https://haulaah.github.io/CIRPO#hasChatChannelId
+###  https://w3id.org/cirpo#hasChatChannelId
 :hasChatChannelId rdf:type owl:DatatypeProperty ;
                   rdfs:domain :ChatChannel ;
                   rdfs:range xsd:string ;
-                  rdfs:comment "Unique identifier of the communication channel (channel_id)." ;
+                  rdfs:comment "Unique identifier of the communication channel." ;
                   rdfs:label "has chat channel ID" .
 
 
-###  https://haulaah.github.io/CIRPO#hasChatChannelName
+###  https://w3id.org/cirpo#hasChatChannelName
 :hasChatChannelName rdf:type owl:DatatypeProperty ;
                     rdfs:domain :ChatChannel ;
                     rdfs:range xsd:string ;
-                    rdfs:comment "Name of the communication channel (channel_name)." ;
+                    rdfs:comment "Name of the communication channel." ;
                     rdfs:label "has chat channel name" .
 
 
-###  https://haulaah.github.io/CIRPO#hasChatMessage
+###  https://w3id.org/cirpo#hasChatMessage
 :hasChatMessage rdf:type owl:DatatypeProperty ;
                 rdfs:domain :ChatMessage ;
                 rdfs:range xsd:string ;
-                rdfs:comment "The content or body of the communication message." ;
+                rdfs:comment "The content or body of the message." ;
                 rdfs:label "has chat message" .
 
 
-###  https://haulaah.github.io/CIRPO#hasChatMessageDateTime
+###  https://w3id.org/cirpo#hasChatMessageDateTime
 :hasChatMessageDateTime rdf:type owl:DatatypeProperty ;
                         rdfs:domain :ChatMessage ;
                         rdfs:range xsd:dateTime ;
@@ -434,15 +485,15 @@ xsd:date rdf:type rdfs:Datatype .
                         rdfs:label "has chat message datetime" .
 
 
-###  https://haulaah.github.io/CIRPO#hasChatMessageId
+###  https://w3id.org/cirpo#hasChatMessageId
 :hasChatMessageId rdf:type owl:DatatypeProperty ;
                   rdfs:domain :ChatMessage ;
                   rdfs:range xsd:string ;
-                  rdfs:comment "Unique identifier of the chat message (post_id)." ;
+                  rdfs:comment "Unique identifier of the chat message." ;
                   rdfs:label "has chat message ID" .
 
 
-###  https://haulaah.github.io/CIRPO#hasChatSentiment
+###  https://w3id.org/cirpo#hasChatSentiment
 :hasChatSentiment rdf:type owl:DatatypeProperty ;
                   rdfs:domain :ChatMessage ;
                   rdfs:range xsd:string ;
@@ -450,7 +501,7 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:label "has chat sentiment" .
 
 
-###  https://haulaah.github.io/CIRPO#hasCoaCreationDateTime
+###  https://w3id.org/cirpo#hasCoaCreationDateTime
 :hasCoaCreationDateTime rdf:type owl:DatatypeProperty ;
                         rdfs:domain :CourseOfAction ;
                         rdfs:range xsd:dateTime ;
@@ -458,7 +509,7 @@ xsd:date rdf:type rdfs:Datatype .
                         rdfs:label "has COA creation datetime" .
 
 
-###  https://haulaah.github.io/CIRPO#hasCoaDescription
+###  https://w3id.org/cirpo#hasCoaDescription
 :hasCoaDescription rdf:type owl:DatatypeProperty ;
                    rdfs:domain :CourseOfAction ;
                    rdfs:range xsd:string ;
@@ -466,7 +517,7 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:label "has COA description" .
 
 
-###  https://haulaah.github.io/CIRPO#hasCoaEndDateTime
+###  https://w3id.org/cirpo#hasCoaEndDateTime
 :hasCoaEndDateTime rdf:type owl:DatatypeProperty ;
                    rdfs:domain :CourseOfAction ;
                    rdfs:range xsd:dateTime ;
@@ -474,7 +525,7 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:label "has COA end datetime" .
 
 
-###  https://haulaah.github.io/CIRPO#hasCoaStartDateTime
+###  https://w3id.org/cirpo#hasCoaStartDateTime
 :hasCoaStartDateTime rdf:type owl:DatatypeProperty ;
                      rdfs:domain :CourseOfAction ;
                      rdfs:range xsd:dateTime ;
@@ -482,7 +533,7 @@ xsd:date rdf:type rdfs:Datatype .
                      rdfs:label "has COA start datetime" .
 
 
-###  https://haulaah.github.io/CIRPO#hasCoaStatus
+###  https://w3id.org/cirpo#hasCoaStatus
 :hasCoaStatus rdf:type owl:DatatypeProperty ;
               rdfs:domain :CourseOfAction ;
               rdfs:range xsd:string ;
@@ -490,7 +541,7 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:label "has COA status" .
 
 
-###  https://haulaah.github.io/CIRPO#hasConfirmationDateTime
+###  https://w3id.org/cirpo#hasConfirmationDateTime
 :hasConfirmationDateTime rdf:type owl:DatatypeProperty ;
                          rdfs:domain :Incident ;
                          rdfs:range xsd:dateTime ;
@@ -498,7 +549,7 @@ xsd:date rdf:type rdfs:Datatype .
                          rdfs:label "has confirmation datetime" .
 
 
-###  https://haulaah.github.io/CIRPO#hasEndDateTime
+###  https://w3id.org/cirpo#hasEndDateTime
 :hasEndDateTime rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Incident ;
                 rdfs:range xsd:dateTime ;
@@ -506,7 +557,7 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "has end datetime" .
 
 
-###  https://haulaah.github.io/CIRPO#hasEventActivity
+###  https://w3id.org/cirpo#hasEventActivity
 :hasEventActivity rdf:type owl:DatatypeProperty ;
                   rdfs:domain :SecurityEventAction ;
                   rdfs:range xsd:string ;
@@ -514,7 +565,7 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:label "has event activity" .
 
 
-###  https://haulaah.github.io/CIRPO#hasEventActivityDateTime
+###  https://w3id.org/cirpo#hasEventActivityDateTime
 :hasEventActivityDateTime rdf:type owl:DatatypeProperty ;
                           rdfs:domain :SecurityEventAction ;
                           rdfs:range xsd:dateTime ;
@@ -522,7 +573,7 @@ xsd:date rdf:type rdfs:Datatype .
                           rdfs:label "has event activity datetime" .
 
 
-###  https://haulaah.github.io/CIRPO#hasEventDescription
+###  https://w3id.org/cirpo#hasEventDescription
 :hasEventDescription rdf:type owl:DatatypeProperty ;
                      rdfs:domain :SecurityEventAction ;
                      rdfs:range xsd:string ;
@@ -530,7 +581,7 @@ xsd:date rdf:type rdfs:Datatype .
                      rdfs:label "has event description" .
 
 
-###  https://haulaah.github.io/CIRPO#hasEventId
+###  https://w3id.org/cirpo#hasEventId
 :hasEventId rdf:type owl:DatatypeProperty ;
             rdfs:domain :SecurityEvent ;
             rdfs:range xsd:string ;
@@ -538,7 +589,7 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:label "has event ID" .
 
 
-###  https://haulaah.github.io/CIRPO#hasEventTitle
+###  https://w3id.org/cirpo#hasEventTitle
 :hasEventTitle rdf:type owl:DatatypeProperty ;
                rdfs:domain :SecurityEvent ;
                rdfs:range xsd:string ;
@@ -546,7 +597,7 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:label "has event title" .
 
 
-###  https://haulaah.github.io/CIRPO#hasIncidentCreationDateTime
+###  https://w3id.org/cirpo#hasIncidentCreationDateTime
 :hasIncidentCreationDateTime rdf:type owl:DatatypeProperty ;
                              rdfs:domain :Incident ;
                              rdfs:range xsd:dateTime ;
@@ -554,7 +605,7 @@ xsd:date rdf:type rdfs:Datatype .
                              rdfs:label "has incident creation datetime" .
 
 
-###  https://haulaah.github.io/CIRPO#hasIncidentDescription
+###  https://w3id.org/cirpo#hasIncidentDescription
 :hasIncidentDescription rdf:type owl:DatatypeProperty ;
                         rdfs:domain :Incident ;
                         rdfs:range xsd:string ;
@@ -562,7 +613,7 @@ xsd:date rdf:type rdfs:Datatype .
                         rdfs:label "has incident description" .
 
 
-###  https://haulaah.github.io/CIRPO#hasIncidentId
+###  https://w3id.org/cirpo#hasIncidentId
 :hasIncidentId rdf:type owl:DatatypeProperty ;
                rdfs:domain :Incident ;
                rdfs:range xsd:string ;
@@ -570,7 +621,7 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:label "has incident ID" .
 
 
-###  https://haulaah.github.io/CIRPO#hasIncidentName
+###  https://w3id.org/cirpo#hasIncidentName
 :hasIncidentName rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Incident ;
                  rdfs:range xsd:string ;
@@ -578,7 +629,7 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "has incident name" .
 
 
-###  https://haulaah.github.io/CIRPO#hasIncidentSeverity
+###  https://w3id.org/cirpo#hasIncidentSeverity
 :hasIncidentSeverity rdf:type owl:DatatypeProperty ;
                      rdfs:domain :Incident ;
                      rdfs:range xsd:string ;
@@ -586,7 +637,7 @@ xsd:date rdf:type rdfs:Datatype .
                      rdfs:label "has incident severity" .
 
 
-###  https://haulaah.github.io/CIRPO#hasIncidentStage
+###  https://w3id.org/cirpo#hasIncidentStage
 :hasIncidentStage rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Incident ;
                   rdfs:range xsd:string ;
@@ -594,7 +645,7 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:label "has incident stage" .
 
 
-###  https://haulaah.github.io/CIRPO#hasIncidentStatus
+###  https://w3id.org/cirpo#hasIncidentStatus
 :hasIncidentStatus rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Incident ;
                    rdfs:range xsd:string ;
@@ -602,7 +653,7 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:label "has incident status" .
 
 
-###  https://haulaah.github.io/CIRPO#hasSecurityAnalysisDataValue
+###  https://w3id.org/cirpo#hasSecurityAnalysisDataValue
 :hasSecurityAnalysisDataValue rdf:type owl:DatatypeProperty ;
                               rdfs:domain :SecurityAnalysis ;
                               rdfs:range xsd:string ;
@@ -610,7 +661,7 @@ xsd:date rdf:type rdfs:Datatype .
                               rdfs:label "has security analysis data value" .
 
 
-###  https://haulaah.github.io/CIRPO#hasSecurityAnalysisDateTime
+###  https://w3id.org/cirpo#hasSecurityAnalysisDateTime
 :hasSecurityAnalysisDateTime rdf:type owl:DatatypeProperty ;
                              rdfs:domain :SecurityAnalysis ;
                              rdfs:range xsd:dateTime ;
@@ -618,7 +669,7 @@ xsd:date rdf:type rdfs:Datatype .
                              rdfs:label "has security analysis datetime" .
 
 
-###  https://haulaah.github.io/CIRPO#hasSecurityAnalysisDetails
+###  https://w3id.org/cirpo#hasSecurityAnalysisDetails
 :hasSecurityAnalysisDetails rdf:type owl:DatatypeProperty ;
                             rdfs:domain :SecurityAnalysis ;
                             rdfs:range xsd:string ;
@@ -626,7 +677,7 @@ xsd:date rdf:type rdfs:Datatype .
                             rdfs:label "has security analysis details" .
 
 
-###  https://haulaah.github.io/CIRPO#hasSecurityAnalysisType
+###  https://w3id.org/cirpo#hasSecurityAnalysisType
 :hasSecurityAnalysisType rdf:type owl:DatatypeProperty ;
                          rdfs:domain :SecurityAnalysis ;
                          rdfs:range xsd:string ;
@@ -638,130 +689,147 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
-###  https://haulaah.github.io/CIRPO#Analysis
+###  https://w3id.org/cirpo#Analysis
 :Analysis rdf:type owl:Class ;
           rdfs:subClassOf :CourseOfAction ;
           rdfs:comment "Activities to assess security incidents." ;
           rdfs:label "Analysis" .
 
 
-###  https://haulaah.github.io/CIRPO#Analyst
+###  https://w3id.org/cirpo#Analyst
 :Analyst rdf:type owl:Class ;
          rdfs:comment "A security analyst who investigates and responds to incidents." ;
          rdfs:label "Analyst" .
 
 
-###  https://haulaah.github.io/CIRPO#Artefact
+###  https://w3id.org/cirpo#Artefact
 :Artefact rdf:type owl:Class ;
           rdfs:comment "An observable piece of evidence collected from an incident." ;
           rdfs:label "Artefact" .
 
 
-###  https://haulaah.github.io/CIRPO#ChatChannel
+###  https://w3id.org/cirpo#ChatChannel
 :ChatChannel rdf:type owl:Class ;
              rdfs:subClassOf :ResponderCommunication ;
              rdfs:comment "A communication channel where responders exchange messages" ;
              rdfs:label "Chat Channel" .
 
 
-###  https://haulaah.github.io/CIRPO#ChatMessage
+###  https://w3id.org/cirpo#ChatMessage
 :ChatMessage rdf:type owl:Class ;
              rdfs:subClassOf :ResponderCommunication ;
              rdfs:comment "A message posted by a responder within a chat channel." ;
              rdfs:label "Chat Message" .
 
 
-###  https://haulaah.github.io/CIRPO#Containment
+###  https://w3id.org/cirpo#Containment
 :Containment rdf:type owl:Class ;
              rdfs:subClassOf :CourseOfAction ;
              rdfs:comment "Actions to limit the spread and impact of an incident." ;
              rdfs:label "Containment" .
 
 
-###  https://haulaah.github.io/CIRPO#CourseOfAction
+###  https://w3id.org/cirpo#CourseOfAction
 :CourseOfAction rdf:type owl:Class ;
                 rdfs:comment "A planned response action to a security incident." ;
                 rdfs:label "Course of Action" .
 
 
-###  https://haulaah.github.io/CIRPO#Detection
+###  https://w3id.org/cirpo#Detection
 :Detection rdf:type owl:Class ;
            rdfs:subClassOf :CourseOfAction ;
            rdfs:comment "Activities in detection of security incidents." ;
            rdfs:label "Detection" .
 
 
-###  https://haulaah.github.io/CIRPO#Eradication
+###  https://w3id.org/cirpo#Eradication
 :Eradication rdf:type owl:Class ;
              rdfs:subClassOf :CourseOfAction ;
              rdfs:comment "Actions to remove threats and root causes from affected systems." ;
              rdfs:label "Eradication" .
 
 
-###  https://haulaah.github.io/CIRPO#Incident
+###  https://w3id.org/cirpo#Incident
 :Incident rdf:type owl:Class ;
           rdfs:comment "A security incident that requires investigation and response." ;
           rdfs:label "Incident" .
 
 
-###  https://haulaah.github.io/CIRPO#PostIncidentActivity
+###  https://w3id.org/cirpo#PostIncidentActivity
 :PostIncidentActivity rdf:type owl:Class ;
                       rdfs:subClassOf :CourseOfAction ;
                       rdfs:comment "Activities conducted after incident resolution (e.g., lessons learned, reporting)." ;
                       rdfs:label "Post-Incident Activity" .
 
 
-###  https://haulaah.github.io/CIRPO#Recovery
+###  https://w3id.org/cirpo#Recovery
 :Recovery rdf:type owl:Class ;
           rdfs:subClassOf :CourseOfAction ;
           rdfs:comment "Actions to restore systems to normal operation." ;
           rdfs:label "Recovery" .
 
 
-###  https://haulaah.github.io/CIRPO#ResponderCommunication
+###  https://w3id.org/cirpo#ResponderCommunication
 :ResponderCommunication rdf:type owl:Class ;
                         rdfs:comment " Any communication resource involved in incident response activities,including channels and individual chat messages" ;
                         rdfs:label "Responder Communication" .
 
 
-###  https://haulaah.github.io/CIRPO#SecurityAnalysis
+###  https://w3id.org/cirpo#SecurityAnalysis
 :SecurityAnalysis rdf:type owl:Class ;
                   rdfs:comment "The analysis of observables from security events leading to an incident" ;
                   rdfs:label "Security Analysis" .
 
 
-###  https://haulaah.github.io/CIRPO#SecurityEvent
+###  https://w3id.org/cirpo#SecurityEvent
 :SecurityEvent rdf:type owl:Class ;
                rdfs:comment "An observable occurrence relevant to system security (e.g., alert from SIEM, IDS)." ;
                rdfs:label "Security Event" .
 
 
-###  https://haulaah.github.io/CIRPO#SecurityEventAction
+###  https://w3id.org/cirpo#SecurityEventAction
 :SecurityEventAction rdf:type owl:Class ;
                      rdfs:subClassOf :SecurityEvent ;
                      rdfs:comment "A specific action taken or observed within a security event." ;
                      rdfs:label "Security Event Action" .
 
 
-###  https://haulaah.github.io/CIRPO#Tier1
+###  https://w3id.org/cirpo#Tier1
 :Tier1 rdf:type owl:Class ;
        rdfs:subClassOf :Analyst ;
        rdfs:comment "First responder performing initial triage and categorization." ;
        rdfs:label "Tier 1" .
 
 
-###  https://haulaah.github.io/CIRPO#Tier2
+###  https://w3id.org/cirpo#Tier2
 :Tier2 rdf:type owl:Class ;
        rdfs:subClassOf :Analyst ;
        rdfs:comment "Incident responder handling deeper investigation and analysis." ;
        rdfs:label "Tier 2" .
 
 
-###  https://haulaah.github.io/CIRPO#Tier3
+###  https://w3id.org/cirpo#Tier3
 :Tier3 rdf:type owl:Class ;
        rdfs:subClassOf :Analyst ;
        rdfs:comment "Senior analyst or subject matter expert handling complex investigations." ;
        rdfs:label "Tier 3" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER
+<https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER> rdf:type owl:NamedIndividual ;
+                                                     owl:sameAs <https://w3id.org/cirpo> .
+
+
+###  https://w3id.org/cirpo
+<https://w3id.org/cirpo> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cirpo
+<https://w3id.org/cirpo> rdf:type owl:NamedIndividual .
 
 
 #################################################################

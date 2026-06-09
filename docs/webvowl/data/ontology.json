@@ -2,27 +2,58 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
-    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "https://haulaah.github.io/CIRPO", "http://www.w3.org/2001/XMLSchema" ],
+    "baseIris" : [ "https://w3id.org/cirpo", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
       "undefined" : "Cyber Incident Response Process Ontology (CIRPO)"
     },
-    "iri" : "https://haulaah.github.io/CIRPO",
-    "version" : "6.0",
-    "author" : [ "Haula Galadima, Cormac Doherty, Rob Brennan" ],
+    "iri" : "https://w3id.org/cirpo",
+    "version" : "7.0",
+    "author" : [ "_:genid2147483675", "_:genid2147483674", "_:genid2147483673" ],
     "description" : {
       "undefined" : "An ontology for modeling cybersecurity incident response processes"
     },
     "other" : {
-      "license" : [ {
-        "identifier" : "license",
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
         "language" : "undefined",
-        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "value" : "https://w3id.org/cirpo/versions/6.0",
         "type" : "iri"
       } ],
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Haula Galadima, Cormac Doherty, Rob Brennan",
+        "value" : "_:genid2147483675",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "_:genid2147483674",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "_:genid2147483673",
+        "type" : "label"
+      } ],
+      "subject" : [ {
+        "identifier" : "subject",
+        "language" : "undefined",
+        "value" : "ontology",
+        "type" : "label"
+      }, {
+        "identifier" : "subject",
+        "language" : "undefined",
+        "value" : "incident response",
+        "type" : "label"
+      }, {
+        "identifier" : "subject",
+        "language" : "undefined",
+        "value" : "CSIRT",
+        "type" : "label"
+      }, {
+        "identifier" : "subject",
+        "language" : "undefined",
+        "value" : "cybersecurity",
         "type" : "label"
       } ],
       "created" : [ {
@@ -34,7 +65,7 @@
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "6.0",
+        "value" : "7.0",
         "type" : "label"
       } ],
       "title" : [ {
@@ -42,31 +73,65 @@
         "language" : "undefined",
         "value" : "Cyber Incident Response Process Ontology (CIRPO)",
         "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/moreiragb/csiho",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://haulaah.github.io/CIRPO/",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf",
+        "type" : "iri"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "CCI & ADAPT, School of Computer Science, University College Dublin",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "Galadima, H., Doherty, C., & Brennan, R. (2026). Cyber Incident Response Process Ontology (CIRPO) Version 7.0. Zenodo. https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER",
+        "type" : "label"
+      } ],
+      "isVersionOf" : [ {
+        "identifier" : "isVersionOf",
+        "language" : "undefined",
+        "value" : "https://doi.org/10.5281/zenodo.20597896",
+        "type" : "iri"
+      } ],
+      "accessRights" : [ {
+        "identifier" : "accessRights",
+        "language" : "undefined",
+        "value" : "public",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2026-06-12",
+        "type" : "label"
       } ]
     }
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "3",
+    "id" : "5",
     "type" : "rdfs:Datatype"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "21",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "22",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "26",
-    "type" : "owl:unionOf"
   }, {
     "id" : "27",
     "type" : "rdfs:Datatype"
@@ -74,215 +139,181 @@
     "id" : "28",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "24",
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
     "type" : "owl:unionOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "32",
     "type" : "owl:unionOf"
   }, {
-    "id" : "33",
+    "id" : "40",
     "type" : "owl:unionOf"
   }, {
-    "id" : "46",
-    "type" : "owl:Class"
-  }, {
-    "id" : "58",
-    "type" : "owl:Class"
+    "id" : "41",
+    "type" : "owl:unionOf"
   }, {
     "id" : "11",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "62",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "63",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "64",
-    "type" : "owl:Class"
-  }, {
-    "id" : "69",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "8",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "38",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "70",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "71",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "50",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "74",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "75",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "77",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "61",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "30",
     "type" : "owl:Class"
   }, {
     "id" : "44",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "46",
     "type" : "owl:Class"
   }, {
-    "id" : "88",
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "89",
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "87",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "42",
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "90",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "13",
+    "id" : "93",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "52",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "91",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "92",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "79",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "80",
-    "type" : "owl:Class"
-  }, {
-    "id" : "81",
-    "type" : "owl:Class"
-  }, {
-    "id" : "73",
-    "type" : "owl:Class"
-  }, {
-    "id" : "131",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "129",
+    "id" : "24",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "95",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "16",
+    "id" : "96",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "99",
+    "id" : "64",
     "type" : "rdfs:Datatype"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
   }, {
     "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "29",
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
     "type" : "owl:Class"
   }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "84",
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "3",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#Eradication",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Eradication",
-      "undefined" : "Eradication"
-    },
-    "comment" : {
-      "undefined" : "Actions to remove threats and root causes from affected systems."
-    },
-    "id" : "4",
-    "superClasses" : [ "5" ]
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#Containment",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Containment",
-      "undefined" : "Containment"
-    },
-    "comment" : {
-      "undefined" : "Actions to limit the spread and impact of an incident."
-    },
-    "id" : "14",
-    "superClasses" : [ "5" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "20",
+    "id" : "5",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "21",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "22",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "instances" : 0,
-    "union" : [ "7", "18" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "26"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "27",
     "label" : {
-      "IRI-based" : "dateTime"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -292,279 +323,49 @@
       "IRI-based" : "string"
     }
   }, {
-    "instances" : 0,
-    "union" : [ "7", "29", "30" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "24"
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "instances" : 0,
-    "union" : [ "7", "29", "30" ],
-    "attributes" : [ "union", "anonymous" ],
+    "union" : [ "35", "7" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "35", "38", "1" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "32"
   }, {
     "instances" : 0,
-    "union" : [ "7", "18" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "33"
+    "union" : [ "35", "38", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "40"
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#Detection",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "Detection",
-      "undefined" : "Detection"
-    },
-    "comment" : {
-      "undefined" : "Activities in detection of security incidents."
-    },
-    "id" : "46",
-    "superClasses" : [ "5" ]
+    "union" : [ "35", "7" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "41"
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#Analysis",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Analysis",
-      "undefined" : "Analysis"
-    },
-    "comment" : {
-      "undefined" : "Activities to assess security incidents."
-    },
-    "id" : "58",
-    "superClasses" : [ "5" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "11",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "62",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "63",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#SecurityAnalysis",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SecurityAnalysis",
-      "undefined" : "Security Analysis"
-    },
-    "comment" : {
-      "undefined" : "The analysis of observables from security events leading to an incident"
-    },
-    "id" : "18"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#Recovery",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Recovery",
-      "undefined" : "Recovery"
-    },
-    "comment" : {
-      "undefined" : "Actions to restore systems to normal operation."
-    },
-    "id" : "64",
-    "superClasses" : [ "5" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "69",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "8",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "38",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "70",
-    "label" : {
-      "IRI-based" : "dateTime"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "71",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "50",
-    "label" : {
-      "IRI-based" : "dateTime"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "74",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "75",
-    "label" : {
-      "IRI-based" : "dateTime"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "77",
-    "label" : {
-      "IRI-based" : "dateTime"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "61",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#Incident",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Incident",
-      "undefined" : "Incident"
-    },
-    "comment" : {
-      "undefined" : "A security incident that requires investigation and response."
-    },
-    "id" : "10"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#Analyst",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Analyst",
-      "undefined" : "Analyst"
-    },
-    "subClasses" : [ "79", "80", "81" ],
-    "comment" : {
-      "undefined" : "A security analyst who investigates and responds to incidents."
-    },
-    "id" : "30"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#ResponderCommunication",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ResponderCommunication",
-      "undefined" : "Responder Communication"
-    },
-    "subClasses" : [ "1", "2" ],
-    "comment" : {
-      "undefined" : " Any communication resource involved in incident response activities,including channels and individual chat messages"
-    },
-    "id" : "44"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#CourseOfAction",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CourseOfAction",
-      "undefined" : "Course of Action"
-    },
-    "subClasses" : [ "4", "14", "64", "46", "84", "58" ],
-    "comment" : {
-      "undefined" : "A planned response action to a security incident."
-    },
-    "id" : "5"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "88",
-    "label" : {
-      "IRI-based" : "dateTime"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "89",
-    "label" : {
-      "IRI-based" : "dateTime"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "87",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "42",
-    "label" : {
-      "IRI-based" : "dateTime"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "90",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "13",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "52",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "91",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "92",
-    "label" : {
-      "IRI-based" : "dateTime"
-    }
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#ChatMessage",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
+    "iri" : "https://w3id.org/cirpo#ChatMessage",
+    "baseIri" : "https://w3id.org/cirpo",
     "instances" : 0,
     "label" : {
       "IRI-based" : "ChatMessage",
@@ -573,11 +374,11 @@
     "comment" : {
       "undefined" : "A message posted by a responder within a chat channel."
     },
-    "id" : "1",
-    "superClasses" : [ "44" ]
+    "id" : "11",
+    "superClasses" : [ "18" ]
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#Tier3",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
+    "iri" : "https://w3id.org/cirpo#Tier3",
+    "baseIri" : "https://w3id.org/cirpo",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Tier3",
@@ -586,37 +387,11 @@
     "comment" : {
       "undefined" : "Senior analyst or subject matter expert handling complex investigations."
     },
-    "id" : "79",
-    "superClasses" : [ "30" ]
+    "id" : "44",
+    "superClasses" : [ "1" ]
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#SecurityEvent",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SecurityEvent",
-      "undefined" : "Security Event"
-    },
-    "subClasses" : [ "73" ],
-    "comment" : {
-      "undefined" : "An observable occurrence relevant to system security (e.g., alert from SIEM, IDS)."
-    },
-    "id" : "7"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#Tier1",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Tier1",
-      "undefined" : "Tier 1"
-    },
-    "comment" : {
-      "undefined" : "First responder performing initial triage and categorization."
-    },
-    "id" : "80",
-    "superClasses" : [ "30" ]
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#Tier2",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
+    "iri" : "https://w3id.org/cirpo#Tier2",
+    "baseIri" : "https://w3id.org/cirpo",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Tier2",
@@ -625,11 +400,11 @@
     "comment" : {
       "undefined" : "Incident responder handling deeper investigation and analysis."
     },
-    "id" : "81",
-    "superClasses" : [ "30" ]
+    "id" : "46",
+    "superClasses" : [ "1" ]
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#SecurityEventAction",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
+    "iri" : "https://w3id.org/cirpo#SecurityEventAction",
+    "baseIri" : "https://w3id.org/cirpo",
     "instances" : 0,
     "label" : {
       "IRI-based" : "SecurityEventAction",
@@ -638,21 +413,188 @@
     "comment" : {
       "undefined" : "A specific action taken or observed within a security event."
     },
-    "id" : "73",
-    "superClasses" : [ "7" ]
+    "id" : "47",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "https://w3id.org/cirpo#Tier1",
+    "baseIri" : "https://w3id.org/cirpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tier1",
+      "undefined" : "Tier 1"
+    },
+    "comment" : {
+      "undefined" : "First responder performing initial triage and categorization."
+    },
+    "id" : "48",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/cirpo#Analyst",
+    "baseIri" : "https://w3id.org/cirpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Analyst",
+      "undefined" : "Analyst"
+    },
+    "subClasses" : [ "44", "46", "48" ],
+    "comment" : {
+      "undefined" : "A security analyst who investigates and responds to incidents."
+    },
+    "id" : "1"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "131",
+    "id" : "67",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "129",
+    "id" : "68",
     "label" : {
       "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/cirpo#SecurityAnalysis",
+    "baseIri" : "https://w3id.org/cirpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SecurityAnalysis",
+      "undefined" : "Security Analysis"
+    },
+    "comment" : {
+      "undefined" : "The analysis of observables from security events leading to an incident"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/cirpo#Artefact",
+    "baseIri" : "https://w3id.org/cirpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Artefact",
+      "undefined" : "Artefact"
+    },
+    "comment" : {
+      "undefined" : "An observable piece of evidence collected from an incident."
+    },
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/cirpo#ChatChannel",
+    "baseIri" : "https://w3id.org/cirpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChatChannel",
+      "undefined" : "Chat Channel"
+    },
+    "comment" : {
+      "undefined" : "A communication channel where responders exchange messages"
+    },
+    "id" : "10",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "83",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "https://w3id.org/cirpo#SecurityEvent",
+    "baseIri" : "https://w3id.org/cirpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SecurityEvent",
+      "undefined" : "Security Event"
+    },
+    "subClasses" : [ "47" ],
+    "comment" : {
+      "undefined" : "An observable occurrence relevant to system security (e.g., alert from SIEM, IDS)."
+    },
+    "id" : "35"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "dateTime"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -662,54 +604,76 @@
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "16",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "99",
+    "id" : "96",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "105",
+    "id" : "64",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#Artefact",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "https://w3id.org/cirpo#Eradication",
+    "baseIri" : "https://w3id.org/cirpo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Artefact",
-      "undefined" : "Artefact"
+      "IRI-based" : "Eradication",
+      "undefined" : "Eradication"
     },
     "comment" : {
-      "undefined" : "An observable piece of evidence collected from an incident."
+      "undefined" : "Actions to remove threats and root causes from affected systems."
     },
-    "id" : "29"
+    "id" : "100",
+    "superClasses" : [ "22" ]
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#ChatChannel",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
+    "iri" : "https://w3id.org/cirpo#Containment",
+    "baseIri" : "https://w3id.org/cirpo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "ChatChannel",
-      "undefined" : "Chat Channel"
+      "IRI-based" : "Containment",
+      "undefined" : "Containment"
     },
     "comment" : {
-      "undefined" : "A communication channel where responders exchange messages"
+      "undefined" : "Actions to limit the spread and impact of an incident."
     },
-    "id" : "2",
-    "superClasses" : [ "44" ]
+    "id" : "102",
+    "superClasses" : [ "22" ]
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#PostIncidentActivity",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
+    "iri" : "https://w3id.org/cirpo#PostIncidentActivity",
+    "baseIri" : "https://w3id.org/cirpo",
     "instances" : 0,
     "label" : {
       "IRI-based" : "PostIncidentActivity",
@@ -718,20 +682,142 @@
     "comment" : {
       "undefined" : "Activities conducted after incident resolution (e.g., lessons learned, reporting)."
     },
-    "id" : "84",
-    "superClasses" : [ "5" ]
+    "id" : "110",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/cirpo#Analysis",
+    "baseIri" : "https://w3id.org/cirpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Analysis",
+      "undefined" : "Analysis"
+    },
+    "comment" : {
+      "undefined" : "Activities to assess security incidents."
+    },
+    "id" : "105",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/cirpo#Recovery",
+    "baseIri" : "https://w3id.org/cirpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recovery",
+      "undefined" : "Recovery"
+    },
+    "comment" : {
+      "undefined" : "Actions to restore systems to normal operation."
+    },
+    "id" : "117",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/cirpo#Detection",
+    "baseIri" : "https://w3id.org/cirpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Detection",
+      "undefined" : "Detection"
+    },
+    "comment" : {
+      "undefined" : "Activities in detection of security incidents."
+    },
+    "id" : "115",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/cirpo#Incident",
+    "baseIri" : "https://w3id.org/cirpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "undefined" : "Incident"
+    },
+    "comment" : {
+      "undefined" : "A security incident that requires investigation and response."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/cirpo#ResponderCommunication",
+    "baseIri" : "https://w3id.org/cirpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResponderCommunication",
+      "undefined" : "Responder Communication"
+    },
+    "subClasses" : [ "11", "10" ],
+    "comment" : {
+      "undefined" : " Any communication resource involved in incident response activities,including channels and individual chat messages"
+    },
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/cirpo#CourseOfAction",
+    "baseIri" : "https://w3id.org/cirpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CourseOfAction",
+      "undefined" : "Course of Action"
+    },
+    "subClasses" : [ "100", "110", "102", "117", "115", "105" ],
+    "comment" : {
+      "undefined" : "A planned response action to a security incident."
+    },
+    "id" : "22"
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "6",
+    "id" : "3",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "9",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "12",
+    "id" : "13",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "15",
@@ -740,50 +826,47 @@
     "id" : "17",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
     "type" : "owl:objectProperty"
   }, {
     "id" : "31",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "34",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "35",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "36",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "37",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "41",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "43",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "45",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "47",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "48",
-    "type" : "owl:disjointWith"
+    "id" : "20",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "49",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "51",
-    "type" : "owl:datatypeProperty"
+    "id" : "50",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "53",
+    "id" : "51",
     "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "54",
     "type" : "owl:disjointWith"
@@ -794,113 +877,125 @@
     "id" : "56",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "25",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "57",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "59",
-    "type" : "owl:disjointWith"
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "65",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "66",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "69",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "68",
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "72",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "76",
+    "id" : "74",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "78",
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "82",
-    "type" : "owl:objectProperty"
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "83",
+    "id" : "33",
     "type" : "owl:objectProperty"
   }, {
     "id" : "85",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "86",
+    "id" : "88",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "93",
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "94",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "96",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "98",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "100",
-    "type" : "rdfs:SubClassOf"
+    "id" : "99",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "101",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "102",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "103",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "104",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "106",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "67",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "107",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "110",
+    "id" : "108",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "111",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "112",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "113",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "114",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "115",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "116",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "117",
-    "type" : "rdfs:SubClassOf"
+    "id" : "19",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "118",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "121",
     "type" : "rdfs:SubClassOf"
@@ -917,50 +1012,47 @@
     "id" : "125",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "40",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "126",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "109",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "120",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "128",
+    "id" : "127",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "130",
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "132",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "133",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "135",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "136",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "137",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "138",
     "type" : "owl:disjointWith"
   }, {
     "id" : "139",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "140",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "97",
-    "type" : "owl:objectProperty"
+    "id" : "140",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "141",
     "type" : "owl:disjointWith"
@@ -968,49 +1060,43 @@
     "id" : "142",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "19",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "143",
     "type" : "owl:disjointWith"
   }, {
     "id" : "144",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "145",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "134",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "146",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "147",
     "type" : "owl:disjointWith"
   }, {
     "id" : "148",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "149",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "150",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "149",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
     "id" : "151",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "152",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "153",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "154",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "127",
     "type" : "owl:objectProperty"
   }, {
     "id" : "155",
@@ -1021,1145 +1107,1142 @@
   }, {
     "id" : "157",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "108",
-    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://haulaah.github.io/CIRPO#wasPostedTo",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
+    "iri" : "https://w3id.org/cirpo#confirmedIncident",
+    "baseIri" : "https://w3id.org/cirpo",
     "range" : "2",
-    "label" : {
-      "IRI-based" : "wasPostedTo",
-      "undefined" : "was posted to"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "Indicates the channel where the chat message was posted."
-    },
-    "attributes" : [ "object" ],
-    "id" : "0"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasEventId",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "hasEventId",
-      "undefined" : "has event ID"
-    },
-    "domain" : "7",
-    "comment" : {
-      "undefined" : "Unique identifier for a security event."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "6"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasIncidentId",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "11",
-    "label" : {
-      "IRI-based" : "hasIncidentId",
-      "undefined" : "has incident ID"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Unique identifier for an incident."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "9"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasChatMessage",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "hasChatMessage",
-      "undefined" : "has chat message"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The content or body of the communication message."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "12"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasIncidentStage",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "16",
-    "label" : {
-      "IRI-based" : "hasIncidentStage",
-      "undefined" : "has incident stage"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Current stage in the incident lifecycle."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "15"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasAnalysis",
-    "inverse" : "19",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "18",
-    "label" : {
-      "IRI-based" : "hasAnalysis",
-      "undefined" : "has analysis"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Links an incident to the security analyses performed on it."
-    },
-    "attributes" : [ "object" ],
-    "id" : "17"
-  }, {
-    "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
-    "inverse" : "25",
-    "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "wasAssociatedWith",
-      "undefined" : "was associated with"
-    },
-    "domain" : "24",
-    "comment" : {
-      "undefined" : "Indicates association with an incident"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "23"
-  }, {
-    "range" : "7",
-    "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "31"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasArtefactCreationDateTime",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "27",
-    "label" : {
-      "IRI-based" : "hasArtefactCreationDateTime",
-      "undefined" : "has artefact creation datetime"
-    },
-    "domain" : "29",
-    "comment" : {
-      "undefined" : "Timestamp when the artefact was collected."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "34"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#generatedChat",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "generatedChat",
-      "undefined" : "generated chat"
-    },
-    "domain" : "30",
-    "comment" : {
-      "undefined" : "Inverse of hasChatAnalyst."
-    },
-    "attributes" : [ "object" ],
-    "id" : "35"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#wasUsedBy",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "wasUsedBy",
-      "undefined" : "was used by"
-    },
-    "domain" : "18",
-    "comment" : {
-      "undefined" : "Inverse of prov:used. Indicates an analysis was used by a course of action."
-    },
-    "attributes" : [ "object" ],
-    "id" : "36"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasIncidentDescription",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "38",
-    "label" : {
-      "IRI-based" : "hasIncidentDescription",
-      "undefined" : "has incident description"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Detailed description of an incident. "
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "37"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasCoaAssignedAnalyst",
-    "inverse" : "40",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "30",
-    "label" : {
-      "IRI-based" : "hasCoaAssignedAnalyst",
-      "undefined" : "has COA assigned analyst"
-    },
-    "domain" : "5",
-    "comment" : {
-      "undefined" : "Links a course of action to the analyst responsible for executing it."
-    },
-    "attributes" : [ "object" ],
-    "id" : "39"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasCoaEndDateTime",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "hasCoaEndDateTime",
-      "undefined" : "has COA end datetime"
-    },
-    "domain" : "5",
-    "comment" : {
-      "undefined" : "Timestamp when execution of the course of action was completed."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "41"
-  }, {
-    "range" : "18",
-    "domain" : "44",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "43"
-  }, {
-    "range" : "7",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "45"
-  }, {
-    "range" : "7",
-    "domain" : "44",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "47"
-  }, {
-    "range" : "7",
-    "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "48"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasEndDateTime",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "50",
-    "label" : {
-      "IRI-based" : "hasEndDateTime",
-      "undefined" : "has end datetime"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Timestamp when incident response was formally concluded."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "49"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasChatChannelName",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "52",
-    "label" : {
-      "IRI-based" : "hasChatChannelName",
-      "undefined" : "has chat channel name"
-    },
-    "domain" : "2",
-    "comment" : {
-      "undefined" : "Name of the communication channel (channel_name)."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "51"
-  }, {
-    "range" : "18",
-    "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "53"
-  }, {
-    "range" : "18",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "54"
-  }, {
-    "range" : "44",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "55"
-  }, {
-    "range" : "7",
-    "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "56"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hadAssociationWith",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "32",
-    "label" : {
-      "IRI-based" : "hadAssociationWith",
-      "undefined" : "had association with"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Inverse of prov:wasAssociatedWith. Indicates an incident's associated analyst, artefact, or security event."
-    },
-    "attributes" : [ "object" ],
-    "id" : "25"
-  }, {
-    "range" : "44",
-    "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "57"
-  }, {
-    "range" : "10",
-    "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "59"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasCoaStatus",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "61",
-    "label" : {
-      "IRI-based" : "hasCoaStatus",
-      "undefined" : "has COA status"
-    },
-    "domain" : "5",
-    "comment" : {
-      "undefined" : "Current execution status of the course of action."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "60"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#createdArtefact",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "29",
-    "label" : {
-      "IRI-based" : "createdArtefact",
-      "undefined" : "created artefact"
-    },
-    "domain" : "30",
-    "comment" : {
-      "undefined" : "Inverse of hasArtefactCreationAnalyst. Links an analyst to the artefacts they created."
-    },
-    "attributes" : [ "object" ],
-    "id" : "65"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasCoaCreationAnalyst",
-    "inverse" : "67",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "30",
-    "label" : {
-      "IRI-based" : "hasCoaCreationAnalyst",
-      "undefined" : "has COA creation analyst"
-    },
-    "domain" : "5",
-    "comment" : {
-      "undefined" : "Links a course of action to the analyst who created or planned it."
-    },
-    "attributes" : [ "object" ],
-    "id" : "66"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasAnalystEmail",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "22",
-    "label" : {
-      "IRI-based" : "hasAnalystEmail",
-      "undefined" : "has analyst email"
-    },
-    "domain" : "30",
-    "comment" : {
-      "undefined" : "Email address of the analyst."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "68"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasEventDescription",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "74",
-    "label" : {
-      "IRI-based" : "hasEventDescription",
-      "undefined" : "has event description"
-    },
-    "domain" : "73",
-    "comment" : {
-      "undefined" : "Detailed description of the security event."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "72"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#isEventOf",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "isEventOf",
-      "undefined" : "is event of"
-    },
-    "domain" : "7",
-    "comment" : {
-      "undefined" : "Inverse of hasEvent. Links a security event back to its parent incident."
-    },
-    "attributes" : [ "object" ],
-    "id" : "76"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasAnalystId",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "28",
-    "label" : {
-      "IRI-based" : "hasAnalystId",
-      "undefined" : "has analyst ID"
-    },
-    "domain" : "30",
-    "comment" : {
-      "undefined" : "Unique identifier for an analyst."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "78"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasChatAnalyst",
-    "inverse" : "35",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "30",
-    "label" : {
-      "IRI-based" : "hasChatAnalyst",
-      "undefined" : "has chat analyst"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "Links a chat message to the analyst who authored it."
-    },
-    "attributes" : [ "object" ],
-    "id" : "82"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasEvent",
-    "inverse" : "76",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "hasEvent",
-      "undefined" : "has event"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Links an incident to one or more related security events that triggered or are part of it."
-    },
-    "attributes" : [ "object" ],
-    "id" : "83"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasIncidentSeverity",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "62",
-    "label" : {
-      "IRI-based" : "hasIncidentSeverity",
-      "undefined" : "has incident severity"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "The severity level of an incident (Low, Medium, High, Critical)."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "85"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasChatSentiment",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "87",
-    "label" : {
-      "IRI-based" : "hasChatSentiment",
-      "undefined" : "has chat sentiment"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The sentiment or tone of the communication."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "86"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasIncidentName",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "63",
-    "label" : {
-      "IRI-based" : "hasIncidentName",
-      "undefined" : "has incident name"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Title of the incident."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "93"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasIncidentStatus",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "95",
-    "label" : {
-      "IRI-based" : "hasIncidentStatus",
-      "undefined" : "has incident status"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Current status of the incident."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "94"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasAnalysisPerformingAnalyst",
-    "inverse" : "97",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "30",
-    "label" : {
-      "IRI-based" : "hasAnalysisPerformingAnalyst",
-      "undefined" : "has analysis performing analyst"
-    },
-    "domain" : "18",
-    "comment" : {
-      "undefined" : "Links a security analysis to the analyst who performed it."
-    },
-    "attributes" : [ "object" ],
-    "id" : "96"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasSecurityAnalysisDateTime",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "99",
-    "label" : {
-      "IRI-based" : "hasSecurityAnalysisDateTime",
-      "undefined" : "has security analysis datetime"
-    },
-    "domain" : "18",
-    "comment" : {
-      "undefined" : "Timestamp when the security analysis was performed."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "98"
-  }, {
-    "range" : "7",
-    "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "100"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#confirmedIncident",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "10",
     "label" : {
       "IRI-based" : "confirmedIncident",
       "undefined" : "confirmed incident"
     },
-    "domain" : "30",
+    "domain" : "1",
     "comment" : {
       "undefined" : "Inverse of hasConfirmationAnalyst. Links an analyst to the incidents they confirmed."
     },
     "attributes" : [ "object" ],
-    "id" : "101"
+    "id" : "0"
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#containsChat",
-    "inverse" : "0",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
+    "iri" : "https://w3id.org/cirpo#hasIncidentStatus",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasIncidentStatus",
+      "undefined" : "has incident status"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Current status of the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasAnalysisPerformingAnalyst",
+    "inverse" : "8",
+    "baseIri" : "https://w3id.org/cirpo",
     "range" : "1",
+    "label" : {
+      "IRI-based" : "hasAnalysisPerformingAnalyst",
+      "undefined" : "has analysis performing analyst"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Links a security analysis to the analyst who performed it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/cirpo#containsChat",
+    "inverse" : "12",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "11",
     "label" : {
       "IRI-based" : "containsChat",
       "undefined" : "contains chat"
     },
-    "domain" : "2",
+    "domain" : "10",
     "comment" : {
       "undefined" : "Indicates that a channel contains chat messages."
     },
     "attributes" : [ "object" ],
-    "id" : "102"
+    "id" : "9"
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasCoaCreationDateTime",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "89",
+    "iri" : "https://w3id.org/cirpo#hasSecurityAnalysisDateTime",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "14",
     "label" : {
-      "IRI-based" : "hasCoaCreationDateTime",
-      "undefined" : "has COA creation datetime"
+      "IRI-based" : "hasSecurityAnalysisDateTime",
+      "undefined" : "has security analysis datetime"
     },
-    "domain" : "5",
+    "domain" : "7",
     "comment" : {
-      "undefined" : "Timestamp when the course of action was created."
+      "undefined" : "Timestamp when the security analysis was performed."
     },
     "attributes" : [ "datatype" ],
-    "id" : "103"
+    "id" : "13"
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasSecurityAnalysisDataValue",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "105",
+    "iri" : "https://w3id.org/cirpo#hasIncidentName",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "16",
     "label" : {
-      "IRI-based" : "hasSecurityAnalysisDataValue",
-      "undefined" : "has security analysis data value"
+      "IRI-based" : "hasIncidentName",
+      "undefined" : "has incident name"
     },
-    "domain" : "18",
+    "domain" : "2",
     "comment" : {
-      "undefined" : "The data value to be analysed."
+      "undefined" : "Title of the incident."
     },
     "attributes" : [ "datatype" ],
-    "id" : "104"
+    "id" : "15"
   }, {
-    "iri" : "http://www.w3.org/ns/prov#used",
-    "inverse" : "36",
-    "baseIri" : "http://www.w3.org/ns/prov",
+    "iri" : "https://w3id.org/cirpo#hasResponderCommunication",
+    "inverse" : "19",
+    "baseIri" : "https://w3id.org/cirpo",
     "range" : "18",
-    "label" : {
-      "IRI-based" : "used",
-      "undefined" : "used"
-    },
-    "domain" : "5",
-    "comment" : {
-      "undefined" : "Indicates that a course of action used specific analysis"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "106"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#createdCoa",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "createdCoa",
-      "undefined" : "created COA"
-    },
-    "domain" : "30",
-    "comment" : {
-      "undefined" : "Inverse of hasCoaCreationAnalyst. Links an analyst to the courses of action they created."
-    },
-    "attributes" : [ "object" ],
-    "id" : "67"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasResponderCommunication",
-    "inverse" : "108",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "44",
     "label" : {
       "IRI-based" : "hasResponderCommunication",
       "undefined" : "has responder communication"
     },
-    "domain" : "10",
-    "subproperty" : [ "109" ],
+    "domain" : "2",
+    "subproperty" : [ "20" ],
     "comment" : {
       "undefined" : "Links an incident to any responder communication resource."
     },
     "attributes" : [ "object" ],
-    "id" : "107"
+    "id" : "17"
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasIncidentCreationDateTime",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "70",
+    "iri" : "https://w3id.org/cirpo#createdCoa",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "22",
     "label" : {
-      "IRI-based" : "hasIncidentCreationDateTime",
-      "undefined" : "has incident creation datetime"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Timestamp when the incident record was first created."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "110"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasEventActivityDateTime",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "75",
-    "label" : {
-      "IRI-based" : "hasEventActivityDateTime",
-      "undefined" : "has event activity datetime"
-    },
-    "domain" : "73",
-    "comment" : {
-      "undefined" : "Timestamp when the specific security event activity occurred."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "111"
-  }, {
-    "range" : "5",
-    "domain" : "58",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "112"
-  }, {
-    "range" : "5",
-    "domain" : "84",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "113"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasConfirmationDateTime",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "77",
-    "label" : {
-      "IRI-based" : "hasConfirmationDateTime",
-      "undefined" : "has confirmation datetime"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Timestamp when the incident was confirmed"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "114"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasCoaDescription",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "90",
-    "label" : {
-      "IRI-based" : "hasCoaDescription",
-      "undefined" : "has COA description"
-    },
-    "domain" : "5",
-    "comment" : {
-      "undefined" : "Narrative description of the course of action and its intended effect."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "115"
-  }, {
-    "range" : "5",
-    "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "116"
-  }, {
-    "range" : "5",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "117"
-  }, {
-    "range" : "5",
-    "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "118"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasArtefact",
-    "inverse" : "120",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "29",
-    "label" : {
-      "IRI-based" : "hasArtefact",
-      "undefined" : "has artefact"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Links an incident to related artefacts/observables collected during the investigation."
-    },
-    "attributes" : [ "object" ],
-    "id" : "119"
-  }, {
-    "range" : "5",
-    "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "121"
-  }, {
-    "range" : "30",
-    "domain" : "81",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "122"
-  }, {
-    "range" : "30",
-    "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "123"
-  }, {
-    "range" : "44",
-    "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "124"
-  }, {
-    "range" : "44",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "125"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#assignedToCoa",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "assignedToCoa",
-      "undefined" : "assigned to COA"
-    },
-    "domain" : "30",
-    "comment" : {
-      "undefined" : "Inverse of hasCoaAssignedAnalyst. Links an analyst to the courses of action they are assigned to execute."
-    },
-    "attributes" : [ "object" ],
-    "id" : "40"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasConfirmationAnalyst",
-    "inverse" : "101",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "30",
-    "label" : {
-      "IRI-based" : "hasConfirmationAnalyst",
-      "undefined" : "has confirmation analyst"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Links an incident to the analyst who confirmed it as a genuine security incident."
-    },
-    "attributes" : [ "object" ],
-    "id" : "126"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasChannel",
-    "inverse" : "127",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "2",
-    "label" : {
-      "IRI-based" : "hasChannel",
-      "undefined" : "has channel"
-    },
-    "superproperty" : [ "107" ],
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Links an incident to its chat channel."
-    },
-    "attributes" : [ "object" ],
-    "id" : "109"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#isArtefactOf",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "isArtefactOf",
-      "undefined" : "is artefact of"
-    },
-    "domain" : "29",
-    "comment" : {
-      "undefined" : "Inverse of hasArtefact. Links an artefact back to its incident."
-    },
-    "attributes" : [ "object" ],
-    "id" : "120"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasSecurityAnalysisDetails",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "129",
-    "label" : {
-      "IRI-based" : "hasSecurityAnalysisDetails",
-      "undefined" : "has security analysis details"
-    },
-    "domain" : "18",
-    "comment" : {
-      "undefined" : "Detailed findings from the analysis."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "128"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasEventTitle",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "69",
-    "label" : {
-      "IRI-based" : "hasEventTitle",
-      "undefined" : "has event title"
-    },
-    "domain" : "7",
-    "comment" : {
-      "undefined" : "Short description or name for the security event."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "130"
-  }, {
-    "range" : "30",
-    "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "132"
-  }, {
-    "iri" : "http://www.w3.org/ns/prov#wasGeneratedBy",
-    "inverse" : "134",
-    "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "wasGeneratedBy",
-      "undefined" : "was generated by"
-    },
-    "domain" : "18",
-    "comment" : {
-      "undefined" : "Indicates the security event that generated this analysis"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "133"
-  }, {
-    "range" : "10",
-    "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "135"
-  }, {
-    "range" : "44",
-    "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "136"
-  }, {
-    "range" : "18",
-    "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "137"
-  }, {
-    "range" : "7",
-    "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "138"
-  }, {
-    "range" : "5",
-    "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "139"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasChatMessageId",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "91",
-    "label" : {
-      "IRI-based" : "hasChatMessageId",
-      "undefined" : "has chat message ID"
+      "IRI-based" : "createdCoa",
+      "undefined" : "created COA"
     },
     "domain" : "1",
     "comment" : {
-      "undefined" : "Unique identifier of the chat message (post_id)."
+      "undefined" : "Inverse of hasCoaCreationAnalyst. Links an analyst to the courses of action they created."
+    },
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasCoaCreationDateTime",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasCoaCreationDateTime",
+      "undefined" : "has COA creation datetime"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Timestamp when the course of action was created."
     },
     "attributes" : [ "datatype" ],
-    "id" : "140"
+    "id" : "23"
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#performedAnalysis",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "18",
-    "label" : {
-      "IRI-based" : "performedAnalysis",
-      "undefined" : "performed analysis"
-    },
-    "domain" : "30",
-    "comment" : {
-      "undefined" : "Inverse of hasAnalysisPerformingAnalyst. Links an analyst to the analyses they performed."
-    },
-    "attributes" : [ "object" ],
-    "id" : "97"
-  }, {
-    "range" : "10",
-    "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "141"
-  }, {
-    "range" : "44",
-    "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "142"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#isAnalysisOf",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "isAnalysisOf",
-      "undefined" : "is analysis of"
-    },
-    "domain" : "18",
-    "comment" : {
-      "undefined" : "Inverse of hasAnalysis. Links an analysis back to its incident."
-    },
-    "attributes" : [ "object" ],
-    "id" : "19"
-  }, {
-    "range" : "18",
-    "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "143"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#performed",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
+    "iri" : "https://w3id.org/cirpo#hasSecurityAnalysisDataValue",
+    "baseIri" : "https://w3id.org/cirpo",
     "range" : "26",
     "label" : {
-      "IRI-based" : "performed",
-      "undefined" : "performed"
-    },
-    "domain" : "30",
-    "comment" : {
-      "undefined" : "Inverse of prov:wasPerformedBy. Indicates an analyst performed an activity."
-    },
-    "attributes" : [ "object" ],
-    "id" : "144"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#isCoaOf",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "isCoaOf",
-      "undefined" : "is COA of"
-    },
-    "domain" : "5",
-    "comment" : {
-      "undefined" : "Inverse of hasCoa. Links a course of action back to its incident."
-    },
-    "attributes" : [ "object" ],
-    "id" : "145"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#generated",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "18",
-    "label" : {
-      "IRI-based" : "generated",
-      "undefined" : "generated"
+      "IRI-based" : "hasSecurityAnalysisDataValue",
+      "undefined" : "has security analysis data value"
     },
     "domain" : "7",
     "comment" : {
-      "undefined" : "Inverse of prov:wasGeneratedBy. Indicates a security event generated an analysis."
-    },
-    "attributes" : [ "object" ],
-    "id" : "134"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasChatMessageDateTime",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "92",
-    "label" : {
-      "IRI-based" : "hasChatMessageDateTime",
-      "undefined" : "has chat message datetime"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "Timestamp when the communication occurred."
+      "undefined" : "The data value to be analysed."
     },
     "attributes" : [ "datatype" ],
-    "id" : "146"
+    "id" : "25"
   }, {
-    "range" : "29",
-    "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "147"
-  }, {
-    "range" : "5",
-    "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "148"
-  }, {
-    "iri" : "http://www.w3.org/ns/prov#wasPerformedBy",
-    "inverse" : "144",
-    "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "30",
-    "label" : {
-      "IRI-based" : "wasPerformedBy",
-      "undefined" : "was performed by"
-    },
-    "domain" : "33",
-    "comment" : {
-      "undefined" : "Indicates the analyst who performed this activity"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "149"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasEventActivity",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "71",
-    "label" : {
-      "IRI-based" : "hasEventActivity",
-      "undefined" : "has event activity"
-    },
-    "domain" : "73",
-    "comment" : {
-      "undefined" : "Description of the specific activity within a security event."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "150"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasArtefactCreationAnalyst",
-    "inverse" : "65",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "30",
-    "label" : {
-      "IRI-based" : "hasArtefactCreationAnalyst",
-      "undefined" : "has artefact creation analyst"
-    },
-    "domain" : "29",
-    "comment" : {
-      "undefined" : "Links an artefact to the analyst who collected, created, or documented it."
-    },
-    "attributes" : [ "object" ],
-    "id" : "151"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasArtefactDataValue",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "hasArtefactDataValue",
-      "undefined" : "has artefact data value"
-    },
-    "domain" : "29",
-    "comment" : {
-      "undefined" : "The actual content or value of the artefact ."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "152"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasCoaStartDateTime",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "88",
-    "label" : {
-      "IRI-based" : "hasCoaStartDateTime",
-      "undefined" : "has COA start datetime"
-    },
-    "domain" : "5",
-    "comment" : {
-      "undefined" : "Timestamp when execution of the course of action was initiated."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "153"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasSecurityAnalysisType",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "131",
-    "label" : {
-      "IRI-based" : "hasSecurityAnalysisType",
-      "undefined" : "has security analysis data type"
-    },
-    "domain" : "18",
-    "comment" : {
-      "undefined" : "The type of analysis performed."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "154"
-  }, {
-    "iri" : "https://haulaah.github.io/CIRPO#isChannelOf",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "10",
+    "iri" : "https://w3id.org/cirpo#isChannelOf",
+    "inverse" : "20",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "2",
     "label" : {
       "IRI-based" : "isChannelOf",
       "undefined" : "is channel of"
     },
-    "domain" : "2",
+    "domain" : "10",
     "comment" : {
       "undefined" : "Inverse of hasChannel."
     },
     "attributes" : [ "object" ],
-    "id" : "127"
+    "id" : "29"
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasArtefactType",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "20",
+    "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
+    "inverse" : "33",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "2",
     "label" : {
-      "IRI-based" : "hasArtefactType",
-      "undefined" : "has artefact type"
+      "IRI-based" : "wasAssociatedWith",
+      "undefined" : "was associated with"
     },
-    "domain" : "29",
+    "domain" : "32",
     "comment" : {
-      "undefined" : "Classification of the artefact."
+      "undefined" : "Indicates association with an incident"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "31"
+  }, {
+    "range" : "35",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasConfirmationAnalyst",
+    "inverse" : "0",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasConfirmationAnalyst",
+      "undefined" : "has confirmation analyst"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Links an incident to the analyst who confirmed it as a genuine security incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/cirpo#isArtefactOf",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isArtefactOf",
+      "undefined" : "is artefact of"
+    },
+    "domain" : "38",
+    "comment" : {
+      "undefined" : "Inverse of hasArtefact. Links an artefact back to its incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/cirpo#assignedToCoa",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "assignedToCoa",
+      "undefined" : "assigned to COA"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Inverse of hasCoaAssignedAnalyst. Links an analyst to the courses of action they are assigned to execute."
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasChannel",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasChannel",
+      "undefined" : "has channel"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Links an incident to its chat channel."
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasArtefactDataValue",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasArtefactDataValue",
+      "undefined" : "has artefact data value"
+    },
+    "domain" : "38",
+    "comment" : {
+      "undefined" : "The actual content or value of the artefact ."
     },
     "attributes" : [ "datatype" ],
-    "id" : "155"
+    "id" : "49"
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasCoa",
-    "inverse" : "145",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "5",
+    "iri" : "https://w3id.org/cirpo#isCoaOf",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isCoaOf",
+      "undefined" : "is COA of"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Inverse of hasCoa. Links a course of action back to its incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "range" : "7",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasChatMessageDateTime",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasChatMessageDateTime",
+      "undefined" : "has chat message datetime"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Timestamp when the communication occurred."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "range" : "35",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "35",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "35",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "7",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasConfirmationDateTime",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "hasConfirmationDateTime",
+      "undefined" : "has confirmation datetime"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Timestamp when the incident was confirmed"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "58"
+  }, {
+    "range" : "7",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "18",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "35",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasCoaDescription",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasCoaDescription",
+      "undefined" : "has COA description"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Narrative description of the course of action and its intended effect."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "63"
+  }, {
+    "range" : "18",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "2",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/cirpo#createdArtefact",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "createdArtefact",
+      "undefined" : "created artefact"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Inverse of hasArtefactCreationAnalyst. Links an analyst to the artefacts they created."
+    },
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://w3id.org/cirpo#performedAnalysis",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "performedAnalysis",
+      "undefined" : "performed analysis"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Inverse of hasAnalysisPerformingAnalyst. Links an analyst to the analyses they performed."
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasChatMessageId",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "hasChatMessageId",
+      "undefined" : "has chat message ID"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Unique identifier of the chat message."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasEventTitle",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "hasEventTitle",
+      "undefined" : "has event title"
+    },
+    "domain" : "35",
+    "comment" : {
+      "undefined" : "Short description or name for the security event."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasCoaAssignedAnalyst",
+    "inverse" : "45",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasCoaAssignedAnalyst",
+      "undefined" : "has COA assigned analyst"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Links a course of action to the analyst responsible for executing it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasCoa",
+    "inverse" : "50",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "22",
     "label" : {
       "IRI-based" : "hasCoa",
       "undefined" : "has course of action"
     },
-    "domain" : "10",
+    "domain" : "2",
     "comment" : {
       "undefined" : "Links an incident to the response actions (COA) taken to resolve it."
     },
     "attributes" : [ "object" ],
-    "id" : "156"
+    "id" : "75"
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#hasChatChannelId",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "3",
+    "iri" : "https://w3id.org/cirpo#hasSecurityAnalysisType",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "hasSecurityAnalysisType",
+      "undefined" : "has security analysis data type"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The type of analysis performed."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasChatChannelId",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "5",
     "label" : {
       "IRI-based" : "hasChatChannelId",
       "undefined" : "has chat channel ID"
     },
-    "domain" : "2",
+    "domain" : "10",
     "comment" : {
-      "undefined" : "Unique identifier of the communication channel (channel_id)."
+      "undefined" : "Unique identifier of the communication channel."
     },
     "attributes" : [ "datatype" ],
-    "id" : "157"
+    "id" : "79"
   }, {
-    "iri" : "https://haulaah.github.io/CIRPO#isRelatedToIncident",
-    "baseIri" : "https://haulaah.github.io/CIRPO",
-    "range" : "10",
+    "iri" : "https://w3id.org/cirpo#hadAssociationWith",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hadAssociationWith",
+      "undefined" : "had association with"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Inverse of prov:wasAssociatedWith. Indicates an incident's associated analyst, artefact, or security event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasSecurityAnalysisDetails",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "hasSecurityAnalysisDetails",
+      "undefined" : "has security analysis details"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Detailed findings from the analysis."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasArtefactCreationDateTime",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasArtefactCreationDateTime",
+      "undefined" : "has artefact creation datetime"
+    },
+    "domain" : "38",
+    "comment" : {
+      "undefined" : "Timestamp when the artefact was collected."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasEventActivity",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "hasEventActivity",
+      "undefined" : "has event activity"
+    },
+    "domain" : "47",
+    "comment" : {
+      "undefined" : "Description of the specific activity within a security event."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://w3id.org/cirpo#wasUsedBy",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "wasUsedBy",
+      "undefined" : "was used by"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Inverse of prov:used. Indicates an analysis was used by a course of action."
+    },
+    "attributes" : [ "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasEventActivityDateTime",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "hasEventActivityDateTime",
+      "undefined" : "has event activity datetime"
+    },
+    "domain" : "47",
+    "comment" : {
+      "undefined" : "Timestamp when the specific security event activity occurred."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://w3id.org/cirpo#performed",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "performed",
+      "undefined" : "performed"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Inverse of prov:wasPerformedBy. Indicates an analyst performed an activity."
+    },
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasArtefact",
+    "inverse" : "43",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasArtefact",
+      "undefined" : "has artefact"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Links an incident to related artefacts/observables collected during the investigation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasEventId",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "hasEventId",
+      "undefined" : "has event ID"
+    },
+    "domain" : "35",
+    "comment" : {
+      "undefined" : "Unique identifier for a security event."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasChatMessage",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "hasChatMessage",
+      "undefined" : "has chat message"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "The content or body of the message."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "103"
+  }, {
+    "range" : "22",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#used",
+    "inverse" : "91",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "used",
+      "undefined" : "used"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Indicates that a course of action used specific analysis"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasIncidentId",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "hasIncidentId",
+      "undefined" : "has incident ID"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Unique identifier for an incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasIncidentStage",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "109",
+    "label" : {
+      "IRI-based" : "hasIncidentStage",
+      "undefined" : "has incident stage"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Current stage in the incident lifecycle."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "108"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasIncidentSeverity",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "hasIncidentSeverity",
+      "undefined" : "has incident severity"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "The severity level of an incident (Low, Medium, High, Critical)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasArtefactType",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasArtefactType",
+      "undefined" : "has artefact type"
+    },
+    "domain" : "38",
+    "comment" : {
+      "undefined" : "Classification of the artefact."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasChatChannelName",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "hasChatChannelName",
+      "undefined" : "has chat channel name"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Name of the communication channel."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "113"
+  }, {
+    "range" : "22",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "22",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://w3id.org/cirpo#isRelatedToIncident",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "2",
     "label" : {
       "IRI-based" : "isRelatedToIncident",
       "undefined" : "is related to incident"
     },
-    "domain" : "44",
+    "domain" : "18",
     "comment" : {
       "undefined" : "Inverse of hasResponderCommunication. Links any responder communication back to the incident it is associated with."
     },
     "attributes" : [ "object" ],
-    "id" : "108"
+    "id" : "19"
+  }, {
+    "range" : "22",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "range" : "18",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "iri" : "https://w3id.org/cirpo#wasPostedTo",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "wasPostedTo",
+      "undefined" : "was posted to"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Indicates the channel where the chat message was posted."
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "range" : "22",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "22",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "1",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "1",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "18",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "35",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "https://w3id.org/cirpo#generatedChat",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "generatedChat",
+      "undefined" : "generated chat"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Inverse of hasChatAnalyst."
+    },
+    "attributes" : [ "object" ],
+    "id" : "126"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasAnalystId",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasAnalystId",
+      "undefined" : "has analyst ID"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Unique identifier for an analyst."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "127"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasArtefactCreationAnalyst",
+    "inverse" : "69",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasArtefactCreationAnalyst",
+      "undefined" : "has artefact creation analyst"
+    },
+    "domain" : "38",
+    "comment" : {
+      "undefined" : "Links an artefact to the analyst who collected, created, or documented it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "128"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasEvent",
+    "inverse" : "130",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasEvent",
+      "undefined" : "has event"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Links an incident to one or more related security events that triggered or are part of it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasCoaStartDateTime",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "hasCoaStartDateTime",
+      "undefined" : "has COA start datetime"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Timestamp when execution of the course of action was initiated."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "131"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasIncidentDescription",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasIncidentDescription",
+      "undefined" : "has incident description"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Detailed description of an incident. "
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "132"
+  }, {
+    "iri" : "https://w3id.org/cirpo#generated",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "generated",
+      "undefined" : "generated"
+    },
+    "domain" : "35",
+    "comment" : {
+      "undefined" : "Inverse of prov:wasGeneratedBy. Indicates a security event generated an analysis."
+    },
+    "attributes" : [ "object" ],
+    "id" : "133"
+  }, {
+    "range" : "1",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "https://w3id.org/cirpo#isAnalysisOf",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isAnalysisOf",
+      "undefined" : "is analysis of"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Inverse of hasAnalysis. Links an analysis back to its incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+    "inverse" : "133",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "wasGeneratedBy",
+      "undefined" : "was generated by"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Indicates the security event that generated this analysis"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasCoaStatus",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "hasCoaStatus",
+      "undefined" : "has COA status"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Current execution status of the course of action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "137"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasAnalystEmail",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasAnalystEmail",
+      "undefined" : "has analyst email"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Email address of the analyst."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "139"
+  }, {
+    "range" : "18",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "7",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "35",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "22",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "2",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "18",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasCoaCreationAnalyst",
+    "inverse" : "21",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasCoaCreationAnalyst",
+      "undefined" : "has COA creation analyst"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Links a course of action to the analyst who created or planned it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "146"
+  }, {
+    "range" : "7",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasCoaEndDateTime",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasCoaEndDateTime",
+      "undefined" : "has COA end datetime"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Timestamp when execution of the course of action was completed."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "148"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasChatSentiment",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "hasChatSentiment",
+      "undefined" : "has chat sentiment"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "The sentiment or tone of the communication."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "149"
+  }, {
+    "range" : "38",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "22",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasEndDateTime",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "hasEndDateTime",
+      "undefined" : "has end datetime"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Timestamp when incident response was formally concluded."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasPerformedBy",
+    "inverse" : "94",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "wasPerformedBy",
+      "undefined" : "was performed by"
+    },
+    "domain" : "41",
+    "comment" : {
+      "undefined" : "Indicates the analyst who performed this activity"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "153"
+  }, {
+    "iri" : "https://w3id.org/cirpo#isEventOf",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isEventOf",
+      "undefined" : "is event of"
+    },
+    "domain" : "35",
+    "comment" : {
+      "undefined" : "Inverse of hasEvent. Links a security event back to its parent incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasChatAnalyst",
+    "inverse" : "126",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasChatAnalyst",
+      "undefined" : "has chat analyst"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Links a chat message to the analyst who authored it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "154"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasIncidentCreationDateTime",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "hasIncidentCreationDateTime",
+      "undefined" : "has incident creation datetime"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Timestamp when the incident record was first created."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "155"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasAnalysis",
+    "inverse" : "135",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasAnalysis",
+      "undefined" : "has analysis"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Links an incident to the security analyses performed on it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "156"
+  }, {
+    "iri" : "https://w3id.org/cirpo#hasEventDescription",
+    "baseIri" : "https://w3id.org/cirpo",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasEventDescription",
+      "undefined" : "has event description"
+    },
+    "domain" : "47",
+    "comment" : {
+      "undefined" : "Detailed description of the security event."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "157"
   } ]
 }

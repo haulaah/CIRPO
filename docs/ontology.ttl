@@ -18,10 +18,7 @@
                           <http://purl.org/dc/terms/creator> _:genid1 ,
                                                              [ <http://xmlns.com/foaf/0.1/name> "Cormac Doherty"
                                                              ] ,
-                                                             _:genid3 ,
-                                                             "Cormac Doherty" ,
-                                                             "Haula Galadima" ,
-                                                             "Rob Brennan" ;
+                                                             _:genid3 ;
                           <http://purl.org/dc/terms/description> "An ontology for modeling cybersecurity incident response processes" ;
                           <http://purl.org/dc/terms/isVersionOf> <https://doi.org/10.5281/zenodo.20597896> ;
                           <http://purl.org/dc/terms/issued> "2026-06-12"^^xsd:date ;

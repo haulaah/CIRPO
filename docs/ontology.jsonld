@@ -228,12 +228,6 @@
     "@id" : "_:genid2"
   }, {
     "@id" : "_:genid3"
-  }, {
-    "@value" : "Cormac Doherty"
-  }, {
-    "@value" : "Haula Galadima"
-  }, {
-    "@value" : "Rob Brennan"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "An ontology for modeling cybersecurity incident response processes"

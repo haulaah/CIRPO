@@ -9,7 +9,7 @@
 	 prov:wasAttributedTo :agent2;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:wasRevisionOf <https://w3id.org/cirpo/versions/6.0>;
-	 prov:wasGeneratedAt "2026-05-03";
+	 prov:wasGeneratedAt "2026-06-09";
 .
 :agent0 a prov:Agent; foaf:name "Haula Galadima".
 :agent1 a prov:Agent; foaf:name "Cormac Doherty".

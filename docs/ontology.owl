@@ -16,7 +16,7 @@
         <dc:subject>incident response</dc:subject>
         <dc:subject>ontology</dc:subject>
         <terms:accessRights>public</terms:accessRights>
-        <terms:bibliographicCitation>Galadima, H., Doherty, C., &amp; Brennan, R. (2026). Cyber Incident Response Process Ontology (CIRPO) Version 7.0. Zenodo. https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER</terms:bibliographicCitation>
+        <terms:bibliographicCitation>Galadima, H., Doherty, C., &amp; Brennan, R. (2026). Cyber Incident Response Process Ontology (CIRPO) Version 7.0. Zenodo. https://doi.org/10.5281/zenodo.20615897</terms:bibliographicCitation>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-06-09</terms:created>
         <terms:creator rdf:nodeID="genid1"/>
         <terms:creator>
@@ -1277,10 +1277,10 @@
     
 
 
-    <!-- https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER -->
+    <!-- https://doi.org/10.5281/zenodo.20615897 -->
 
 
-    <owl:NamedIndividual rdf:about="https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER">
+    <owl:NamedIndividual rdf:about="https://doi.org/10.5281/zenodo.20615897">
         <owl:sameAs rdf:resource="https://w3id.org/cirpo"/>
     </owl:NamedIndividual>
     

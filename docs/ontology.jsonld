@@ -195,7 +195,7 @@
   "@id" : "http://xmlns.com/foaf/0.1/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER",
+  "@id" : "https://doi.org/10.5281/zenodo.20615897",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://w3id.org/cirpo"
@@ -216,7 +216,7 @@
     "@value" : "public"
   } ],
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@value" : "Galadima, H., Doherty, C., & Brennan, R. (2026). Cyber Incident Response Process Ontology (CIRPO) Version 7.0. Zenodo. https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER"
+    "@value" : "Galadima, H., Doherty, C., & Brennan, R. (2026). Cyber Incident Response Process Ontology (CIRPO) Version 7.0. Zenodo. https://doi.org/10.5281/zenodo.20615897"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",

@@ -6,7 +6,7 @@
 <https://w3id.org/cirpo> <http://purl.org/dc/elements/1.1/subject> "ontology" .
 <https://w3id.org/cirpo> <http://purl.org/dc/terms/accessRights> "public" .
 <https://w3id.org/cirpo> <http://purl.org/dc/terms/bibliographicCitation> "Galadima, H., Doherty, C., & Brennan, R. (2026). Cyber Incident Response Process Ontology (CIRPO) Version 7.0. Zenodo. https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER" .
-<https://w3id.org/cirpo> <http://purl.org/dc/terms/created> "2026-05-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/cirpo> <http://purl.org/dc/terms/created> "2026-06-09"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/cirpo> <http://purl.org/dc/terms/creator> _:genid1 .
 _:genid1 <http://xmlns.com/foaf/0.1/name> "Haula Galadima" .
 _:genid1 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://orcid.org/0009-0003-2485-3067> .

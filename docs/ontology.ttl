@@ -13,7 +13,7 @@
                                                                     "incident response" ,
                                                                     "ontology" ;
                           <http://purl.org/dc/terms/accessRights> "public" ;
-                          <http://purl.org/dc/terms/bibliographicCitation> "Galadima, H., Doherty, C., & Brennan, R. (2026). Cyber Incident Response Process Ontology (CIRPO) Version 7.0. Zenodo. https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER" ;
+                          <http://purl.org/dc/terms/bibliographicCitation> "Galadima, H., Doherty, C., & Brennan, R. (2026). Cyber Incident Response Process Ontology (CIRPO) Version 7.0. Zenodo. https://doi.org/10.5281/zenodo.20615897" ;
                           <http://purl.org/dc/terms/created> "2026-06-09"^^xsd:date ;
                           <http://purl.org/dc/terms/creator> _:genid1 ,
                                                              [ <http://xmlns.com/foaf/0.1/name> "Cormac Doherty"
@@ -820,7 +820,7 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 ###  https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER
-<https://doi.org/10.5281/zenodo.NEW_DOI_PLACEHOLDER> rdf:type owl:NamedIndividual ;
+<https://doi.org/10.5281/zenodo.20615897> rdf:type owl:NamedIndividual ;
                                                      owl:sameAs <https://w3id.org/cirpo> .
 
 
